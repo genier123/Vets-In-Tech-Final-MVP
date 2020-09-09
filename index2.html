@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Club Tracks</title>
+    <link rel="stylesheet" href="./stylesheets/styles2.css">
+</head>
+<body>
+    <header>
+        Hot Club Tracks
+    </header>
+        <div id="navbar1">
+            <p>
+                <ul>
+                    <li><a href="index.html">Hot Now</a></li>
+                    <li><a class="active" href="#2000s">2000s</a></li>
+                    <li><a href="#HotClubTracksRev2-90s.html">90s</a></li>
+                    <li><a href="#TikTok">TikTok</a></li>
+                    <li class="right"><a href="#about">About</a></li>
+                </ul>
+            </p>
+        </div>
+            <div class="flex-container">
+                <div>
+                    <div id="paragraphs1">
+                        <div id="filter">
+                            <span>
+                                <button onClick="history.go(0);">Popular</button>
+                            </span>
+                            &nbsp;
+                            <span>
+                                <button onclick="sortTableA()">Artist</button>
+                            </span>
+                            &nbsp;
+                            <span>
+                                <button onclick="sortTableS()">Song</button>
+                            </span>
+                            &nbsp;
+                            <span>
+                                <button onclick="sortTableB()">BPM</button>
+                            </span>
+                            &nbsp;
+                            <span>
+                                <button onclick="sortTableK()">Key</button>
+                            </span>
+                            &nbsp;                    
+                            <span>
+                                <input type="text" id="myInput" onkeyup="myFunctionA()" placeholder="Search for.." title="search for">
+                            </span>
+                        </div>
+                        <br>
+                        <table id="myTable">
+                            <!-- here goes our data! -->
+                        </table>
+                    </div>
+                </div>
+                <div>
+                    <div id="paragraphs2">
+                        <u><h2>This Weeks Top Track!</h2></u>
+                        <img src="https://i0.wp.com/musicmayhemmagazine.com/wp-content/uploads/2020/08/image003.png?zoom=2&resize=660%2C330&ssl=1" alt="" style="width: 100%;">
+                        If you're visiting this page, you're likely here because you're searching for a random sentence. Sometimes a random word just isn't enough, and that is where the random sentence generator comes into play. By inputting the desired number, you can make a list of as many random sentences as you want or need. Producing random sentences can be helpful in a number of different ways.
+                        <hr>
+                        <img src="./addimages/" width="99%"id="myPicture1" alt="some add">
+                        <hr>
+                    </div>
+                </div>
+            </div>
+    <footer>
+        <div class="footerspace1">
+            <div>Email Us: hotclubtracks@gmail.com<br>Copyright © 2020 Top Hits Music Blog
+            </div>
+        <div>
+            <div class="socialicons1">
+                <div>Follow on Twitter:@hotclubtracks</div>
+            </div>
+            <div class="socialicons2">
+                <div>Follow on Instagram:@hotclubtracks</div>
+            </div>
+        </div>
+    </div>
+    </footer>
+<script src="./scripts/script_2.js"></script>
+</body>
+</html>
