@@ -8,8 +8,8 @@ header{
     border-color: darkblue;
     text-align: center;
     font-size: 50px;
-    color: darkkhaki;
-    text-shadow: darkslateblue 1px;
+    color: rgb(240, 229, 84);
+    text-shadow: black 1px;
     border-radius: 5px;
     margin: 0 auto;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -22,7 +22,7 @@ footer{
     border-color: darkblue;
     text-align: center;
     font-size: 16px;
-    color: darkkhaki;
+    color: rgb(240, 229, 84);
     padding-top: 5px;
     border-radius: 5px;
     margin: 0 auto;
