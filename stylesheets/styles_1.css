@@ -1,5 +1,5 @@
 body{
-    background-color: lavender;
+  background-image: linear-gradient(to bottom, white, lavender,rgba(220, 198, 224, 1), rgba(83,51,0237,1));
 }
 
 header{
@@ -136,4 +136,11 @@ border-radius: 5px;
 
 #myTable tr.header, #myTable tr:hover {
   background-color: #f1f1f1;
+}
+
+#paragraphs1:hover{
+  cursor: pointer;
+}
+#paragraphs2:hover{
+  cursor: pointer;
 }
