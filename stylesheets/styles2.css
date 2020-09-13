@@ -1,32 +1,31 @@
 body{
-  background-image: linear-gradient(to bottom, white, lavender,rgb(224, 206, 228),rgb(157, 141, 241));
+  background-image: linear-gradient(to bottom right, white, lavender,rgb(224, 206, 228),rgb(157, 141, 241));
 }
 
 header{
-  border-style: solid;
-  border-width: thick;
-  border-color: darkblue;
-  text-align: center;
-  font-size: 50px;
-  color: rgb(240, 229, 84);
-  text-shadow: darkslateblue 1px;
-  border-radius: 5px;
-  margin: 0 auto;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  background-image: url(https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467_1280.jpg);
+    border-style: solid;
+    border-width: thick;
+    border-color: darkblue;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(240, 229, 84);
+    border-radius: 5px;
+    margin: 0 auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: url(https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467_1280.jpg);
 }
 
 footer{
-  border-style: solid;
-  border-width: thick;
-  border-color: darkblue;
-  text-align: center;
-  font-size: 16px;
-  color: rgb(240, 229, 84);
-  padding-top: 5px;
-  border-radius: 5px;
-  margin: 0 auto;
-  background-image: url(https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467_1280.jpg);
+    border-style: solid;
+    border-width: thick;
+    border-color: darkblue;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(240, 229, 84);
+    padding-top: 5px;
+    border-radius: 5px;
+    margin: 0 auto;
+    background-image: url(https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467_1280.jpg);
 }
 .footerspace1{
   display: flex;
@@ -34,7 +33,7 @@ footer{
   justify-content: center;
 }
 .footerspace1 div{
-  width: 75%;
+  width: 100%;
 }
 .socialicons1{
   display: flex;
@@ -48,39 +47,41 @@ footer{
 
 
 #navbar1{
-    margin: 0 auto;
-    width: 100%;
+  margin: 0 auto;
+  width: 100%;
 }
 ul {
   list-style-type: none;
   overflow: hidden;
-  background-color: darkblue;
-  width: 99%;
-  padding-left: 1%;
+  width: 100%;
   font-family: sans-serif;
   margin: 0 auto;
-  border-style: solid;
-  border-width: thin;
 }
 li {
 float: left;
+padding: 1px;
 }
 li a {
   display: block;
-  color: lavender;
-  padding: 14px 16px;
+  color: darkblue;
+  padding: 5px 5px 5px 5px;
   text-decoration: none;
-  border-bottom-color: aliceblue;
+  border-color: darkblue;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 5px;
 }
 li a:hover:not(.active) {
-background-color: lavender;
-color: darkblue;
-border-radius: 5px;
+  background-color: darkblue;
+  color: yellow;
+  border-radius: 5px;
 }
 .active {
-background-color: lavender;
-color: darkblue;
-border-radius: 5px;
+  background-color: purple;
+  color: yellow;
+  border-radius: 5px;
+  border-width: thin;
+
 }
 
 
@@ -88,28 +89,32 @@ border-radius: 5px;
 #paragraphs1{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
-    padding-left: 2px;
+    padding: 10px;
     width: 100%;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 2px;
 }
 #paragraphs2{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
     width: 100%;
-    padding-top: none;
-    margin: 0 auto;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 2px;
+box-shadow: black;
 }
 
 .flex-container {
     display: flex;
     align-items: center flex-start;
     justify-content: center space-evenly;
-    padding-right: 14px;
     padding-bottom: 10px;
 }
 .flex-container div {
     width: 100%;
+    padding: 11px;
 }
 
 
@@ -123,7 +128,7 @@ border-radius: 5px;
 
 #myTable th, #myTable td {
   text-align: left;
-  padding: 2px;
+
 }
 
 #myTable th{
@@ -136,11 +141,4 @@ border-radius: 5px;
 
 #myTable tr.header, #myTable tr:hover {
   background-color: #f1f1f1;
-}
-
-#paragraphs1:hover{
-  cursor: pointer;
-}
-#paragraphs2:hover{
-  cursor: pointer;
 }

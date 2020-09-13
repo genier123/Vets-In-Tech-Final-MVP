@@ -9,7 +9,6 @@ header{
   text-align: center;
   font-size: 50px;
   color: rgb(240, 229, 84);
-  text-shadow: darkslateblue 1px;
   border-radius: 5px;
   margin: 0 auto;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -29,111 +28,117 @@ footer{
   background-image: url(https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467_1280.jpg);
 }
 .footerspace1{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 .footerspace1 div{
-  width: 75%;
+width: 100%;
 }
 .socialicons1{
-  display: flex;
-  align-items: center;
+display: flex;
+align-items: center;
 }
 .socialicons2{
-  display: flex;
-  align-items: center;
+display: flex;
+align-items: center;
 }
 
 
 
 #navbar1{
-    margin: 0 auto;
-    width: 100%;
+margin: 0 auto;
+width: 100%;
 }
 ul {
-  list-style-type: none;
-  overflow: hidden;
-  background-color: darkblue;
-  width: 99%;
-  padding-left: 1%;
-  font-family: sans-serif;
-  margin: 0 auto;
-  border-style: solid;
-  border-width: thin;
+list-style-type: none;
+overflow: hidden;
+width: 100%;
+font-family: sans-serif;
+margin: 0 auto;
 }
 li {
 float: left;
+padding: 1px;
 }
 li a {
-  display: block;
-  color: lavender;
-  padding: 14px 16px;
-  text-decoration: none;
-  border-bottom-color: aliceblue;
+display: block;
+color: darkblue;
+padding: 5px 5px 5px 5px;
+text-decoration: none;
+border-color: darkblue;
+border-style: solid;
+border-width: thin;
+border-radius: 5px;
 }
 li a:hover:not(.active) {
-background-color: lavender;
-color: darkblue;
+background-color: darkblue;
+color: yellow;
 border-radius: 5px;
 }
 .active {
-background-color: lavender;
-color: darkblue;
+background-color: purple;
+color: yellow;
 border-radius: 5px;
+border-width: thin;
+
 }
 
 
 
 #paragraphs1{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    padding-left: 2px;
-    width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  padding: 10px;
+  width: 100%;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 2px;
 }
 #paragraphs2{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 100%;
-    padding-top: none;
-    margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  padding: 10px;
+  width: 100%;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 2px;
+box-shadow: black;
 }
 
 .flex-container {
-    display: flex;
-    align-items: center flex-start;
-    justify-content: center space-evenly;
-    padding-right: 14px;
-    padding-bottom: 10px;
+  display: flex;
+  align-items: center flex-start;
+  justify-content: center space-evenly;
+  padding-bottom: 10px;
 }
 .flex-container div {
-    width: 100%;
+  width: 100%;
+  padding: 11px;
 }
 
 
 
 #myTable {
-  border-collapse: collapse;
-  width: 100%;
-  border: 2px solid darkblue;
-  font-size: 12px;
+border-collapse: collapse;
+width: 100%;
+border: 2px solid darkblue;
+font-size: 12px;
 }
 
 #myTable th, #myTable td {
-  text-align: left;
-  padding: 2px;
+text-align: left;
+
 }
 
 #myTable th{
-  background-color: floralwhite;
+background-color: floralwhite;
 }
 
 #myTable tr {
-  border-bottom: 1px solid darkblue;
+border-bottom: 1px solid darkblue;
 }
 
 #myTable tr.header, #myTable tr:hover {
-  background-color: #f1f1f1;
+background-color: #f1f1f1;
 }
