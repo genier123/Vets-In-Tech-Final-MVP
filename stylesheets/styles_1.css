@@ -143,3 +143,8 @@ li a:hover:not(.active) {
 #myTable tr.header, #myTable tr:hover {
   background-color: #f1f1f1;
 }
+
+h2{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(2, 2, 95);
+}
