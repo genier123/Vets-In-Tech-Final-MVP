@@ -1,5 +1,5 @@
 body{
-  background-image: linear-gradient(to bottom right, white, lavender,rgb(224, 206, 228),rgb(157, 141, 241));
+  background-image: linear-gradient(to right, white, lavender,rgb(224, 206, 228),rgb(157, 141, 241));
 }
 
 header{
@@ -99,11 +99,11 @@ li a:hover:not(.active) {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     padding: 10px;
-    width: 100%;
+    width: 95%;
     border-style: solid;
     border-width: thin;
     border-radius: 2px;
-box-shadow: black;
+    box-shadow: black;
 }
 
 .flex-container {
@@ -114,7 +114,8 @@ box-shadow: black;
 }
 .flex-container div {
     width: 100%;
-    padding: 11px;
+    padding: 12px;
+
 }
 
 
