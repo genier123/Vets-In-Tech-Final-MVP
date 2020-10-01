@@ -89,11 +89,17 @@ let songData = [
     { Artist: 'Jadakiss ft. Styles P', Song: 'We Gonna Make It', BPM: 87, KEY: 'Dm'},
     { Artist: 'OutKast', Song: 'Hey Ya', BPM: 80, KEY: 'Em'},
     { Artist: 'CamRon ft. Juelz Santana', Song: 'Oh Boy', BPM: 83, KEY: 'Gb'},
-    { Artist: 'Three 6 Mafia ft. Eightball and MJG & Young Buck', Song: 'Stay Fly', BPM: 97, KEY: 'Em'},
-    { Artist: 'Damien Marley', Song: 'Welcome To Jamrock', BPM: 97, KEY: 'Em'},
-    { Artist: 'Ying Yang Twins', Song: 'Salt Shaker', BPM: 97, KEY: 'Em'},
-    { Artist: 'Justin Timberlake ft. Clipse', Song: 'Like I Love You', BPM: 97, KEY: 'Em'},
-    { Artist: 'OutKast', Song: 'Hey Ya', BPM: 97, KEY: 'Em'}
+    { Artist: 'Three 6 Mafia ft. Eightball and MJG & Young Buck', Song: 'Stay Fly', BPM: 68, KEY: 'B'},
+    { Artist: 'Damien Marley', Song: 'Welcome To Jamrock', BPM: 77, KEY: 'Cm'},
+    { Artist: 'Ying Yang Twins', Song: 'Salt Shaker', BPM: 102, KEY: 'B'},
+    { Artist: 'Justin Timberlake ft Clipse', Song: 'Like I Love You', BPM: 115, KEY: 'Gbm'},
+    { Artist: 'Lil Kim ft Mr. Cheeks', Song: 'The Jump Off', BPM: 105, KEY: 'Bbm'},
+    { Artist: 'Beenie Man ft Ms. Thing & Shawna', Song: 'Dude (Remix)', BPM: 94, KEY: 'F'},
+    { Artist: 'Joe Buddens', Song: 'Pump It Up', BPM: 105, KEY: 'Gb'},
+    { Artist: 'Murphy Lee', Song: 'What Da Hook Gone Be?', BPM: 95, KEY: 'Fm'},
+    { Artist: 'Trillville', Song: 'Some Cut', BPM: 85, KEY: 'Dm'},
+    { Artist: 'Cassidy ft Mary j. Blige', Song: 'Im A Hustla', BPM: 91, KEY: 'Bm'},
+    { Artist: 'Dr. Dre ft Snoop Dogg & Akon', Song: 'Kush', BPM: 95, KEY: 'G'}
   ];
   
   function generateTableHead(table, data) {
