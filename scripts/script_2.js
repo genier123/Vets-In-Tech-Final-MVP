@@ -59,7 +59,7 @@ let songData = [
     { Artist: 'OutKast', Song: 'Ms. Jackson', BPM: 95, KEY: 'Em'},
     { Artist: 'Sean Paul', Song: 'We Be Burnin', BPM: 117, KEY: 'Db'},
     { Artist: 'Jamie Foxx ft T Pain', Song: 'Blame It', BPM: 88, KEY: 'Bm'},
-    { Artist: 'Jay Z ft Kanye West & Rihanna', Song: 'Run This Town', BPM: 85, KEY: 'Cm'},
+    { Artist: 'Jay-Z ft Kanye West & Rihanna', Song: 'Run This Town', BPM: 85, KEY: 'Cm'},
     { Artist: 'DJ Khaled ft Ludacris, Snoop Dogg, Rick Ross & T Pain', Song: 'All I Do Is Win', BPM: 75, KEY: 'Dm'},
     { Artist: 'Akon ft Eminem', Song: 'Smack That', BPM: 119, KEY: 'Fm'},
     { Artist: 'Chris Brown ft T-Pain', Song: 'Kiss Kiss', BPM: 70, KEY: 'Bbm'},
