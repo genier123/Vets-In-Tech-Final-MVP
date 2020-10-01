@@ -45,7 +45,6 @@ footer{
 }
 
 
-
 #navbar1{
   margin: 0 auto;
   width: 100%;
@@ -81,9 +80,7 @@ li a:hover:not(.active) {
   color: yellow;
   border-radius: 5px;
   border-width: thin;
-
 }
-
 
 
 #paragraphs1{
@@ -107,6 +104,7 @@ li a:hover:not(.active) {
     box-shadow: 1px 1px;
 }
 
+
 .flex-container {
     display: flex;
     align-items: center flex-start;
@@ -116,9 +114,7 @@ li a:hover:not(.active) {
 .flex-container div {
     width: 100%;
     padding: 12px;
-
 }
-
 
 
 #myTable {
@@ -127,23 +123,19 @@ li a:hover:not(.active) {
   border: 2px solid darkblue;
   font-size: 12px;
 }
-
 #myTable th, #myTable td {
   text-align: left;
-
 }
-
 #myTable th{
   background-color: floralwhite;
 }
-
 #myTable tr {
   border-bottom: 1px solid darkblue;
 }
-
 #myTable tr.header, #myTable tr:hover {
   background-color: #f1f1f1;
 }
+
 
 h2{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
