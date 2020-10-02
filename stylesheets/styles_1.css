@@ -1,5 +1,5 @@
 body{
-  background-image: linear-gradient(to bottom, white, lavender,rgb(224, 206, 228),rgb(157, 141, 241));
+  background-image: linear-gradient(to bottom, white, lavender,rgb(224, 206, 228),rgb(152, 138, 223));
 }
 
 header{
@@ -140,4 +140,27 @@ li a:hover:not(.active) {
 h2{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: rgb(2, 2, 95);
+}
+
+h3{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(2, 2, 95);
+}
+
+.box {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#songstext {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#streamtabs {
+  display: flex;
+  flex-flow: row;
+  flex-direction: row row-reverse;
 }
