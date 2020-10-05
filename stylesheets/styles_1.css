@@ -107,10 +107,11 @@ li a:hover:not(.active) {
 .flex-container {
     display: flex;
     align-items: center space-evenly;
+    justify-content: space-evenly;
     padding-bottom: 10px;
 }
 .flex-container div {
-  width: 100%;
+    width: 100%;
 }
 
 
