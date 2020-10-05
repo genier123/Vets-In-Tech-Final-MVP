@@ -4,20 +4,22 @@ body{
 
 header{
     min-width: 375px;
+    max-width: 99%;
+    margin: 5px;
     text-align: center;
     font-size: 50px;
     color: rgb(240, 229, 84);
-    margin: 0 auto;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-image: url(https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467_1280.jpg);
 }
 
 footer{
     min-width: 375px;
+    max-width: 99%;
+    margin: 5px;
     text-align: center;
     font-size: 14px;
     color: rgb(240, 229, 84);
-    margin: 0 auto;
     background-image: url(https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467_1280.jpg);
     padding-top: 5px;
 }
@@ -82,41 +84,42 @@ li a:hover:not(.active) {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     padding: 10px;
-    width: 100%;
     border-style: solid;
     border-width: thin;
-    border-radius: 2px;
-    box-shadow: 1px 1px;
+    border-radius: 5px;
+    min-width: 375px;
+    max-width: 99%;
+    margin: 5px;
 }
 #paragraphs2{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    padding: 10px;
-    width: 100%;
-    border-style: solid;
-    border-width: thin;
-    border-radius: 2px;
-    box-shadow: 1px 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  padding: 10px;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 5px;
+  min-width: 375px;
+  max-width: 99%;
+  margin: 5px;
 }
 
 
 .flex-container {
     display: flex;
-    align-items: stretch;
-    justify-content: center space-evenly;
+    align-items: center space-evenly;
     padding-bottom: 10px;
 }
 .flex-container div {
-    width: 100%;
-    padding: 12px;
+  width: 100%;
 }
 
 
 #myTable {
   border-collapse: collapse;
   width: 100%;
-  border: 2px solid darkblue;
-  font-size: 12px;
+  border: 1px solid darkblue;
+  font-size: 11px;
+  border-radius: 10px;
 }
 #myTable th, #myTable td {
   text-align: left;
@@ -131,7 +134,10 @@ li a:hover:not(.active) {
   background-color: #f1f1f1;
 }
 
-
+h1{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(2, 2, 95);
+}
 h2{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: rgb(2, 2, 95);

@@ -1,25 +1,25 @@
   //------------------------ Write Table Data ----------------------
   let songData = [
-    { Artist: 'Drake ft Lil Durk', Song: 'Laugh Now Cry Later', BPM: 67, KEY: '8A'},
-    { Artist: 'DJ Khaled ft Drake', Song: 'POPSTAR', BPM: 82, KEY: '5A'},
-    { Artist: 'Ty Dolla Sign ft Kanye West & FKY Twigs', Song: 'Ego Death', BPM: 111, KEY: '2A'},
-    { Artist: '2 Chainz ft Lil Wayne', Song: 'Money Maker', BPM: 70, KEY: '8A'},
-    { Artist: 'Saweetie ft Post Malone, DaBaby & Jack Harlow', Song: 'Tap In', BPM: 100, KEY: '5A'},
-    { Artist: 'DaBaby ft Young Thug', Song: 'BLIND', BPM: 82, KEY: '9A'},
-    { Artist: 'Big Sean ft Travis Scott', Song: 'Lithuania', BPM: 76, KEY: '11A'},
-    { Artist: 'Puri & Lisa Mercedez ft Jhorrmountian & Adje', Song: 'Cono', BPM: 100, KEY: '8A'},
-    { Artist: 'Dr Fresh & LO99', Song: 'Ravewerk', BPM: 126, KEY: '5A'},
-    { Artist: 'ManyFew', Song: 'Get Close', BPM: 125, KEY: '1A'},
-    { Artist: 'Steve Aoki & KREAM', Song: 'Lies', BPM: 124, KEY: '11A'},
-    { Artist: 'Fisher', Song: 'Wanna Go Dancin', BPM: 125, KEY: '8A'},
-    { Artist: 'DJ Snake ft Tchami, Malaa & Mercer', Song: 'Made in France', BPM: 126, KEY: '1A'},
-    { Artist: 'Tchami ft Daecolm', Song: 'Proud (Kohmi Remix)', BPM: 124, KEY: '8A'},
-    { Artist: 'Cardi B & Megan Thee Stallion', Song: 'WAP', BPM: 67, KEY: '1A'},
-    { Artist: 'Nicki Minaj', Song: 'Yikes', BPM: 75, KEY: '5A'},
-    { Artist: 'J Balvin, Dua Lipa, Bad Bunny & Tiany', Song: 'Un DIA (ONE DAY)', BPM: 84, KEY: '11A'},
-    { Artist: 'De La Ghetto Y Nikcy Jam', Song: 'Sube La Music', BPM: 94, KEY: '4A'},
-    { Artist: 'Pop Smoke', Song: 'Dior', BPM: 71, KEY: '6A'},
-    { Artist: 'Megan Thee Stallion', Song: 'Girls in The Hood', BPM: 97, KEY: '6A'}
+    { Artist: 'Drake ft Lil Durk', Song: 'Laugh Now Cry Later'},
+    { Artist: 'DJ Khaled ft Drake', Song: 'POPSTAR'},
+    { Artist: 'Ty Dolla Sign ft Kanye West & FKY Twigs', Song: 'Ego Death'},
+    { Artist: '2 Chainz ft Lil Wayne', Song: 'Money Maker'},
+    { Artist: 'Saweetie ft Post Malone, DaBaby & Jack Harlow', Song: 'Tap In'},
+    { Artist: 'DaBaby ft Young Thug', Song: 'BLIND'},
+    { Artist: 'Big Sean ft Travis Scott', Song: 'Lithuania'},
+    { Artist: 'Puri & Lisa Mercedez ft Jhorrmountian & Adje', Song: 'Cono'},
+    { Artist: 'Dr Fresh & LO99', Song: 'Ravewerk'},
+    { Artist: 'ManyFew', Song: 'Get Close'},
+    { Artist: 'Steve Aoki & KREAM', Song: 'Lies'},
+    { Artist: 'Fisher', Song: 'Wanna Go Dancin'},
+    { Artist: 'DJ Snake ft Tchami, Malaa & Mercer', Song: 'Made in France'},
+    { Artist: 'Tchami ft Daecolm', Song: 'Proud (Kohmi Remix)'},
+    { Artist: 'Cardi B & Megan Thee Stallion', Song: 'WAP'},
+    { Artist: 'Nicki Minaj', Song: 'Yikes'},
+    { Artist: 'J Balvin, Dua Lipa, Bad Bunny & Tiany', Song: 'Un DIA (ONE DAY)'},
+    { Artist: 'De La Ghetto Y Nikcy Jam', Song: 'Sube La Music'},
+    { Artist: 'Pop Smoke', Song: 'Dior'},
+    { Artist: 'Megan Thee Stallion', Song: 'Girls in The Hood'}
   ];
   
   function generateTableHead(table, data) {
@@ -57,8 +57,6 @@
       for (var i = 0; i < rows.length; i++) {
           var firstCol = rows[i].cells[0].textContent.toUpperCase();
           var secondCol = rows[i].cells[1].textContent.toUpperCase();
-          var thirdCol = rows[i].cells[2].textContent.toUpperCase();
-          var fourthCol = rows[i].cells[3].textContent.toUpperCase();
           if (firstCol.indexOf(filter) > -1 || secondCol.indexOf(filter) > -1 || thirdCol.indexOf(filter) > -1 || fourthCol.indexOf(filter) > -1) {
               rows[i].style.display = "";
           } else {
