@@ -106,7 +106,7 @@ li a:hover:not(.active) {
 
 .flex-container {
     display: flex;
-    align-items: center space-evenly;
+    align-items: center space-evenly stretch;
     justify-content: space-evenly;
     padding-bottom: 10px;
 }
@@ -138,6 +138,7 @@ li a:hover:not(.active) {
 h1{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: rgb(2, 2, 95);
+  font-size: 21px;
 }
 h2{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
