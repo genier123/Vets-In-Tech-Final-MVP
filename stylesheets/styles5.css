@@ -6,6 +6,8 @@ body{
   background-color:darkorchid;
   position: relative;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  min-width: 320px;
+  max-width: 1600px;
 }
 
 .topnav #myLinks {
@@ -46,6 +48,8 @@ body{
   text-align: center;
   font-size: 25px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  min-width: 320px;
+  max-width: 1600px;
 }
 .mainfooter{
   outline: auto;
@@ -55,6 +59,8 @@ body{
   text-align: center;
   font-size: 12px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  min-width: 320px;
+  max-width: 1600px;
 }
 
 .box{

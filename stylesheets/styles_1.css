@@ -6,6 +6,8 @@ body{
   background-color:darkorchid;
   position: relative;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  min-width: 320px;
+  max-width: 1600px;
 }
 
 .topnav #myLinks {
@@ -46,6 +48,8 @@ body{
   text-align: center;
   font-size: 25px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  min-width: 320px;
+  max-width: 1600px;
 }
 .mainfooter{
   outline: auto;
@@ -55,6 +59,8 @@ body{
   text-align: center;
   font-size: 12px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  min-width: 320px;
+  max-width: 1600px;
 }
 
 .box{
@@ -72,8 +78,7 @@ body{
     border-style: solid;
     border-width: thin;
     border-radius: 5px;
-    min-width: 375px;
-    max-width: 99%;
+    max-width: 100%;
     margin: 5px;
 }
 #paragraphs2{
@@ -83,8 +88,7 @@ body{
   border-style: solid;
   border-width: thin;
   border-radius: 5px;
-  min-width: 375px;
-  max-width: 99%;
+  max-width: 100%;
   margin: 5px;
 }
 
@@ -100,7 +104,6 @@ body{
 
 #myTable {
   border-collapse: collapse;
-  width: 370px;
   border: 1px solid darkblue;
   font-size: 11px;
   border-radius: 10px;
