@@ -3,7 +3,7 @@ body{
 }
 .topnav {
   overflow: hidden;
-  background-color:darksalmon;
+  background-color:darkorchid;
   position: relative;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -13,7 +13,7 @@ body{
 }
 
 .topnav a {
-  color: white;
+  color: whitesmoke;
   outline: auto black;
   padding: 14px 16px;
   text-decoration: none;
@@ -22,7 +22,7 @@ body{
 }
 
 .topnav a.icon {
-  background: darkblue;
+  background: purple;
   display: table-row;
   position: absolute;
   right: 0;
@@ -31,6 +31,7 @@ body{
 
 .topnav a:hover {
   background-color: darkblue;
+  color: yellow;
 }
 
 .active {
@@ -38,13 +39,13 @@ body{
 }
 
 .mainheader{
-outline: auto;
-outline-color: darkblue;
-color:darkblue;
-background-color: darksalmon;
-text-align: center;
-font-size: 25px;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  outline: auto;
+  outline-color: darkblue;
+  color:darkblue;
+  background-color: darksalmon;
+  text-align: center;
+  font-size: 25px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .mainfooter{
   outline: auto;

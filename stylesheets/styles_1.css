@@ -1,84 +1,69 @@
 body{
-  background-image: linear-gradient(to bottom, white, lavender,rgb(224, 206, 228),rgb(152, 138, 223));
+  background-color: lavender;
 }
-
-header{
-    min-width: 375px;
-    max-width: 99%;
-    margin: 5px;
-    text-align: center;
-    font-size: 50px;
-    color: rgb(240, 229, 84);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-image: url(https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467_1280.jpg);
-}
-
-footer{
-    min-width: 375px;
-    max-width: 99%;
-    margin: 5px;
-    text-align: center;
-    font-size: 14px;
-    color: rgb(240, 229, 84);
-    background-image: url(https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467_1280.jpg);
-    padding-top: 5px;
-}
-
-.footerspace1{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.footerspace1 div{
-  width: 100%;
-}
-.socialicons1{
-  display: flex;
-  align-items: center;
-}
-.socialicons2{
-  display: flex;
-  align-items: center;
-}
-
-
-#navbar1{
-  margin: 0 auto;
-  width: 100%;
-}
-ul {
-  list-style-type: none;
+.topnav {
   overflow: hidden;
-  width: 100%;
-  font-family: sans-serif;
-  margin: 0 auto;
+  background-color:darkorchid;
+  position: relative;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-li {
-float: left;
-padding: 1px;
+
+.topnav #myLinks {
+  display: none;
 }
-li a {
-  display: block;
-  color: darkblue;
-  padding: 5px 5px 5px 5px;
+
+.topnav a {
+  color: whitesmoke;
+  outline: auto black;
+  padding: 14px 16px;
   text-decoration: none;
-  border-color: darkblue;
-  border-style: solid;
-  border-width: thin;
-  border-radius: 5px;
+  font-size: 16px;
+  display: block;
 }
-li a:hover:not(.active) {
+
+.topnav a.icon {
+  background: purple;
+  display: table-row;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
   background-color: darkblue;
   color: yellow;
-  border-radius: 5px;
-}
-.active {
-  background-color: purple;
-  color: yellow;
-  border-radius: 5px;
-  border-width: thin;
 }
 
+.active {
+  background-color: darkblue;
+}
+
+.mainheader{
+  outline: auto;
+  outline-color: darkblue;
+  color:darkblue;
+  background-color: darksalmon;
+  text-align: center;
+  font-size: 25px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.mainfooter{
+  outline: auto;
+  outline-color: darkblue;
+  color:darkblue;
+  background-color: darksalmon;
+  text-align: center;
+  font-size: 12px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.box{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/*-----------------------------------------------*/
 
 #paragraphs1{
     font-family: Arial, Helvetica, sans-serif;
@@ -103,7 +88,6 @@ li a:hover:not(.active) {
   margin: 5px;
 }
 
-
 .flex-container {
     display: flex;
     align-items: center space-evenly stretch;
@@ -114,10 +98,9 @@ li a:hover:not(.active) {
     width: 100%;
 }
 
-
 #myTable {
   border-collapse: collapse;
-  width: 100%;
+  width: 370px;
   border: 1px solid darkblue;
   font-size: 11px;
   border-radius: 10px;

@@ -11,19 +11,26 @@
     <link rel="stylesheet" href="./stylesheets/styles_1.css">
 </head>
 <body>
-    <header>
-        Hot Club Tracks
-    </header>
-    <br>
-    <div id="navbar1">
-        <ul>
-            <li><a class="active">Hot Now</a></li>
-            <li><a href="index2.html">2000s</a></li>
-            <li><a href="index3.html">90s</a></li>
-            <li><a href="index4.html">TikTok</a></li>
-            <li><a href="index5.html">Tips</a></li>
-        </ul>
-    </div>
+    <body>
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="#home" class="active"><i>Hot Club Tracks.com | Trending Songs</i></a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="./index2.html"><i>2000s</i></a>
+                <a href="./index3.html"><i>90s</i></a>
+                <a href="./index4.html"><i>TikTok</i></a>
+                <a href="./index5.html"><i>Tips Page</i></a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myHamburg()">
+                <button><i class="fa fa-bars"></i></button>
+            </a>
+        </div>
+        <hr color="darkblue">
+            <div class="mainheader">Trending Songs Right Now</div>
+        <hr color="darkblue">
+        <br>
         <p><!-- Paragraph -->
             <div id="paragraphs1">
                 <div class="flex-container">
@@ -87,20 +94,13 @@
                 <img src="./addimages/" width="99%"id="myPicture1" alt="some add">
             </div>
         </p>
-    <footer>
-        <div class="footerspace1">
-                <div>Email Us: hotclubtracks@gmail.com<br>Copyright © 2020 Hot Club Tracks
-                </div>
-                <div>
-                <div class="socialicons1">
-                    <div>Follow on Twitter:@hotclubtracks</div>
-                </div>
-                <div class="socialicons2">
-                    <div>Follow on Instagram:@hotclubtracks</div>
-                </div>
-            </div>
+        <hr color="darkblue">
+        <div class="mainfooter">
+            <hr>
+            <a href="hotclubtracks@gmail.com">Email Us</a> | Copyright © 2020 Hot Club Tracks | <a href="https://www.instagram.com/hotclubtracks/">IG:@hotclubtracks</a>
+            <hr>
         </div>
-    </footer>
+        <hr color="darkblue">
 <script src="./scripts/script_1.js"></script>
 </body>
 </html>

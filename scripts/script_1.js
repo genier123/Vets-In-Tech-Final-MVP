@@ -218,3 +218,14 @@ function choosePic() {
   var randomNum = Math.floor(Math.random() * myPix.length);
   document.getElementById("myPicture1").src = myPix[randomNum];
 }
+
+//---------------- Hamburg Menu --------------------------
+function myHamburg() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
