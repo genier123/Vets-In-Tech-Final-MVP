@@ -137,9 +137,7 @@ let songData = [
       for (var i = 0; i < rows.length; i++) {
           var firstCol = rows[i].cells[0].textContent.toUpperCase();
           var secondCol = rows[i].cells[1].textContent.toUpperCase();
-          var thirdCol = rows[i].cells[2].textContent.toUpperCase();
-          var fourthCol = rows[i].cells[3].textContent.toUpperCase();
-          if (firstCol.indexOf(filter) > -1 || secondCol.indexOf(filter) > -1 || thirdCol.indexOf(filter) > -1 || fourthCol.indexOf(filter) > -1) {
+          if (firstCol.indexOf(filter) > -1 || secondCol.indexOf(filter) > -1) {
               rows[i].style.display = "";
           } else {
               rows[i].style.display = "none";
@@ -219,78 +217,6 @@ let songData = [
     }
   }
 
-  //----------------------- Sort BPM --------------------
-  function sortTableB() {
-    var table, rows, switching, i, x, y, shouldSwitch;
-    table = document.getElementById("myTable");
-    switching = true;
-    /*Make a loop that will continue until
-    no switching has been done:*/
-    while (switching) {
-      //start by saying: no switching is done:
-      switching = false;
-      rows = table.rows;
-      /*Loop through all table rows (except the
-      first, which contains table headers):*/
-      for (i = 1; i < (rows.length - 1); i++) {
-        //start by saying there should be no switching:
-        shouldSwitch = false;
-        /*Get the two elements you want to compare,
-        one from current row and one from the next:*/
-        x = rows[i].getElementsByTagName("TD")[2];
-        y = rows[i + 1].getElementsByTagName("TD")[2];
-        //check if the two rows should switch place:
-        if (Number(x.innerHTML) > Number(y.innerHTML)) {
-          //if so, mark as a switch and break the loop:
-          shouldSwitch = true;
-          break;
-        }
-      }
-      if (shouldSwitch) {
-        /*If a switch has been marked, make the switch
-        and mark that a switch has been done:*/
-        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-        switching = true;
-      }
-    }
-  }
-  
-    //------------------------ Sort KEY --------------------
-    function sortTableK() {
-        var table, rows, switching, i, x, y, shouldSwitch;
-        table = document.getElementById("myTable");
-        switching = true;
-        /*Make a loop that will continue until
-        no switching has been done:*/
-        while (switching) {
-          //start by saying: no switching is done:
-          switching = false;
-          rows = table.rows;
-          /*Loop through all table rows (except the
-          first, which contains table headers):*/
-          for (i = 1; i < (rows.length - 1); i++) {
-            //start by saying there should be no switching:
-            shouldSwitch = false;
-            /*Get the two elements you want to compare,
-            one from current row and one from the next:*/
-            x = rows[i].getElementsByTagName("TD")[3];
-            y = rows[i + 1].getElementsByTagName("TD")[3];
-            //check if the two rows should switch place:
-            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-              //if so, mark as a switch and break the loop:
-              shouldSwitch = true;
-              break;
-            }
-          }
-          if (shouldSwitch) {
-            /*If a switch has been marked, make the switch
-            and mark that a switch has been done:*/
-            rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-            switching = true;
-          }
-        }
-      }
-
 //---------------- Random Add Space --------------------------
 window.onload = choosePic;
 
@@ -309,4 +235,21 @@ function myHamburg() {
   } else {
     x.style.display = "block";
   }
+}
+
+//---------------- Scroll Down --------------------------
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myScrolldown()};
+
+function myScrolldown() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+
+//---------------- Pop Up Model --------------------------
+function myPopup() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
 }

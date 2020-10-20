@@ -79,7 +79,6 @@ body{
     border-width: thin;
     border-radius: 5px;
     max-width: 100%;
-    margin: 5px;
 }
 #paragraphs2{
   font-family: Arial, Helvetica, sans-serif;
@@ -89,7 +88,6 @@ body{
   border-width: thin;
   border-radius: 5px;
   max-width: 100%;
-  margin: 5px;
 }
 
 .flex-container {
