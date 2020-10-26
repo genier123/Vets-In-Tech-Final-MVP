@@ -1,10 +1,13 @@
   //------------------------ Write Table Data ----------------------
   let songData = [
+    { Artist: 'Megan Thee Stallion ft Young Thug', Song: 'Dont Stop'},
+    { Artist: 'Travis Scott ft Young Thug & M.I.A.', Song: 'Franchise'},
+    { Artist: 'Tyga ft YG & Saweetie', Song: 'Money Mouf'},
     { Artist: 'Drake ft Lil Durk', Song: 'Laugh Now Cry Later'},
     { Artist: 'DJ Khaled ft Drake', Song: 'POPSTAR'},
     { Artist: 'Ty Dolla Sign ft Kanye West & FKY Twigs', Song: 'Ego Death'},
     { Artist: '2 Chainz ft Lil Wayne', Song: 'Money Maker'},
-    { Artist: 'Saweetie ft Post Malone, DaBaby & Jack Harlow', Song: 'Tap In'},
+    { Artist: 'Saweetie', Song: 'Tap In'},
     { Artist: 'DaBaby ft Young Thug', Song: 'BLIND'},
     { Artist: 'Big Sean ft Travis Scott', Song: 'Lithuania'},
     { Artist: 'Puri & Lisa Mercedez ft Jhorrmountian & Adje', Song: 'Cono'},
@@ -57,7 +60,7 @@
       for (var i = 0; i < rows.length; i++) {
           var firstCol = rows[i].cells[0].textContent.toUpperCase();
           var secondCol = rows[i].cells[1].textContent.toUpperCase();
-          if (firstCol.indexOf(filter) > -1 || secondCol.indexOf(filter) > -1 || thirdCol.indexOf(filter) > -1 || fourthCol.indexOf(filter) > -1) {
+          if (firstCol.indexOf(filter) > -1 || secondCol.indexOf(filter) > -1) {
               rows[i].style.display = "";
           } else {
               rows[i].style.display = "none";
