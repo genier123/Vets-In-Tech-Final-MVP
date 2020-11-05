@@ -218,6 +218,7 @@ let songData = [
   }
 
 //---------------- Random Add Space --------------------------
+/*
 window.onload = choosePic;
 
 var myPix = new Array("./addimages/BlankAdd1.png","./addimages/BlankAdd2.png","./addimages/BlankAdd3.png","./addimages/BlankAdd4.png");
@@ -226,7 +227,7 @@ function choosePic() {
   var randomNum = Math.floor(Math.random() * myPix.length);
   document.getElementById("myPicture1").src = myPix[randomNum];
 }
-
+*/
 //---------------- Hamburg Menu --------------------------
 function myHamburg() {
   var x = document.getElementById("myLinks");
