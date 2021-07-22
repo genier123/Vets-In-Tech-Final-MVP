@@ -11,44 +11,28 @@
     <link rel="stylesheet" href="./stylesheets/styles_1.css">
 </head>
 <body>
-        <!-- Top Navigation Menu -->
-        <div class="topnav">
-            <a href="#home" class="active"><i>Hot Club Tracks.com | Trending Songs</i></a>
-            <!-- Navigation links (hidden by default) -->
-            <div id="myLinks">
-                <a href="./index2.html"><i>2000s</i></a>
-                <a href="./index3.html"><i>90s</i></a>
-                <a href="./index4.html"><i>TikTok</i></a>
-                <a href="./index5.html"><i>Tips Page</i></a>
-            </div>
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" onclick="myHamburg()">
-                <button><i class="fa fa-bars"></i></button>
-            </a>
+    <div id="myNav5" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="./index2.html">2000s</a>
+            <a href="./index3.html">90s</a>
+            <a href="./index4.html">TikTok</a>
+            <a href="./index5.html">News</a>
         </div>
-        <hr color="darkblue">
-            <div class="mainheader">Trending Songs Right Now</div>
-        <hr color="darkblue">
-        <p class="para1"><!-- Paragraph -->
-            <img src="https://i2.wp.com/www.olisa.tv/wp-content/uploads/2020/10/megan-stallion-young-thug.jpg?w=700&ssl=1" alt="Megan Thee Stallion and Young Thug" style="width: 95%; border-radius: 10px; border-color: darkblue; border-style: solid;">
+    </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; <span class="mainTitle1">HotClubTracks</span></span>
+        <hr>
+      <div class="maintopic">Trending Songs Right Now</div>
+      <br>
+        <p class="para1"><!-- Paragraph 1 -->
+            <br>
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.vNuynbP10pCihWISY2emlAHaFr%26pid%3DApi&f=1" alt="Megan Thee Stallion and Young Thug" style="width: 95%; border-radius: 2px; box-shadow: 2px 3px 3px grey;">
+        <br>
         <br>
             Megan Thee Stallion and Young Thug hit the top of our Hot Now List. For the past decade these two talented artists have been hitting the top of the charts and does not show any signs of slowing down.
             We are awaiting the more hot tracks by Megan Thee Stallion and Young Thug before the end of the year. We also have a hunch that they are saving their best for when the full re-opening of the country when things come back in full force.
-        <hr>
-            <span>
-                <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_br_asin_til&ad_type=product_link&tracking_id=hctlinks-20&marketplace=amazon&region=US&placement=B0887GP791&asins=B0887GP791&linkId=ac6c9188237373d87564949e3d417085&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
-                </iframe>
-            </span>
-            <span>
-                <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_br_asin_til&ad_type=product_link&tracking_id=hctlinks-20&marketplace=amazon&region=US&placement=B00JX1ZS5O&asins=B00JX1ZS5O&linkId=4487fdd37b94bd5e672c49b7e2b8a116&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
-                </iframe>
-            </span>
-            <span>
-                <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_br_asin_til&ad_type=product_link&tracking_id=hctlinks-20&marketplace=amazon&region=US&placement=B07K39FRSL&asins=B07K39FRSL&linkId=1d5aef70c873f02616bd667bc59e4a80&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
-                </iframe>
-            </span>
-        <hr>
         </p>
+        <br>
         <div class="para2">
             <div id="filter">
                 <span>
@@ -69,9 +53,9 @@
             </div>
             <br>
                 <table id="myTable">
-                    <!-- here goes our data! -->
+                    <!-- Table Data! -->
                 </table>
-            <hr>
+            <!--Future Ads
                 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                 <ins class="adsbygoogle"
                     style="display:block"
@@ -83,14 +67,17 @@
                     (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
             <hr>
+            -->
         </div>
-        <hr color="darkblue">
-        <div class="mainfooter">
-            <hr>
-            <a href="hotclubtracks@gmail.com">Email Us</a> | Copyright © 2020 Hot Club Tracks | <a href="https://www.instagram.com/hotclubtracks/">IG:@hotclubtracks</a>
-            <hr>
-        </div>
-        <hr color="darkblue">
+        <br>
+    <div class="mainfooter">
+        <hr>
+        <br>
+            <a href="hotclubtracks@gmail.com">Email Us</a> | Copyright © Hot Club Tracks | <a href="https://www.instagram.com/hotclubtracks/">IG:@hotclubtracks</a>
+        <br>
+        <br>
+        <hr>
+    </div>
 <script src="./scripts/script_1.js"></script>
 </body>
 </html>

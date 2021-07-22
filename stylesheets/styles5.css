@@ -1,50 +1,14 @@
 body{
-  background-color: lavender;
+  background-image: linear-gradient(to right, lavender, white);
 }
-.topnav {
-  overflow: hidden;
-  background-color:darkorchid;
-  position: relative;
+.mainTitle1{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  min-width: 320px;
-  max-width: 1600px;
+  font-size: x-large;
+  color: darkblue;
+  text-shadow: white 1px 1px 1px;
 }
-
-.topnav #myLinks {
-  display: none;
-}
-
-.topnav a {
-  color: whitesmoke;
-  outline: auto black;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 16px;
-  display: block;
-}
-
-.topnav a.icon {
-  background: purple;
-  display: table-row;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.topnav a:hover {
-  background-color: darkblue;
-  color: yellow;
-}
-
-.active {
-  background-color: darkblue;
-}
-
-.mainheader{
-  outline: auto;
-  outline-color: darkblue;
+.maintopic{
   color:darkblue;
-  background-color: darksalmon;
   text-align: center;
   font-size: 25px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -52,42 +16,144 @@ body{
   max-width: 1600px;
 }
 .mainfooter{
-  outline: auto;
-  outline-color: darkblue;
   color:darkblue;
-  background-color: darksalmon;
+  background-color: lavender;
   text-align: center;
   font-size: 12px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   min-width: 320px;
   max-width: 1600px;
 }
-
-.box{
-  width: 100%;
+/*---------------------Paragraphs------------------------*/
+.para1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 1px;
+  max-width: 100%;
+  margin: auto;
+  vertical-align: middle;
+  text-align: center;
+  color: darkslateblue;
+  border-radius: 2px;
+  box-shadow: 2px 3px 3px grey;
+  background-color: whitesmoke;
+}
+#filter{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  margin: auto;
+  vertical-align: middle;
+  text-align: center;
+}
+.para2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  padding: 10px;
+  border-radius: 2px;
+  max-width: 100%;
+  margin: auto;
+  vertical-align: middle;
+  text-align: center;
+  box-shadow: 2px 3px 3px grey;
+  background-color: whitesmoke;
+}
+/*------------------------Tables----------------------*/
+#myTable {
+  border-collapse: collapse;
+  border: 1px solid darkblue;
+  font-size: 12px;
+  border-radius: 5px;
+  max-width: 100%;
+  min-width: 320px;
+  margin: auto;
+}
+#myTable th, #myTable td {
+  text-align: left;
+}
+#myTable th{
+  background-color: floralwhite;
+}
+#myTable tr {
+  border-bottom: 1px solid darkblue;
+}
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+/*-------------------------------------------------------*/
+h1{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(2, 2, 95);
+  font-size: 21px;
+}
+h2{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(2, 2, 95);
+}
+h3{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(2, 2, 95);
+}
+#songstext {
   display: flex;
   flex-flow: row wrap;
 }
-
-/*-----------------------------------------------*/
-
-#answers{
-  color: darkslateblue;
-  font-weight: bolder;
-  font-size: 14px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  padding-left: 2%;
+#streamtabs {
+  display: flex;
+  flex-flow: row;
+  flex-direction: row row-reverse;
 }
-#para{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  padding-left: 2%;
-  padding-bottom: 10px;
-  padding-top: 10px;
+
+/*-----------------NewMenu--------------------*/
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(71, 67, 71, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
 }
-#img1 {
-  float: left;
-  padding-right: 10px;
-  padding-bottom: 5px;
-  padding-top: 4px;
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 26px;
+  color:silver;
+  display: block;
+  transition: 0.5s;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
 }

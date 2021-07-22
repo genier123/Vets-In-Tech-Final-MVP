@@ -1,144 +1,159 @@
 body{
-    background-color: lavender;
+  background-image: linear-gradient(to right, lavender, white);
 }
-
-header{
-  border-style: solid;
-  border-width: thick;
-  border-color: darkblue;
-  text-align: center;
-  font-size: 50px;
-  color: rgb(240, 229, 84);
-  border-radius: 5px;
-  margin: 0 auto;
+.mainTitle1{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  background-image: url(https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467_1280.jpg);
+  font-size: x-large;
+  color: darkblue;
+  text-shadow: white 1px 1px 1px;
 }
-
-footer{
-  border-style: solid;
-  border-width: thick;
-  border-color: darkblue;
+.maintopic{
+  color:darkblue;
   text-align: center;
-  font-size: 16px;
-  color: rgb(240, 229, 84);
-  padding-top: 5px;
-  border-radius: 5px;
-  margin: 0 auto;
-  background-image: url(https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467_1280.jpg);
+  font-size: 25px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  min-width: 320px;
+  max-width: 1600px;
 }
-.footerspace1{
-display: flex;
-align-items: center;
-justify-content: center;
-}
-.footerspace1 div{
-width: 100%;
-}
-.socialicons1{
-display: flex;
-align-items: center;
-}
-.socialicons2{
-display: flex;
-align-items: center;
-}
-
-
-
-#navbar1{
-margin: 0 auto;
-width: 100%;
-}
-ul {
-list-style-type: none;
-overflow: hidden;
-width: 100%;
-font-family: sans-serif;
-margin: 0 auto;
-}
-li {
-float: left;
-padding: 1px;
-}
-li a {
-display: block;
-color: darkblue;
-padding: 5px 5px 5px 5px;
-text-decoration: none;
-border-color: darkblue;
-border-style: solid;
-border-width: thin;
-border-radius: 5px;
-}
-li a:hover:not(.active) {
-background-color: darkblue;
-color: yellow;
-border-radius: 5px;
-}
-.active {
-background-color: purple;
-color: yellow;
-border-radius: 5px;
-border-width: thin;
-
-}
-
-
-
-#paragraphs1{
-  font-family: Arial, Helvetica, sans-serif;
+.mainfooter{
+  color:darkblue;
+  background-color: lavender;
+  text-align: center;
   font-size: 12px;
-  padding: 10px;
-  width: 100%;
-  border-style: solid;
-  border-width: thin;
-  border-radius: 2px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  min-width: 320px;
+  max-width: 1600px;
 }
-#paragraphs2{
+/*---------------------Paragraphs------------------------*/
+.para1{
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  padding: 10px;
-  width: 100%;
-  border-style: solid;
-  border-width: thin;
-  border-radius: 2px;
-box-shadow: black;
-}
-
-.flex-container {
-  display: flex;
-  align-items: center flex-start;
-  justify-content: center space-evenly;
+  font-size: 14px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10px;
   padding-bottom: 10px;
+  border-radius: 1px;
+  max-width: 100%;
+  margin: auto;
+  vertical-align: middle;
+  text-align: center;
+  color: darkslateblue;
+  border-radius: 2px;
+  box-shadow: 2px 3px 3px grey;
+  background-color: whitesmoke;
 }
-.flex-container div {
-  width: 100%;
-  padding: 11px;
+#filter{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  margin: auto;
+  vertical-align: middle;
+  text-align: center;
 }
-
-
-
+.para2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  padding: 10px;
+  border-radius: 2px;
+  max-width: 100%;
+  margin: auto;
+  vertical-align: middle;
+  text-align: center;
+  box-shadow: 2px 3px 3px grey;
+  background-color: whitesmoke;
+}
+/*------------------------Tables----------------------*/
 #myTable {
-border-collapse: collapse;
-width: 100%;
-border: 2px solid darkblue;
-font-size: 12px;
+  border-collapse: collapse;
+  border: 1px solid darkblue;
+  font-size: 12px;
+  border-radius: 5px;
+  max-width: 100%;
+  min-width: 320px;
+  margin: auto;
 }
-
 #myTable th, #myTable td {
-text-align: left;
-
+  text-align: left;
 }
-
 #myTable th{
-background-color: floralwhite;
+  background-color: floralwhite;
 }
-
 #myTable tr {
-border-bottom: 1px solid darkblue;
+  border-bottom: 1px solid darkblue;
+}
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+/*-------------------------------------------------------*/
+h1{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(2, 2, 95);
+  font-size: 21px;
+}
+h2{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(2, 2, 95);
+}
+h3{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(2, 2, 95);
+}
+#songstext {
+  display: flex;
+  flex-flow: row wrap;
+}
+#streamtabs {
+  display: flex;
+  flex-flow: row;
+  flex-direction: row row-reverse;
 }
 
-#myTable tr.header, #myTable tr:hover {
-background-color: #f1f1f1;
+/*-----------------NewMenu--------------------*/
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(71, 67, 71, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 26px;
+  color:silver;
+  display: block;
+  transition: 0.5s;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
 }
