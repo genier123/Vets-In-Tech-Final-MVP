@@ -25,23 +25,47 @@ body{
   max-width: 1600px;
 }
 /*---------------------Paragraphs------------------------*/
+.griditems1{
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-gap: 1em;
+  padding-left: 5%;
+  padding-right: 5%;
+}
 .para1{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 14px;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 10px;
-  padding-bottom: 10px;
   border-radius: 1px;
-  max-width: 100%;
-  margin: auto;
-  vertical-align: middle;
-  text-align: center;
-  color: darkslateblue;
+  padding-right: 5%;
   border-radius: 2px;
   box-shadow: 2px 3px 3px grey;
   background-color: whitesmoke;
 }
+
+.vidWrapper1{
+
+  display: flex;
+  justify-content: center;
+
+}
+
+@media screen and (max-width: 600px) {
+  .vidWrapper1 {
+    display: flex;
+    justify-content: center;
+    width: 340px;
+    padding-left: 3%;
+  }
+}
+
+.craziestVid1{
+  text-align: center;
+  font-style: italic;
+  font-weight: bolder;
+  text-decoration: underline; 
+  
+}
+
 #filter{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 10px;
