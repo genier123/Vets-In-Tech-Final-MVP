@@ -9,11 +9,15 @@ body{
 }
 .maintopic{
   color:darkblue;
-  text-align: center;
   font-size: 25px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   min-width: 320px;
   max-width: 1600px;
+  text-align: center;
+  font-style: italic;
+  font-weight: bolder;
+  text-decoration: underline;
+
 }
 .mainfooter{
   color:darkblue;
@@ -35,7 +39,6 @@ body{
   .griditems1 {
     display: flex;
     flex-wrap: wrap;
-
     width: 240px;
     padding-left: 5%;
   }
@@ -52,9 +55,10 @@ body{
 }
 
 .vidWrapper1{
-
-  display: flex;
-  justify-content: center;
+  width: 300px;
+  margin: 0 auto;
+  padding: 5px 5px 5px 5px;
+  padding-left: 5%;
 
 }
 
@@ -62,16 +66,36 @@ body{
   .vidWrapper1 {
     display: flex;
     justify-content: center;
-    width: 340px;
+    width: 300px;
     padding-left: 3%;
   }
 }
 
+.vidWrapper2{
+  width: 300px;
+  font-style: italic;
+  font-size: smaller;
+  margin: 0 auto;
+  padding-left: 5%;
+
+}
+
+@media screen and (max-width: 600px) {
+  .vidWrapper2 {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    padding-left: 3%;
+  }
+}
+/*-----------------*/
+
 .craziestVid1{
+
   text-align: center;
   font-style: italic;
   font-weight: bolder;
-  text-decoration: underline; 
+  color: darkblue;
   
 }
 
@@ -88,7 +112,7 @@ body{
   padding: 10px;
   border-radius: 2px;
   max-width: 100%;
-  margin: auto;
+  margin: 0 auto;
   vertical-align: middle;
   text-align: center;
   box-shadow: 2px 3px 3px grey;
@@ -102,7 +126,7 @@ body{
   border-radius: 5px;
   max-width: 100%;
   min-width: 320px;
-  margin: auto;
+  margin: 0 auto;
 }
 #myTable th, #myTable td {
   text-align: left;
