@@ -70,6 +70,7 @@ body{
 /*------------------Content----------------------*/
 .contentTitle {
 /*Title*/
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: center;
   font-style: italic;
   font-weight: bolder;
@@ -234,9 +235,23 @@ h3{
 }
 
 .adsPic1 {
-  max-height: 50px;
+  max-height: 100px;
   display: flex;
   justify-content: center;
   margin: 0 auto;
 
+}
+
+.catchyAds1 {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+
+}
+
+.adPicContent {
+
+  padding: 2px 2px 2px 2px;
 }
