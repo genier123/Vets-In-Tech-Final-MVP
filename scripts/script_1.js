@@ -1,5 +1,17 @@
   //------------------------ Write Table Data ----------------------
   let songData = [
+    { Artist: 'Bia Nicki Minaj', Song: 'Whole Lotta Money (Remix)'},
+    { Artist: 'Normani ft Cardi B', Song: 'Wild Side'},
+    { Artist: 'Lil Nas X ft Jack Harlow', Song: 'Industry Baby'},
+    { Artist: 'Fat Joe ft Remy Ma & Cool & Dre', Song: 'Back Outside'},
+    { Artist: 'Pop Smoke ft 42 Dugg & 21 Savage', Song: 'Bought a Million'},
+    { Artist: 'Megan Thee Stallion', Song: 'Thot Sh-t'},
+    { Artist: 'City Girls', Song: 'Twerkulater'},
+    { Artist: 'Beatking ft 2 Chainz & Juicy J', Song: 'SDAB'},
+    { Artist: 'Belly, The Weeknd, Young Thug', Song: 'Better Believe'},
+    { Artist: 'Swedish House Mafia', Song: 'It Gets Better'},
+    { Artist: 'Yung Bleu ft Chris Brown & 2 Chainz', Song: 'Baddest'},
+    { Artist: 'French Montana', Song: 'FWMGAB'},
     { Artist: 'Megan Thee Stallion ft Young Thug', Song: 'Dont Stop'},
     { Artist: 'Travis Scott ft Young Thug & M.I.A.', Song: 'Franchise'},
     { Artist: 'Tyga ft YG & Saweetie', Song: 'Money Mouf'},

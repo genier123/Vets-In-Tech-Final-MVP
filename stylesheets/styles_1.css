@@ -1,5 +1,5 @@
 body{
-  background-image: linear-gradient(to right, lavender, white);
+  background-image: linear-gradient(to top, rgb(216, 155, 216), rgb(206, 175, 206), white);
 }
 .mainTitle1{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -43,18 +43,42 @@ body{
     padding-left: 5%;
   }
 }
+/*------------------Paragraphs----------------------*/
+.para1 {
 
-.para1{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 14px;
-  border-radius: 1px;
-  padding-right: 5%;
-  border-radius: 2px;
-  box-shadow: 2px 3px 3px grey;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px grey;
   background-color: whitesmoke;
+  max-width: 500px;
+  margin: 0 auto;
+
 }
 
-.vidWrapper1{
+.para2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px grey;
+  background-color: whitesmoke;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/*----------------------------------------*/
+/*------------------Content----------------------*/
+.contentTitle {
+/*Title*/
+  text-align: center;
+  font-style: italic;
+  font-weight: bolder;
+  color: darkblue;
+  
+}
+
+.pictureWrapper{
+/*Picture*/
   width: 300px;
   margin: 0 auto;
   padding: 5px 5px 5px 5px;
@@ -63,15 +87,19 @@ body{
 }
 
 @media screen and (max-width: 600px) {
-  .vidWrapper1 {
+  /*PictureMobile*/
+  .pictureWrapper {
     display: flex;
     justify-content: center;
     width: 300px;
     padding-left: 3%;
+  
   }
+
 }
 
-.vidWrapper2{
+.contentWrapper {
+/*Writing*/
   width: 300px;
   font-style: italic;
   font-size: smaller;
@@ -81,23 +109,18 @@ body{
 }
 
 @media screen and (max-width: 600px) {
-  .vidWrapper2 {
+  /*WritingMobile*/
+  
+  .contentWrapper {
     display: flex;
     justify-content: center;
     width: 300px;
     padding-left: 3%;
+  
   }
+
 }
 /*-----------------*/
-
-.craziestVid1{
-
-  text-align: center;
-  font-style: italic;
-  font-weight: bolder;
-  color: darkblue;
-  
-}
 
 #filter{
   font-family: Arial, Helvetica, sans-serif;
@@ -106,26 +129,14 @@ body{
   vertical-align: middle;
   text-align: center;
 }
-.para2{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  padding: 10px;
-  border-radius: 2px;
-  max-width: 100%;
-  margin: 0 auto;
-  vertical-align: middle;
-  text-align: center;
-  box-shadow: 2px 3px 3px grey;
-  background-color: whitesmoke;
-}
+
 /*------------------------Tables----------------------*/
 #myTable {
   border-collapse: collapse;
   border: 1px solid darkblue;
   font-size: 12px;
   border-radius: 5px;
-  max-width: 100%;
-  min-width: 320px;
+  max-width: 300px;
   margin: 0 auto;
 }
 #myTable th, #myTable td {
@@ -140,6 +151,13 @@ body{
 #myTable tr.header, #myTable tr:hover {
   background-color: #f1f1f1;
 }
+@media screen and (max-width: 500px) {
+  .myTable {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
 /*-------------------------------------------------------*/
 h1{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -213,4 +231,12 @@ h3{
   top: 15px;
   right: 35px;
   }
+}
+
+.adsPic1 {
+  max-height: 50px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
 }
