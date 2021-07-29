@@ -234,14 +234,7 @@ h3{
   }
 }
 
-.adsPic1 {
-  max-height: 100px;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-
-}
-
+/*Ads*/
 .catchyAds1 {
 
   display: flex;
@@ -254,4 +247,49 @@ h3{
 .adPicContent {
 
   padding: 2px 2px 2px 2px;
+  
+}
+
+.adsPic1 {
+  max-height: 100px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+}
+
+/*Artwork*/
+
+.artworkContent1 {
+
+  max-width: 620px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+
+
+
+}
+
+/*Artwork
+
+.artwork1 {
+
+}
+
+*/
+
+.topsongs1 {
+  max-height: 100px;
+  padding: 2px 2px 2px 2px;
+
+}
+
+/*Shrink Images Under 620px*/
+@media screen and (max-width: 620px) {
+  .topsongs1 {
+    max-height: 60px;
+    padding: 2px 2px 2px 2px;
+  }
 }
