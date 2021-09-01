@@ -1,0 +1,210 @@
+/*---------Menu & Overlay Porperties----------*/
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(71, 67, 71, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 26px;
+    color:silver;
+    display: block;
+    transition: 0.5s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+  
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+}
+
+.mainLogo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    text-shadow: white 1px 1px 1px;
+}
+/*-----------------------------------------------*/
+
+/*------H Tag Proporties-----*/
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-style: italic;
+    padding-left: 1em;
+}
+@media screen and (max-width: 768px) {
+    h1 {
+        text-align: center;
+    }
+  }
+
+h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-style: italic;
+}
+
+h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-style: italic;
+    margin: 0 auto;
+}
+/*----------------------------------------*/
+
+/*------MainArtical Picture Proporties-----*/
+.mainPicture {
+    height: auto;
+    box-shadow: black 1px 1px 5px;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 768px) {
+    .mainPicture {
+        width: 95%;
+        
+    }
+  }
+/*-----------------------------------------*/
+
+/*--------------Layout----------------*/
+.horizontalGridLayout{
+    display: flex;
+    flex-direction: row;
+    -ms-grid-column-align: stretch;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .horizontalGridLayout {
+        display: flex;
+        flex-direction: column;
+        justify-content: center space-evenly;
+        margin: 0 auto;
+        width: 95%;
+    }
+  }
+
+#para1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    #para1 {
+        width: 95%;
+    }
+  }
+
+/*CathyAds1*/
+.catchyAds1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center space-evenly;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .catchyAds1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 auto;
+    }
+  }
+
+.adPicContent {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    border-radius: 1px;
+    box-shadow: 1px 1px 3px grey;
+}
+
+#adsPic1 {
+    max-height: 100px;
+    max-width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.catchyAds2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center space-evenly;
+    margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+    #catchyAdsMiniScreen {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 auto;
+    }
+  }
+/*------------------------------------*/
+/*OtherAds*/
+.otherAdsLayout{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+@media screen and (max-width: 768px) {
+    .otherAdsLayout {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 auto;
+        width: 95%;
+    }
+  }
+#otherAdsIcon{
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+/*---------------Footer---------------------*/
+.mainfooter{
+    color:darkblue;
+    background-color: lavender;
+    text-align: center;
+    font-size: 12px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    min-width: 320px;
+    max-width: 1600px;
+}
