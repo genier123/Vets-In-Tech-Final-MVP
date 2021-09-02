@@ -69,13 +69,12 @@ body{
 }
 /*-------------------------------------------------------*/
 h1{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: rgb(2, 2, 95);
-  font-size: 21px;
+  font-family: 'Teko', sans-serif;
+  text-align: center;
 }
-h2{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: rgb(2, 2, 95);
+h2 {
+  font-family: 'Teko', sans-serif;
+  text-align: center;
 }
 h3{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;

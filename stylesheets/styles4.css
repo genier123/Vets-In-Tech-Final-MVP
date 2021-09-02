@@ -13,12 +13,11 @@ body{
   font-family: 'Teko', sans-serif;
   font-size: xx-large;
 }
-.mainfooter{
-  color:darkblue;
-  background-color: lavender;
+.mainfooter {
+  
   text-align: center;
   font-size: 12px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Teko', sans-serif;
   min-width: 320px;
   max-width: 1600px;
 }
@@ -82,18 +81,17 @@ body{
   background-color: #f1f1f1;
 }
 /*-------------------------------------------------------*/
-h1{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: rgb(2, 2, 95);
-  font-size: 21px;
+h1 {
+  font-family: 'Teko', sans-serif;
+  text-align: center;
 }
-h2{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: rgb(2, 2, 95);
+h2 {
+  font-family: 'Teko', sans-serif;
+  text-align: center;
 }
 h3{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: rgb(2, 2, 95);
+  font-family: 'Teko', sans-serif;
+  text-align: center;
 }
 #songstext {
   display: flex;
@@ -154,4 +152,9 @@ h3{
   top: 15px;
   right: 35px;
   }
+}
+
+.tiktokSong1{
+  max-width: 95%;
+  margin: 0 auto;
 }
