@@ -1,19 +1,17 @@
 body{
-background-color: lavender;
+  background-color: white;
 }
 .mainTitle1{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Teko', sans-serif;
   font-size: x-large;
-  color: darkblue;
-  text-shadow: white 1px 1px 1px;
 }
 .maintopic{
-  color:darkblue;
-  text-align: center;
   font-size: 25px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   min-width: 320px;
   max-width: 1600px;
+  text-align: center;
+  font-family: 'Teko', sans-serif;
+  font-size: xx-large;
 }
 .mainfooter{
   color:darkblue;
