@@ -49,8 +49,8 @@
 }
 
 .mainLogo{
-  font-family: 'Teko', sans-serif;
-  font-size: x-large;
+    font-family: 'Teko', sans-serif;
+    font-size: x-large;
 }
 /*-----------------AvailableArticles--------------------*/
 
@@ -94,13 +94,16 @@ div.desc {
 }
 
 /*-----------H Tag Properties-----------------*/
-h1{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-style: italic;
+h1 {
+  font-family: 'Teko', sans-serif;
   text-align: center;
-  font-size: xx-large;
 }
-/*CathyAds1*/
+@media screen and (max-width: 768px) {
+  h1 {
+      text-align: center;
+  }
+}
+/*CatchyyAds1*/
 .adPicContent {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   display: flex;
@@ -110,7 +113,7 @@ h1{
 }
 .AdHeadline{
   font-size: 23px;
-  text-shadow: grey 1px 1px 2px;
+  font-family: 'Teko', sans-serif;
 }
 
 /*-----------------MainFooter--------------------*/

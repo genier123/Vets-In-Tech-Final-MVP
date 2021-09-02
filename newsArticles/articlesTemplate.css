@@ -198,11 +198,9 @@ h3 {
 
 /*---------------Footer---------------------*/
 .mainfooter{
-    color:darkblue;
-    background-color: lavender;
     text-align: center;
     font-size: 12px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Teko', sans-serif;
     min-width: 320px;
     max-width: 1600px;
 }

@@ -13,59 +13,44 @@ body{
   font-family: 'Teko', sans-serif;
   font-size: xx-large;
 }
-.mainfooter{
-  color:darkblue;
-  background-color: lavender;
-  text-align: center;
-  font-size: 12px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  min-width: 320px;
-  max-width: 1600px;
-}
+
 /*---------------------Paragraphs------------------------*/
 .para1{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-radius: 1px;
   max-width: 100%;
-  margin: auto;
+  margin: 0 auto;
   vertical-align: middle;
   text-align: center;
-  color: darkslateblue;
   border-radius: 2px;
-  box-shadow: 2px 3px 3px grey;
-  background-color: whitesmoke;
 }
 #filter{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 10px;
   margin: auto;
   vertical-align: middle;
   text-align: center;
 }
 .para2{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 12px;
-  padding: 10px;
   border-radius: 2px;
   max-width: 100%;
-  margin: auto;
+  margin: 0 auto;
   vertical-align: middle;
   text-align: center;
-  box-shadow: 2px 3px 3px grey;
-  background-color: whitesmoke;
 }
 /*------------------------Tables----------------------*/
 #myTable {
   border-collapse: collapse;
-  border: 1px solid darkblue;
-  font-size: 12px;
+  border: 1px solid;
   border-radius: 5px;
-  max-width: 100%;
+  font-size: 12px;
+  max-width: 95%;
   min-width: 320px;
   margin: auto;
 }
@@ -79,7 +64,8 @@ body{
   border-bottom: 1px solid darkblue;
 }
 #myTable tr.header, #myTable tr:hover {
-  background-color: #f1f1f1;
+  background-color: whitesmoke;
+  cursor: pointer;
 }
 /*-------------------------------------------------------*/
 h1{
@@ -154,4 +140,12 @@ h3{
   top: 15px;
   right: 35px;
   }
+}
+/*---------Footer----------*/
+.mainfooter{
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Teko', sans-serif;
+  min-width: 320px;
+  max-width: 1600px;
 }
