@@ -14,7 +14,7 @@ body{
   font-size: xx-large;
 }
 .mainfooter {
-  
+
   text-align: center;
   font-size: 12px;
   font-family: 'Teko', sans-serif;
@@ -156,5 +156,9 @@ h3{
 
 .tiktokSong1{
   max-width: 95%;
+  margin: 0 auto;
+}
+
+#tiktokSongContent{
   margin: 0 auto;
 }
