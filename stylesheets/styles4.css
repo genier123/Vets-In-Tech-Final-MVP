@@ -21,65 +21,7 @@ body{
   min-width: 320px;
   max-width: 1600px;
 }
-/*---------------------Paragraphs------------------------*/
-.para1{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 1px;
-  max-width: 100%;
-  margin: auto;
-  vertical-align: middle;
-  text-align: center;
-  color: darkslateblue;
-  border-radius: 2px;
-  box-shadow: 2px 3px 3px grey;
-  background-color: whitesmoke;
-}
-#filter{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 10px;
-  margin: auto;
-  vertical-align: middle;
-  text-align: center;
-}
-.para2{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  padding: 10px;
-  border-radius: 2px;
-  max-width: 100%;
-  margin: auto;
-  vertical-align: middle;
-  text-align: center;
-  box-shadow: 2px 3px 3px grey;
-  background-color: whitesmoke;
-}
-/*------------------------Tables----------------------*/
-#myTable {
-  border-collapse: collapse;
-  border: 1px solid darkblue;
-  font-size: 12px;
-  border-radius: 5px;
-  max-width: 100%;
-  min-width: 320px;
-  margin: auto;
-}
-#myTable th, #myTable td {
-  text-align: left;
-}
-#myTable th{
-  background-color: floralwhite;
-}
-#myTable tr {
-  border-bottom: 1px solid darkblue;
-}
-#myTable tr.header, #myTable tr:hover {
-  background-color: #f1f1f1;
-}
+
 /*-------------------------------------------------------*/
 h1 {
   font-family: 'Teko', sans-serif;
@@ -92,15 +34,6 @@ h2 {
 h3{
   font-family: 'Teko', sans-serif;
   text-align: center;
-}
-#songstext {
-  display: flex;
-  flex-flow: row wrap;
-}
-#streamtabs {
-  display: flex;
-  flex-flow: row;
-  flex-direction: row row-reverse;
 }
 
 /*-----------------NewMenu--------------------*/
@@ -154,11 +87,38 @@ h3{
   }
 }
 
-.tiktokSong1{
-  max-width: 95%;
-  margin: 0 auto;
+.tiktokLayout{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 95%;
 }
+/*
+.div1{
 
-#tiktokSongContent{
-  margin: 0 auto;
 }
+.div2{
+  
+}
+.div3{
+  
+}
+.div4{
+  
+}
+.div4{
+  
+}
+.div5{
+  
+}
+.div6{
+  
+}
+.div7{
+  
+}
+.div8{
+  
+}
+*/
