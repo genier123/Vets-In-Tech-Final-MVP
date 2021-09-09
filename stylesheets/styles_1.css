@@ -1,6 +1,9 @@
 body{
   background-color: white;
 }
+.myGoogleAd{
+  margin: 0 auto;
+}
 .mainTitle1{
   font-family: 'Teko', sans-serif;
   font-size: x-large;
