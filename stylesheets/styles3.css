@@ -14,47 +14,17 @@ body{
   font-size: xx-large;
 }
 .mainfooter{
-  color:darkblue;
-  background-color: lavender;
   text-align: center;
   font-size: 12px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Teko', sans-serif;
   min-width: 320px;
   max-width: 1600px;
 }
 /*---------------------Paragraphs------------------------*/
 
-/*------------------------Tables----------------------*/
-#myTable {
-  border-collapse: collapse;
-  border: 1px solid darkblue;
-  font-size: 12px;
-  border-radius: 5px;
-  max-width: 100%;
-  min-width: 320px;
-  margin: auto;
-}
-#myTable th, #myTable td {
-  text-align: left;
-}
-#myTable th{
-  background-color: floralwhite;
-}
-#myTable tr {
-  border-bottom: 1px solid darkblue;
-}
-#myTable tr.header, #myTable tr:hover {
-  background-color: #f1f1f1;
-}
-/*-------------------------------------------------------*/
-h1{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: rgb(2, 2, 95);
-  font-size: 21px;
-}
-h2{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: rgb(2, 2, 95);
+h2 {
+  font-family: 'Teko', sans-serif;
+  text-align: center;
 }
 h3{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -68,6 +38,43 @@ h3{
   display: flex;
   flex-flow: row;
   flex-direction: row row-reverse;
+}
+
+/*------------------------Tables----------------------*/
+#myTable {
+  font-size: 12px;
+  border-radius: 10px;
+  border-width: thin;
+  box-shadow: 1px 1px 3px grey;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  max-width: 95%;
+  min-width: 320px;
+  margin: auto;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#myTable th, #myTable td {
+  text-align: left;
+}
+#myTable th{
+  background-color: lightblue;
+  text-decoration: underline solid;
+  font-size: medium;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#myTable tr {
+  padding-bottom: 1px;
+  padding-top: 1px;
+}
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
 }
 
 /*-----------------NewMenu--------------------*/
@@ -119,4 +126,28 @@ h3{
   top: 15px;
   right: 35px;
   }
+}
+
+/*Ads*/
+.catchyAds1 {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+
+}
+
+.adPicContent {
+
+  padding: 2px 2px 2px 2px;
+  
+}
+
+.adsPic1 {
+  max-height: 100px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
 }
