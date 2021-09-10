@@ -54,152 +54,34 @@
     font-size: x-large;
 }
 /*-----------------------------------------------*/
-
-/*------H Tag Proporties-----*/
-h1 {
+/*General*/
+h1{
     font-family: 'Teko', sans-serif;
-    text-align: left;
-    padding-left: 10px;
-}
-@media screen and (max-width: 768px) {
-    h1 {
-        text-align: center;
-    }
+    margin-left: 10px;
+    text-decoration: underline;
   }
-
 h2 {
     font-family: 'Teko', sans-serif;
-    text-align: center;
-    font-style: italic;
 }
-
-h3 {
+h3{
     font-family: 'Teko', sans-serif;
-    text-align: center;
-    font-style: italic;
-    margin: 0 auto;
 }
-/*----------------------------------------*/
-
-/*------MainArtical Picture Proporties-----*/
+/*-----------MainArtical Picture------------*/
 .mainPicture {
     height: auto;
     box-shadow: black 1px 1px 5px;
-    border-radius: 2px;
-    width: 100%;
+    border-radius: 1px;
+    width: 75%;
+    margin-left: 10px;
 }
 
 @media screen and (max-width: 768px) {
     .mainPicture {
+        margin: 0 auto;
         width: 95%;
-        
     }
   }
 /*-----------------------------------------*/
-
-/*--------------Layout----------------*/
-.horizontalGridLayout{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-    .horizontalGridLayout {
-        display: flex;
-        flex-direction: column;
-        justify-content: center space-evenly;
-        margin: 0 auto;
-        width: 95%;
-    }
-  }
-
-#para1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-left: 1em;
-    padding-right: 1em;
-    text-align: left;
-    width: 100%;
-}
-}
-
-@media screen and (max-width: 768px) {
-    #para1 {
-        width: 95%;
-    }
-  }
-
-/*otherStories1*/
-.otherStories1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-@media screen and (max-width: 768px) {
-    .otherStories1 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-    }
-  }
-
-.adPicContent {
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: xx-small;
-    border-radius: 1px;
-    box-shadow: 1px 1px 3px grey;
-    margin: 3px 3px 3px 3px;
-
-}
-
-#adsPic1 {
-    max-height: 100px;
-    max-width: 100px;
-    display: flex;
-    justify-content: center;
-}
-
-.catchyAds2{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0 auto;
-
-}
-@media screen and (max-width: 768px) {
-    #catchyAdsMiniScreen {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        justify-content: stretch;
-    }
-  }
-/*------------------------------------*/
-/*OtherAds*/
-.otherAdsLayout{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-left: 1px;
-    padding-right: 1px;
-}
-@media screen and (max-width: 768px) {
-    .otherAdsLayout {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: 0 auto;
-        width: 95%;
-    }
-  }
-#otherAdsIcon{
-    padding-left: 1px;
-    padding-right: 1px;
-}
-
 /*---------------Footer---------------------*/
 .mainfooter{
     text-align: center;
@@ -207,4 +89,199 @@ h3 {
     font-family: 'Teko', sans-serif;
     min-width: 320px;
     max-width: 1600px;
+}
+/*-----------------------------------------*/
+/*-----------------Layout------------------*/
+.layout1{
+    margin-left: 10px;
+    padding-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .layout1 {
+        margin: 0 auto;
+        width: 100%;
+    }
+  }
+/*-----------------------------------------*/
+.totalLayout{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.col-2{
+    width: 75%;
+}
+
+@media screen and (max-width: 768px) {
+    .totalLayout {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 95%;
+        margin: 0 auto;
+    }
+  }
+
+/*-------------otherArticles1--------------*/
+.otherTitles{
+    text-align: center;
+    text-decoration: underline;
+}
+.otherArticles1{
+    float: right;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.artBorder1{
+    width: 95%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: black 1px 1px 3px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.artBorder2{
+    width: 95%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: black 1px 1px 3px;
+    text-align: center;
+    border-radius: 5px;
+}
+.artBorder3{
+    width: 95%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: black 1px 1px 3px;
+    text-align: center;
+    border-radius: 5px;
+}
+.artBorder4{
+    width: 95%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: black 1px 1px 3px;
+    text-align: center;
+    border-radius: 5px;
+}
+.artTitle1{
+    width: 95%;
+    font-family: 'Teko', sans-serif;
+    font-size: small;
+}
+.artTitle2{
+    width: 95%;
+    font-family: 'Teko', sans-serif;
+    font-size: small;
+}
+.artTitle3{
+    width: 95%;
+    font-family: 'Teko', sans-serif;
+    font-size: small;
+}
+.artTitle4{
+    width: 95%;
+    font-family: 'Teko', sans-serif;
+    font-size: small;
+}
+#art1{
+    width: 95%;
+}
+.art2{
+    width: 95%;
+}
+.art3{
+    width: 95%;
+}
+.art4{
+    width: 95%;
+}
+@media screen and (max-width: 768px) {
+    .otherArticles1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .col-2{
+        margin: 0 auto;
+        width: 100%;
+    }
+    .artBorder1{
+        width: 24%;
+    }
+    .artBorder2{
+        width: 24%;
+    }
+    .artBorder3{
+        width: 24%;
+    }
+    .artBorder4{
+        width: 24%;
+    }
+    .artTitle1{
+        width: 99%;
+        align-content: center;
+    }
+    .artTitle2{
+        width: 99%;
+        align-content: center;
+    }
+    .artTitle3{
+        width: 99%;
+        align-content: center;
+    }
+    .artTitle4{
+        width: 99%;
+        align-content: center;
+    }
+  }
+/*OtherAds*/
+.otherAdsTitle{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.otherAdsLayout{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+@media screen and (max-width: 800px) {
+    .otherAdsLayout {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        width: 100%;
+    }
+  }
+#otherAdsIcon{
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+
+.myGoogleAd{
+    margin: 0 auto;
 }
