@@ -47,8 +47,8 @@ h3{
 
 /*------------------------Tables----------------------*/
 #myTable {
-  font-size: 12px;
-  border-radius: 10px;
+  font-size: 14px;
+  border-radius: 5px;
   border-width: thin;
   box-shadow: 1px 1px 3px grey;
   padding-top: 10px;
@@ -64,14 +64,13 @@ h3{
   text-align: left;
 }
 #myTable th{
-  background-color: lightblue;
   text-decoration: underline solid;
-  font-size: medium;
+  font-size: x-large;
+  font-weight: bolder;
   border-radius: 5px;
-  padding-left: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Teko', sans-serif;
 }
 #myTable tr {
   padding-bottom: 1px;

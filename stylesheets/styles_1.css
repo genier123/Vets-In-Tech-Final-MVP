@@ -130,25 +130,37 @@ body{
 
 /*------------------------Tables----------------------*/
 #myTable {
-  border-collapse: collapse;
-  border: 1px solid;
+  font-size: 14px;
   border-radius: 5px;
-  font-size: 12px;
+  border-width: thin;
+  box-shadow: 1px 1px 3px grey;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
   max-width: 95%;
   min-width: 320px;
   margin: auto;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #myTable th, #myTable td {
   text-align: left;
 }
 #myTable th{
-  background-color: floralwhite;
+  text-decoration: underline solid;
+  font-size: x-large;
+  font-weight: bolder;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: 'Teko', sans-serif;
 }
 #myTable tr {
-  border-bottom: 1px solid darkblue;
+  padding-bottom: 1px;
+  padding-top: 1px;
 }
 #myTable tr.header, #myTable tr:hover {
-  background-color: whitesmoke;
+  background-color: #f1f1f1;
   cursor: pointer;
 }
 
@@ -227,28 +239,31 @@ h3{
   }
 }
 
-/*Ads*/
-.catchyAds1 {
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
-
+/*OtherAds*/
+.otherAdsTitle{
+  text-align: center;
+  text-decoration: underline;
 }
 
-.adPicContent {
-
-  padding: 2px 2px 2px 2px;
-  
-}
-
-.adsPic1 {
-  max-height: 100px;
+.otherAdsLayout{
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  margin: 0 auto;
-
+  padding-left: 1px;
+  padding-right: 1px;
+}
+@media screen and (max-width: 800px) {
+  .otherAdsLayout {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin: 0 auto;
+      width: 100%;
+  }
+}
+#otherAdsIcon{
+  padding-left: 1px;
+  padding-right: 1px;
 }
 
 /*Artwork*/
@@ -264,14 +279,6 @@ h3{
 
 
 }
-
-/*Artwork
-
-.artwork1 {
-
-}
-
-*/
 
 .topsongs1 {
   max-height: 100px;
