@@ -1,3 +1,7 @@
+.myGoogleAd{
+  margin: 0 auto;
+}
+
 .overlay {
   height: 100%;
   width: 0;
@@ -52,24 +56,6 @@
     font-family: 'Teko', sans-serif;
     font-size: x-large;
 }
-/*-----------------AvailableArticles--------------------*/
-
-div.articleScroll {
-  overflow: auto;
-  white-space: nowrap;
-  display: inline-flex;
-}
-
-div.articleScroll a {
-  display: inline-block;
-  text-align: center;
-}
-
-div.articleScroll a:hover {
-border-width: thick;
-border-color: burlywood;
-cursor: pointer;
-} 
 
 /*-----------------AvailableArticles-Widgets--------------------*/
 div.gallery {
@@ -103,26 +89,94 @@ h1 {
       text-align: center;
   }
 }
-/*CatchyyAds1*/
-.adPicContent {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+h2{
+  font-family: 'Teko', sans-serif;
 }
-.AdHeadline{
-  font-size: 23px;
+h3{
   font-family: 'Teko', sans-serif;
 }
 
+a {
+  text-decoration:none;
+  color: black;
+}
+
+/*Stories List*/
+.storyPreview {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: 75%;
+  max-height: 200px;
+}
+@media screen and (max-width: 768px) {
+  .storyPreview {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 100%;
+  }
+}
+.col-1{
+  padding-top: 5px;
+  cursor: pointer;
+}
+.col-2{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding-left: 10px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+.storyPic1{
+  max-height: 100px;
+  max-width: 100px;
+
+}
+.storyHeadline{
+  font-family: 'Teko', sans-serif;
+}
+.storyBody{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*OtherAds*/
+.otherAdsTitle{
+  text-align: center;
+  text-decoration: underline;
+}
+
+.otherAdsLayout{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+@media screen and (max-width: 800px) {
+  .otherAdsLayout {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin: 0 auto;
+      width: 100%;
+  }
+}
+#otherAdsIcon{
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+
+
+
 /*-----------------MainFooter--------------------*/
-.mainfooter {
-  color:darkblue;
-  background-color: lavender;
+.mainfooter{
   text-align: center;
   font-size: 12px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Teko', sans-serif;
   min-width: 320px;
   max-width: 1600px;
 }
