@@ -173,9 +173,6 @@ hr{
   padding-right: 1px;
 }
 
-
-
-
 /*-----------------MainFooter--------------------*/
 .mainfooter{
   text-align: center;
@@ -189,7 +186,6 @@ hr{
 .articleSearch1{
   text-align: center;
   margin: 0 auto;
-  width: 50%;
 }
 #searchInput1{
   padding-top: 5px;
@@ -201,7 +197,15 @@ hr{
   border-radius: 2px;
   font-family: Arial, Helvetica, sans-serif;
   font-style: italic;
+  width: 325px;
 }
+@media screen and (max-width: 768px) {
+  #searchInput1 {
+    margin: 0 auto;
+    width: 325px;
+  }
+}
+
 
 #myUL {
   /* Remove default list styling */
