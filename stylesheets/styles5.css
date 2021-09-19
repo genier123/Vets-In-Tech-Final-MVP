@@ -97,12 +97,8 @@ h3{
 }
 
 a {
-  text-decoration:none;
+  text-decoration: none;
   color: black;
-}
-
-hr{
-  color: lightgray;
 }
 
 /*Stories List*/
@@ -110,7 +106,7 @@ hr{
   display: flex;
   flex-direction: row;
   justify-content: left;
-  width: 75%;
+  width: 100%;
   max-height: 200px;
 }
 @media screen and (max-width: 768px) {
@@ -121,11 +117,11 @@ hr{
     width: 100%;
   }
 }
-.col-1{
+.block-1{
   padding-top: 5px;
   cursor: pointer;
 }
-.col-2{
+.block-2{
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -206,7 +202,6 @@ hr{
   }
 }
 
-
 #myUL {
   /* Remove default list styling */
   list-style-type: none;
@@ -226,4 +221,182 @@ hr{
 
 #myUL li a:hover:not(.header) {
   background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+
+/*-------------Total Layout----------------*/
+.totalLayout{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.col-1{
+  width: 75%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.col-2{
+  width: 25%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+@media screen and (max-width: 768px) {
+  .totalLayout {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 95%;
+      margin: 0 auto;
+  }
+  .col-1{
+    width: 100%;
+  }
+}
+
+/*-------------otherArticles1--------------*/
+.otherTitles{
+  text-align: center;
+  text-decoration: underline;
+}
+
+.otherArticles1{
+  float: right;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.artBorder1{
+  width: 95%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  border-radius: 1px;
+  cursor: pointer;
+  border: 1px solid #ddd; /* Add a border to all links */
+  background-color: #f6f6f6; /* Grey background color */
+  padding: 5px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  color: black; /* Add a black text color */
+  display: block; /* Make it into a block element to fill the whole list */
+  overflow: hidden;
+}
+.artBorder2{
+  width: 95%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  border-radius: 1px;
+  cursor: pointer;
+  border: 1px solid #ddd; /* Add a border to all links */
+  background-color: #f6f6f6; /* Grey background color */
+  padding: 5px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  color: black; /* Add a black text color */
+  display: block; /* Make it into a block element to fill the whole list */
+  overflow: hidden;
+}
+.artBorder3{
+  width: 95%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  border-radius: 1px;
+  cursor: pointer;
+  border: 1px solid #ddd; /* Add a border to all links */
+  background-color: #f6f6f6; /* Grey background color */
+  padding: 5px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  color: black; /* Add a black text color */
+  display: block; /* Make it into a block element to fill the whole list */
+  overflow: hidden;
+}
+.artBorder4{
+  width: 95%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  border-radius: 1px;
+  cursor: pointer;
+  border: 1px solid #ddd; /* Add a border to all links */
+  background-color: #f6f6f6; /* Grey background color */
+  padding: 5px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  color: black; /* Add a black text color */
+  display: block; /* Make it into a block element to fill the whole list */
+  overflow: hidden;
+}
+.artTitle1{
+  width: 95%;
+  font-family: 'Teko', sans-serif;
+  font-size: small;
+}
+.artTitle2{
+  width: 95%;
+  font-family: 'Teko', sans-serif;
+  font-size: small;
+}
+.artTitle3{
+  width: 95%;
+  font-family: 'Teko', sans-serif;
+  font-size: small;
+}
+.artTitle4{
+  width: 95%;
+  font-family: 'Teko', sans-serif;
+  font-size: small;
+}
+#art1{
+  width: 95%;
+}
+.art2{
+  width: 95%;
+}
+.art3{
+  width: 95%;
+}
+.art4{
+  width: 95%;
+}
+@media screen and (max-width: 768px) {
+  .otherArticles1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%;
+  }
+  .col-2{
+      margin: 0 auto;
+      width: 100%;
+  }
+  .artBorder1{
+      width: 24%;
+  }
+  .artBorder2{
+      width: 24%;
+  }
+  .artBorder3{
+      width: 24%;
+  }
+  .artBorder4{
+      width: 24%;
+  }
+  .artTitle1{
+      width: 99%;
+      align-content: center;
+  }
+  .artTitle2{
+      width: 99%;
+      align-content: center;
+  }
+  .artTitle3{
+      width: 99%;
+      align-content: center;
+  }
+  .artTitle4{
+      width: 99%;
+      align-content: center;
+  }
 }

@@ -60,16 +60,20 @@ h1{
     margin-left: 10px;
     text-decoration: underline;
   }
-h2 {
+h2{
     font-family: 'Teko', sans-serif;
 }
 h3{
     font-family: 'Teko', sans-serif;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 /*-----------MainArtical Picture------------*/
 .mainPicture {
     height: auto;
-    box-shadow: black 1px 1px 5px;
+    box-shadow: grey 1px 1px 1px;
     border-radius: 1px;
     width: 75%;
     margin-left: 10px;
@@ -103,17 +107,25 @@ h3{
         width: 100%;
     }
   }
-/*-----------------------------------------*/
+/*-------------Total Layout----------------*/
 .totalLayout{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-}
-.col-2{
+  }
+  
+  .col-1{
     width: 75%;
-}
-
-@media screen and (max-width: 768px) {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  .col-2{
+    width: 25%;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  
+  @media screen and (max-width: 768px) {
     .totalLayout {
         display: flex;
         flex-direction: column;
@@ -121,102 +133,123 @@ h3{
         width: 95%;
         margin: 0 auto;
     }
+    .col-1{
+      width: 100%;
+    }
   }
 
 /*-------------otherArticles1--------------*/
 .otherTitles{
     text-align: center;
     text-decoration: underline;
-}
-.otherArticles1{
+  }
+  .otherArticles1{
     float: right;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-}
-
-.artBorder1{
+  }
+  
+  .artBorder1{
     width: 95%;
-    padding-top: 10px;
-    padding-bottom: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
-    box-shadow: black 1px 1px 3px;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 1px;
     cursor: pointer;
-}
-.artBorder2{
+    border: 1px solid #ddd; /* Add a border to all links */
+    background-color: #f6f6f6; /* Grey background color */
+    padding: 5px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+    overflow: hidden;
+  }
+  .artBorder2{
     width: 95%;
-    padding-top: 10px;
-    padding-bottom: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
-    box-shadow: black 1px 1px 3px;
     text-align: center;
-    border-radius: 5px;
-}
-.artBorder3{
+    border-radius: 1px;
+    cursor: pointer;
+    border: 1px solid #ddd; /* Add a border to all links */
+    background-color: #f6f6f6; /* Grey background color */
+    padding: 5px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+    overflow: hidden;
+  }
+  .artBorder3{
     width: 95%;
-    padding-top: 10px;
-    padding-bottom: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
-    box-shadow: black 1px 1px 3px;
     text-align: center;
-    border-radius: 5px;
-}
-.artBorder4{
+    border-radius: 1px;
+    cursor: pointer;
+    border: 1px solid #ddd; /* Add a border to all links */
+    background-color: #f6f6f6; /* Grey background color */
+    padding: 5px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+    overflow: hidden;
+  }
+  .artBorder4{
     width: 95%;
-    padding-top: 10px;
-    padding-bottom: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
-    box-shadow: black 1px 1px 3px;
     text-align: center;
-    border-radius: 5px;
-}
-.artTitle1{
+    border-radius: 1px;
+    cursor: pointer;
+    border: 1px solid #ddd; /* Add a border to all links */
+    background-color: #f6f6f6; /* Grey background color */
+    padding: 5px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+    overflow: hidden;
+  }
+  .artTitle1{
     width: 95%;
     font-family: 'Teko', sans-serif;
     font-size: small;
-}
-.artTitle2{
+  }
+  .artTitle2{
     width: 95%;
     font-family: 'Teko', sans-serif;
     font-size: small;
-}
-.artTitle3{
+  }
+  .artTitle3{
     width: 95%;
     font-family: 'Teko', sans-serif;
     font-size: small;
-}
-.artTitle4{
+  }
+  .artTitle4{
     width: 95%;
     font-family: 'Teko', sans-serif;
     font-size: small;
-}
-#art1{
+  }
+  #art1{
     width: 95%;
-}
-.art2{
+  }
+  .art2{
     width: 95%;
-}
-.art3{
+  }
+  .art3{
     width: 95%;
-}
-.art4{
+  }
+  .art4{
     width: 95%;
-}
-@media screen and (max-width: 768px) {
+  }
+  @media screen and (max-width: 768px) {
     .otherArticles1 {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
         width: 100%;
     }
-
     .col-2{
         margin: 0 auto;
         width: 100%;
