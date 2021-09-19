@@ -4,6 +4,21 @@ body{
 .myGoogleAd{
   margin: 0 auto;
 }
+
+/*In feed and Main Affiliate Ads*/
+.mainAd{
+  margin: 0 auto;
+  text-align: center;
+}
+.adArtMain{
+  height: 100px;
+}
+.mainAd :hover .adArtMain {
+  opacity: 0.3;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+/*------------------------------*/
 .mainTitle1{
   font-family: 'Teko', sans-serif;
   font-size: x-large;
