@@ -14,6 +14,7 @@
     { Artist: 'Burna Boy', Song: 'City Boys'},
     { Artist: 'Iggy Azalea', Song: 'Money Come'},
     { Artist: 'Offset', Song: 'FAN'},
+    { Artist: 'Dua Lipa', Song: 'Dance The Night'},
   ];
   
   function generateTableHead(table, data) {
