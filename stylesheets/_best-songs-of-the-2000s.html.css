@@ -148,3 +148,40 @@ h3{
   min-width: 320px;
   max-width: 1600px;
 }
+
+.mainAd {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.adArtMain {
+  height: 100px;
+}
+
+.mainAd:hover .adArtMain {
+  opacity: 0.3;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.adsPic1 {
+  max-height: 100px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.otherAdsTitle {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.otherAdsLayout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#otherAdsIcon {
+  padding: 0;
+}
