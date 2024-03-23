@@ -1,20 +1,15 @@
 //------------------------ Write Table Data ----------------------
 let songData = [
-  { Artist: 'J Balvin, USHER & DJ Khaled', Song: 'Dientes' },
-  { Artist: 'UN PREVIEW', Song: 'Bad Bunny' },
-  { Artist: 'Sexyy Red', Song: 'Looking For The Hoes' },
-  { Artist: 'Cardi B & Megan Thee Stallion', Song: 'Bongos' },
-  { Artist: 'Sunshine', Song: 'Wuki' },
-  { Artist: 'Moneybagg Yo, Sexyy Red & CMG The Label', Song: 'Big Dawg' },
-  { Artist: 'Lil Wayne & Cool & Dre', Song: 'To The Bank' },
-  { Artist: 'Tyga, YG & Lil Wayne', Song: 'Brand New' },
-  { Artist: 'HUGEL & J Balvin', Song: 'Me La Llevo' },
-  { Artist: 'Drake (ft. SZA)', Song: 'Slime You Out' },
-  { Artist: 'Burna Boy', Song: 'Dey Play' },
-  { Artist: 'Burna Boy', Song: 'City Boys' },
-  { Artist: 'Iggy Azalea', Song: 'Money Come' },
-  { Artist: 'Offset', Song: 'FAN' },
-  { Artist: 'Dua Lipa', Song: 'Dance The Night' },
+  { Artist: "Cardi B", Title: "Enough (Miami)" },
+  { Artist: "Rihanna", Title: "Pon De Replay" },
+  { Artist: "Sexyy Red", Title: "Get It Sexyy" },
+  { Artist: "Drake", Title: "0 To 100 (The Catch Up)" },
+  { Artist: "Pitbull", Title: "Guantanamera (She's Hot)" },
+  { Artist: "Sophie Ellis-Bextor", Title: "You" },
+  { Artist: "Lloyd (ft. Lil Wayne)", Title: "Prada Dem" },
+  { Artist: "Gunna (ft. Offset)", Title: "Love Is Gone" },
+  { Artist: "David Guetta (ft. Chris Willis)", Title: "Say Aah" },
+  { Artist: "Trey Songz", Title: "Carnival" },
 ];
   
 function generateTableHead(table, data) {

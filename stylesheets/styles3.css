@@ -1,5 +1,5 @@
 body{
-  background-image: white;
+  background-color: #f5f0f0;
 }
 
 .myGoogleAd{
@@ -154,4 +154,26 @@ h3{
   justify-content: center;
   margin: 0 auto;
 
+}
+
+.mainAd {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.adArtMain {
+  height: 100px;
+}
+
+.mainAd:hover .adArtMain {
+  opacity: 0.3;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.adsPic1 {
+  max-height: 100px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
