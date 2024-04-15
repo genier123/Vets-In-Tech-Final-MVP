@@ -318,3 +318,15 @@ p {
 .myGoogleAd{
     margin: 0 auto;
 }
+
+        /* Center the image */
+        .mainPic1 {
+          display: flex;
+          justify-content: center;
+      }
+
+      /* Adjust the size of the image */
+      img {
+          max-width: 100%;
+          height: auto;
+      }
