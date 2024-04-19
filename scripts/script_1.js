@@ -1,15 +1,25 @@
 //------------------------ Write Table Data ----------------------
 let songData = [
-  { Artist: "Cardi B", Title: "Enough (Miami)" },
-  { Artist: "Rihanna", Title: "Pon De Replay" },
-  { Artist: "Sexyy Red", Title: "Get It Sexyy" },
-  { Artist: "Drake", Title: "0 To 100 (The Catch Up)" },
-  { Artist: "Pitbull", Title: "Guantanamera (She's Hot)" },
-  { Artist: "Sophie Ellis-Bextor", Title: "You" },
-  { Artist: "Lloyd (ft. Lil Wayne)", Title: "Prada Dem" },
-  { Artist: "Gunna (ft. Offset)", Title: "Love Is Gone" },
-  { Artist: "David Guetta (ft. Chris Willis)", Title: "Say Aah" },
-  { Artist: "Trey Songz", Title: "Carnival" },
+  {"Title": "Electric Dreams", "Artist": "Dua Lipa"},
+  {"Title": "Stardust", "Artist": "The Weeknd"},
+  {"Title": "Neon Nights", "Artist": "Olivia Rodrigo"},
+  {"Title": "Galactic Groove", "Artist": "Bruno Mars"},
+  {"Title": "Quantum Love", "Artist": "Billie Eilish"},
+  {"Title": "Cosmic Rhythm", "Artist": "Shawn Mendes"},
+  {"Title": "Starstruck", "Artist": "Ariana Grande"},
+  {"Title": "Nebula Dance", "Artist": "Ed Sheeran"},
+  {"Title": "Celestial Beats", "Artist": "Rihanna"},
+  {"Title": "Astral Melodies", "Artist": "Harry Styles"},
+  {"Title": "Orbiting Hearts", "Artist": "Taylor Swift"},
+  {"Title": "Solar Serenade", "Artist": "Justin Bieber"},
+  {"Title": "Infinity Echo", "Artist": "Lizzo"},
+  {"Title": "Dreamscape", "Artist": "Kendrick Lamar"},
+  {"Title": "Supernova", "Artist": "Beyoncé"},
+  {"Title": "Galaxy Glide", "Artist": "Camila Cabello"},
+  {"Title": "Time Warp", "Artist": "Drake"},
+  {"Title": "Lunar Lullaby", "Artist": "Selena Gomez"},
+  {"Title": "Interstellar Funk", "Artist": "Post Malone"},
+  {"Title": "Voyage Home", "Artist": "Coldplay"}
 ];
   
 function generateTableHead(table, data) {
