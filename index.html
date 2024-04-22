@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <hr>
+    <br>
     <div id="myNav5" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
@@ -94,11 +94,15 @@
                 <h3>Other Stories</h3>
             </div>
             <div class="otherArticles1">
-                <div class="artBorder1">
-                    <a href="../index.html">
-                        <div class="artTitle2"><u>Hot Songs Now!</u></div>
-                            <img class="art2" src="../img/Top_Tracks_Icon.jpg" alt="Hot Songs Now">
-                    </a>
+                <div class="container">
+                    <h1>Weather Data</h1>
+                    <input type="text" id="locationInput" placeholder="Enter a city">
+                    <button id="searchButton">Search</button>
+                    <div class="weather-info">
+                        <h2 id="location"></h2>
+                        <p id="temperature"></p>
+                        <p id="description"></p>
+                    </div>
                 </div>
                 <div class="artBorder2">
                     <a href="../BestPartySongsofthe2000s.html">
