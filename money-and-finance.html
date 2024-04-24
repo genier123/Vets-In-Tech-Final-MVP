@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2474604734581000"
+    crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hot Club Tracks is a music blog and resource website for DJs, producers, musicians, and music lovers. Discover trending music, find BPM, lyrics, and harmonic key references to popular songs.">
+    <meta name="keywords" content="Hot Club Tracks, trending music, music blog, BPM, lyrics, harmonic key">
+    <meta name="author" content="Hot Club Tracks by PG Digital">
+    <title>Pay Raise Calculator | Hot Club Tracks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/calculator_style.css">
+</head>
+<body>
+    <br>
+    <div id="myNav5" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="./index.html">Home</a>
+            <a href="./BestPartySongsofthe2000s.html">2000s</a>
+            <a href="./Best90sSongs.html">90s</a>
+            <a href="./100-Wedding-Songs-for-Every-Wedding.html">Best Wedding Songs</a>
+            <a href="./index5.html">News</a>
+        </div>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; <span class="mainTitle1">HotClubTracks</span></span>
+    <hr>
+    <div class="maintopic">Pay Raise Calculator</div>
+    <div class="container">
+        <h1>Figure Out Your Annual Income</h1>
+        <br>
+        <div>
+          <label for="hourlyRate">Hourly Rate:</label>
+          <input type="number" id="hourlyRate" placeholder="Hourly Rate">
+        </div>
+        <br>
+        <div>
+          <label for="hoursPerWeek">Hours Per Week:</label>
+          <input type="number" id="hoursPerWeek" placeholder="Hours Per Week">
+        </div>
+        <button onclick="calculateAnnualIncome()">Calculate</button>
+        <div id="annualIncomeResult"></div>
+        <button onclick="copyAnnualIncome()">Copy Result</button>
+        <button onclick="resetAnnualIncome()">Reset</button>
+      </div>
+      <br>
+      <div class="container">
+        <h1>Pay Raise Calculator</h1>
+        <br>
+        <div>
+            <label for="currentAmount">Current Annual Income:</label>
+            <input type="number" id="currentAmount" placeholder="Current Annual Income">
+        </div>
+        <br>
+        <div>
+            <input type="radio" id="newIncomeTab" name="tab" value="newIncome" checked>
+            <label for="newIncomeTab">New Annual Income:</label>
+            <input type="number" id="newAmount" placeholder="New Annual Income">
+        </div>
+        <br>
+        <div>
+            <input type="radio" id="percentIncreaseTab" name="tab" value="percentIncrease">
+            <label for="percentIncreaseTab">Percent Increase:</label>
+            <input type="number" id="percentIncrease" placeholder="Percent Increase">
+            <label for="applyAnnually">
+                <input type="checkbox" id="applyAnnually"> Apply Increase Annually
+            </label>
+            <label for="numberOfYears" id="yearsLabel" style="display:none;">Number of Years:</label>
+            <input type="number" id="numberOfYears" placeholder="Number of Years" style="display:none;">
+        </div>
+        <button onclick="calculate()">Calculate</button>
+        <div id="results"></div>
+        <button onclick="copyResult()">Copy Result</button>
+        <button onclick="reset()">Reset</button>
+    </div>
+    <br>
+    <hr>
+    <p>
+        <div class="otherAdsTitle"><h2>GIFs of the Week!</h2></div>
+        <div class="otherAdsLayout">
+            <div id="otherAdsIcon">
+                <img src="../GIFs/Dancing GIF-downsized.gif" alt="" height="75px">
+            </div>
+            <div id="otherAdsIcon">
+                <img src="../GIFs/Advertise GIF-downsized.gif" alt="" height="75px">
+            </div>
+            <div id="otherAdsIcon">
+                <img src="../GIFs/Wtf GIF-downsized.gif" alt="" height="75px">
+            </div>
+            <div id="otherAdsIcon">
+                <img src="../GIFs/Way2Sexy.gif" alt="" height="75px">
+            </div>
+        </div>
+    </p>
+    <br>
+    <div class="mainAd">
+        <a href="https://join.robinhood.com/patricg1405/"> <img class="adArtMain" src="./addimages/robinhoodaddimage1a.jpg" alt="Robinhood Ad"></a>
+    </div>
+    <div class="mainfooter">
+        <hr>
+        <br>
+            <a href = "mailto: hotclubtracks@gmail.com">Email Us</a> | Copyright © Hot Club Tracks | <a href="https://www.instagram.com/hotclubtracks/">IG:@hotclubtracks</a>
+        <br>
+        <br>
+    </div>
+  <script src="/scripts/raiseCalc.js"></script>
+</body>
+</html>
