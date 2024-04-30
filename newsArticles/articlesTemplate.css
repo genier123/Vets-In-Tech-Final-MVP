@@ -1,145 +1,52 @@
-body, div, p, ul, ol, li, table, tr, td, th {
-  margin: 0;
-  padding: 0;
+.hr-menu {
+  color: gainsboro;
 }
-
-/* Original CSS */
-
-body {
-  background-color: #ffffff;
-}
-
-.mainAd {
+.container {
+  max-width: 500px;
   margin: 0 auto;
-  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-.adArtMain {
-  height: 100px;
+input[type="number"] {
+  width: 100px;
 }
 
-.mainAd:hover .adArtMain {
-  opacity: 0.3;
-  transition: .5s ease;
-  backface-visibility: hidden;
+button {
+  margin-top: 10px;
+  padding: 8px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.mainTitle1 {
-  font-family: 'Teko', sans-serif;
-  font-size: x-large;
+button:hover {
+  background-color: #0056b3;
 }
 
-.maintopic {
-  font-size: 25px;
-  min-width: 320px;
-  max-width: 1600px;
-  text-align: center;
-  font-family: 'Teko', sans-serif;
-  font-size: xx-large;
-}
-
-.mainfooter {
-  text-align: center;
-  font-size: 12px;
-  font-family: 'Teko', sans-serif;
-  min-width: 320px;
-  max-width: 1600px;
-}
-
-.griditems1 {
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  grid-gap: 1em;
-  padding-left: 3%;
-}
-
-@media screen and (max-width: 600px) {
-  .griditems1 {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    padding-left: 5%;
-  }
-}
-
-.contentTitle {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: large;
-  text-align: center;
-  font-weight: bold;
-  color: darkblue;
-}
-
-.pictureWrapper {
-  width: 300px;
+.mainPicture {
   margin: 0 auto;
-  padding: 5px;
-}
-
-@media screen and (max-width: 600px) {
-  .pictureWrapper {
-    width: 100%;
-    padding-left: 3%;
-  }
-}
-
-.contentWrapper {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  width: 300px;
-  font-size: smaller;
-  margin: 0 auto;
-  padding-left: 5%;
-}
-
-@media screen and (max-width: 600px) {
-  .contentWrapper {
-    width: 100%;
-    padding-left: 3%;
-  }
-}
-
-.para1, #filter, .para2 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 14px;
-  border-radius: 2px;
-  max-width: 100%;
-  margin: 0 auto;
-  vertical-align: middle;
+  width: 95%;
+  margin-top: 5px;
+  margin-bottom: 5px;
   text-align: center;
+  border-radius: 1px;
+  padding: 1%; /* Add some padding */
+  overflow: hidden;
 }
-
-#myTable {
-  width: 75%;
-  margin: 0 auto;
-  border-collapse: collapse;
-  border: 1px solid #ddd;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: small;
-}
-
-#myTable th, #myTable td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
-}
-
-#myTable th {
-  background-color: #f2f2f2;
-}
-
-#myTable tbody tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-#myTable tbody tr:hover {
-  background-color: #ddd;
-}
-
 
 h1 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: rgb(2, 2, 95);
-  font-size: 21px;
+  font-size:xx-large;
+  margin: 0 auto;
+  width: 95%;
+  text-align: center;
+  padding: 1%; /* Add some padding */
+  overflow: hidden;
 }
 
 h2 {
@@ -150,6 +57,11 @@ h2 {
 h3 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: rgb(2, 2, 95);
+}
+
+.p {
+  font-family: 'Teko', sans-serif;
+  padding: 10%, 10%, 10%, 10%;
 }
 
 .overlay {
@@ -312,12 +224,15 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .col-1{
   width: 75%;
   padding-left: 1%;
   padding-right: 1%;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .col-2{
   width: 25%;
@@ -481,5 +396,153 @@ h3 {
   .artTitle4{
       width: 99%;
       align-content: center;
+  }
+}
+
+body, div, p, ul, ol, li, table, tr, td, th {
+  margin: 0;
+  padding: 0;
+}
+
+/* Original CSS */
+
+body {
+  background-color: #ffffff;
+}
+
+.mainAd {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.adArtMain {
+  height: 100px;
+}
+
+.mainAd:hover .adArtMain {
+  opacity: 0.3;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.mainTitle1 {
+  font-family: 'Teko', sans-serif;
+  font-size: x-large;
+}
+
+.maintopic {
+  font-size: 25px;
+  min-width: 320px;
+  max-width: 1600px;
+  text-align: center;
+  font-family: 'Teko', sans-serif;
+  font-size: xx-large;
+}
+
+.mainfooter {
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Teko', sans-serif;
+  min-width: 320px;
+  max-width: 1600px;
+}
+
+.griditems1 {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-gap: 1em;
+  padding-left: 3%;
+}
+
+@media screen and (max-width: 600px) {
+  .griditems1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 5%;
+  }
+}
+
+.contentTitle {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  text-align: center;
+  font-weight: bold;
+  color: darkblue;
+}
+
+.pictureWrapper {
+  width: 300px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .pictureWrapper {
+    width: 100%;
+    padding-left: 3%;
+  }
+}
+
+.contentWrapper {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 300px;
+  font-size: smaller;
+  margin: 0 auto;
+  padding-left: 5%;
+}
+
+@media screen and (max-width: 600px) {
+  .contentWrapper {
+    width: 100%;
+    padding-left: 3%;
+  }
+}
+
+.para1, #filter, .para2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  border-radius: 2px;
+  max-width: 100%;
+  margin: 0 auto;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Return Button container */
+.return-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Return Button styles */
+.back-to-stories {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #161616;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+}
+
+.back-to-stories:hover {
+  background-color: #222;
+}
+
+/* Optional: Adjust the button size for different screen sizes */
+@media screen and (max-width: 600px) {
+  .back-to-stories {
+    font-size: 16px;
+    padding: 8px 16px;
   }
 }

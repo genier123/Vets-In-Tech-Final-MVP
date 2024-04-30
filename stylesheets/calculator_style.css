@@ -482,3 +482,42 @@
     vertical-align: middle;
     text-align: center;
   }
+
+
+  /* Return Button container */
+.return-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Return Button styles */
+.back-to-stories {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #161616;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+}
+
+.back-to-stories:hover {
+  background-color: #222;
+}
+
+/* Optional: Adjust the button size for different screen sizes */
+@media screen and (max-width: 600px) {
+  .back-to-stories {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
