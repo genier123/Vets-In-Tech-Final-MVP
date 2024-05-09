@@ -1,6 +1,21 @@
-body{
-  background-color: #f5f0f0;
+.body{
+  background-color: #ffffff;
 }
+
+.para1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-width: 100%;
+  margin: 0 auto;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 2px;
+}
+
 
 .myGoogleAd{
   margin: 0 auto;
