@@ -217,3 +217,19 @@ function fetchWeather(location) {
             console.error('Error fetching weather data:', error);
         });
 }
+
+//new Date().getHours();
+function applyTheme() {
+  const hour = 11;
+  const body = document.body;
+
+  if (hour >= 7 && hour < 19) {
+      body.classList.add('light-mode');
+      body.classList.remove('dark-mode');
+  } else {
+      body.classList.add('dark-mode');
+      body.classList.remove('light-mode');
+  }
+}
+
+applyTheme();
