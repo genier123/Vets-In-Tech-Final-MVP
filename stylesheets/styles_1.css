@@ -161,7 +161,6 @@ h3 {
   font-size: large;
   text-align: center;
   font-weight: bold;
-  color: darkblue;
 }
 
 .pictureWrapper {
@@ -266,7 +265,6 @@ h3 {
 }
 
 /* Smartphone Compatibility and Responsiveness */
-
 @viewport {
   width: device-width;
   zoom: 1.0;
