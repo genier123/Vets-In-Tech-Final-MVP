@@ -40,6 +40,18 @@ h3 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+.mainPicture {
+  margin: 0 auto;
+  width: 75%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 1px;
+  padding-left: 15%; /* Add some padding */
+  padding-right: 15%;
+  overflow: hidden;
+}
+
 .mainImage {
   max-width: 100%;
   width: 150px;
