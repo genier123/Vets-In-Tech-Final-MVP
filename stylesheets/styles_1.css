@@ -40,6 +40,15 @@ h3 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+.mainImage {
+  max-width: 100%;
+  width: 150px;
+  height: 150px;
+  height: auto;
+  display: block;
+  margin: 10px 50px 20px;
+}
+
 .mainTitle1 {
   font-size: 1.5em;
 }
