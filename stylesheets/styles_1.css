@@ -422,6 +422,7 @@ h3 {
   overflow: hidden;
   flex: 1 1 calc(50% - 40px); /* 2 items per row for larger screens */
   transition: transform 0.3s ease; /* Scaling effect on hover */
+  margin: .01px;
 }
 
 .news-item:hover {
@@ -433,7 +434,7 @@ h3 {
   height: 150px; /* Default height for larger screens */
   object-fit: cover;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: height 0.3s ease; /* Transition for smooth scaling */
 }
