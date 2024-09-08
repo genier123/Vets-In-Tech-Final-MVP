@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Use our simple Rent Affordability Calculator to determine how much you can afford to spend on rent based on your monthly income, debts, and expenses.">
+    <meta name="keywords" content="Rent Calculator, Affordability Calculator, Rent Budget, Monthly Rent, Personal Finance">
+    <meta name="author" content="Hot Club Tracks">
+    <title>Rent Affordability Calculator - Find Your Ideal Rent Budget</title>
+    <link rel="stylesheet" href="/calculatorTools/rent-affordability-calculator.css">
+    <link rel="canonical" href="https://www.example.com/rent-affordability-calculator">
+    <meta property="og:title" content="Rent Affordability Calculator">
+    <meta property="og:description" content="Calculate how much you can afford to spend on rent with our easy-to-use Rent Affordability Calculator. Enter your income, debts, and expenses to find your ideal rent budget.">
+    <meta property="og:image" content="https://tse1.mm.bing.net/th?id=OIG4.PoFauHHEnYjHHifP5Kt_&w=270&h=270&c=6&r=0&o=5&dpr=2&pid=ImgGn">
+    <meta property="og:url" content="https://www.example.com/rent-affordability-calculator">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rent Affordability Calculator">
+    <meta name="twitter:description" content="Find out how much rent you can afford with our Rent Affordability Calculator. Enter your financial details to get your ideal rent budget.">
+    <meta name="twitter:image" content="https://tse1.mm.bing.net/th?id=OIG4.PoFauHHEnYjHHifP5Kt_&w=270&h=270&c=6&r=0&o=5&dpr=2&pid=ImgGn">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2474604734581000"
+    crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <hr>
+    <div class="myMenu">HotClubTracks</div>
+        <div id="buttonMenu">
+            <button onclick="location.href='./pageMaintenance_1.html'">Music</button>
+            <button onclick="location.href='./BestPartySongsofthe2000s.html'">2000s</button>
+            <button onclick="location.href='./Best90sSongs.html'">90s</button>
+            <button onclick="location.href='./100-Wedding-Songs-for-Every-Wedding.html'">Best Wedding Songs</button>
+            <button onclick="location.href='./pageMaintenance_1.html'">Archives</button>
+            <button onclick="location.href='./pageMaintenance_1.html'">Calculator Tools</button>
+            <button onclick="location.href='./pageMaintenance_1.html'">Car & Truck</button>
+            <button onclick="location.href='./pay-raise-calculator.html'">Money & Finance</button>
+            <button onclick="location.href='./pageMaintenance_1.html'">Lyrics</button>
+            <button onclick="location.href='./news.html'">Story Archives</button>
+        </div>
+    <hr>
+        <div class="maintopic">Rent Affordability Calculator</div>
+        <div class="totalLayout">
+            <div class="col-1">
+                <div class="rent-calculator">
+                    <h1>Rent Affordability Calculator</h1>
+                    <label for="income">Monthly Income:</label>
+                    <input type="number" id="income" placeholder="Enter your income" />
+                
+                    <label for="debts">Monthly Debt Payments:</label>
+                    <input type="number" id="debts" placeholder="Enter your debt payments" />
+                
+                    <label for="expenses">Other Monthly Expenses:</label>
+                    <input type="number" id="expenses" placeholder="Enter other expenses" />
+                
+                    <label for="rentPercentage">Percentage of Income for Rent:</label>
+                    <input type="number" id="rentPercentage" value="30" />
+                
+                    <button onclick="calculateRent()">Calculate</button>
+                
+                    <div class="result" id="result"></div>
+                </div>
+                <br>
+                <div class="return-button-container">
+                     <!-- <a href="./index.html" class="back-to-stories">Back to Home</a> -->
+                    <a href="#" onclick="window.history.back(); return false;" class="back-to-stories">Return to Last Page</a>
+                  </div>
+                <br>
+            </div>
+            <div class="col-2">
+                <div class="otherStories">
+                    <h1>Other Stories</h1>
+                </div>
+                <div class="news-container2">
+                    <article class="news-item2">
+                        <a href="/BestPartySongsofthe2000s.html" class="news-link2">
+                            <img src="/img/Top_2000s_Icon.jpg" alt="Eminem">
+                            <h2>Best 2000s Party Songs</h2>
+                        </a>
+                    </article>
+                    <article class="news-item2">
+                        <a href="/Best90sSongs.html" class="news-link2">
+                            <img src="/img/Top_90s_Icon.jpg" alt="Tupac">
+                            <h2>Best 90s Party Songs</h2>
+                        </a>
+                    </article>
+                    <article class="news-item2">
+                        <a href="/ArtistLyricsPages/LovenOnMeJackHarlowLyrics.html" class="news-link2">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/7/72/%22Lovin_On_Me%22_by_Jack_Harlow_-_cover_art.png" alt="Loven On Me Lyrics">
+                            <h2>Loven On Me Lyrics</h2>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <br>
+  <div class="mainAd">
+    <a href="https://join.robinhood.com/patricg1405/"> <img class="adArtMain" src="../addimages/robinhoodaddimage1a.jpg" alt="Robinhood Ad"></a>
+</div>
+<p>
+    <div class="otherAdsTitle"><h2>GIFs of the Week!</h2></div>
+    <div class="otherAdsLayout">
+        <div id="otherAdsIcon">
+            <img src="../GIFs/Dancing GIF-downsized.gif" alt="" height="75px">
+        </div>
+        <div id="otherAdsIcon">
+            <img src="../GIFs/Advertise GIF-downsized.gif" alt="" height="75px">
+        </div>
+        <div id="otherAdsIcon">
+            <img src="../GIFs/Wtf GIF-downsized.gif" alt="" height="75px">
+        </div>
+        <div id="otherAdsIcon">
+            <img src="../GIFs/Way2Sexy.gif" alt="" height="75px">
+        </div>
+    </div>
+</p>
+<br>
+<div class="mainfooter">
+    <hr>
+    <br>
+        <a href = "mailto: hotclubtracks@gmail.com">Email Us</a> | Copyright © Hot Club Tracks | <a href="https://www.instagram.com/hotclubtracks/">IG:@hotclubtracks</a>
+    <br>
+    <br>
+    <hr>
+</div>
+    <script src="/calculatorTools/rent-affordability-calculator.js"></script>
+</body>
+</html>

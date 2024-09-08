@@ -1,0 +1,297 @@
+/* Original CSS */
+
+body {
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s ease;
+  }
+  
+  .light-mode {
+    background-color: white;
+    color: black;
+    border: black;
+  }
+  
+  .dark-mode {
+    background-color: black;
+    color: white;
+    border: white;
+  }
+  
+  hr{
+    font-size: xx-small;
+    background-color: #fff;
+    border: .1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .para1, #filter, .para2, p, .news-date {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 21px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+  }
+  
+  h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  .mainPicture {
+    margin: 0 auto;
+    width: 75%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 1px;
+    padding-left: 15%; /* Add some padding */
+    padding-right: 15%;
+    overflow: hidden;
+  }
+  
+  .mainImage {
+    max-width: 100%;
+    width: 150px;
+    height: 150px;
+    height: auto;
+    display: block;
+    margin: 10px 50px 20px;
+  }
+  
+  .mainTitle1 {
+    font-size: 1.5em;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {
+      font-size: 20px;
+    }
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+  
+  .mainAd {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .adArtMain {
+    height: 100px;
+  }
+  
+  .mainAd:hover .adArtMain {
+    opacity: 0.3;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .myMenu{
+    font-family: 'Teko', sans-serif;
+    font-size: xx-large;
+    margin: auto;
+    padding-top: .1px;
+    padding-bottom: .1px;
+    padding-left: 5%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Compact Button Menu Styling */
+  #buttonMenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    margin: 5px 5%;
+    font-family: 'Teko', sans-serif;
+  }
+  
+  #buttonMenu button {
+    cursor: pointer;
+    flex: 1 1 auto;
+    padding: 3px 3px 3px 3px;
+    font-size: 16px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    min-width: 120px;
+    font-family: 'Teko', sans-serif;
+    color: black;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  #buttonMenu button:hover {
+    background-color: #575757;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (max-width: 600px) {
+    #buttonMenu button {
+        font-size: 14px;
+        padding: 5px;
+        min-width: 100px;
+    }
+  }
+
+
+
+.news-archive {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+ul#newsList {
+    list-style: none; /* Hides the bullet points */
+    padding: 0;
+}
+
+.news-item {
+    margin-bottom: 20px;
+}
+
+.news-content {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Grey drop shadow */
+}
+
+.news-img {
+    width: 25%; /* 25% width for the image */
+}
+
+.news-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover; /* Ensures the image fills the div */
+}
+
+.news-title {
+    width: 75%; /* 75% width for the title */
+    padding-left: 20px;
+}
+
+.news-title h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+}
+
+.news-title p {
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+}
+
+.newsLink {
+    text-decoration: none;
+    color: inherit;
+}
+
+.newsLink:hover h3 {
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+
+
+
+
+/* Return Button container */
+.return-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Return Button styles */
+.back-to-stories {
+  margin: 0 auto;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #161616;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+}
+
+.back-to-stories:hover {
+  background-color: #222;
+}
+
+/* Optional: Adjust the button size for different screen sizes */
+@media screen and (max-width: 600px) {
+  .back-to-stories {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 560px; /* Ensures the iframe does not exceed this width */
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (height/width * 100) */
+  height: 0;
+  overflow: hidden;
+  margin: 0 auto; /* Center the container */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*OtherAds*/
+/* Other Ads Section */
+
+.otherAdsTitle {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.otherAdsLayout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#otherAdsIcon {
+  padding: 0;
+}
+
+/*-----------------MainFooter--------------------*/
+.mainfooter{
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Teko', sans-serif;
+  min-width: 320px;
+  max-width: 1600px;
+}
