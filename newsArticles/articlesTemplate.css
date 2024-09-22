@@ -368,6 +368,7 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin: 5px 5%;
 }
 
 .col-1{
