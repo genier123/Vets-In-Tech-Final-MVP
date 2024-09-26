@@ -43,24 +43,9 @@ h3 {
 }
 
 .mainPicture {
-  margin: 0 auto;
-  width: 75%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-align: center;
-  border-radius: 1px;
-  padding-left: 15%; /* Add some padding */
-  padding-right: 15%;
-  overflow: hidden;
-}
-
-.mainImage {
-  max-width: 100%;
-  width: 150px;
-  height: 150px;
-  height: auto;
-  display: block;
-  margin: 10px 50px 20px;
+  width: 100%;
+  max-width: 460px;
+  margin: 0 auto; /* This centers the image horizontally */
 }
 
 .mainTitle1 {
@@ -209,7 +194,7 @@ h3 {
   }
 }
 
-.para1, #filter, .para2, p, .news-date {
+.para1, #filter, .para2, p, .news-date, li {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
   border-radius: 2px;
@@ -364,19 +349,23 @@ h3 {
   margin: 0 auto;
 }
 
-
 /*-------------Total Layout----------------*/
-.totalLayout{
+.totalLayout {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin: 5px 5%;
+  margin: 5px auto; /* Centers the content horizontally */
+  max-width: 1024px; /* Ensures it doesn't stretch wider than a 13" screen */
+  width: 100%; /* Allows it to be responsive */
+  padding: 0 5%; /* Optional: Add some padding for smaller screens */
 }
 
 .col-1{
   width: 75%;
   padding-left: 1%;
   padding-right: 1%;
+  margin: 0 auto; /* This centers the image horizontally */
+  text-align: center;
 }
 .col-2{
   width: 25%;
@@ -448,7 +437,6 @@ h3 {
 .news-link:hover {
   color: #007BFF;
 }
-
 
 /* Media Queries for responsiveness */
 
