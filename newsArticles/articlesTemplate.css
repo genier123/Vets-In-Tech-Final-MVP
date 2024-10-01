@@ -696,3 +696,38 @@ h3 {
 .social-linkedin {
   background: #0077b5;
 }
+
+/* Privacy Policy */
+.privacy-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+.privacy-cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: lightgrey;
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+  display: none; /* Initially hidden */
+}
+.privacy-cookie-banner button {
+  background: #218394;
+  border: none;
+  color: #cfcaca;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.privacy-cookie-banner button:hover {
+  background: #ffffff;
+}
+.privacy-footer {
+  text-align: center;
+  padding: 20px;
+  background: #f4f4f4;
+  border-top: 1px solid #ddd;
+}
