@@ -249,3 +249,4 @@ function acceptPrivacyCookies() {
 
 // Show the banner on page load
 window.onload = showPrivacyCookieBanner;
+
