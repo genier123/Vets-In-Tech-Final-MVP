@@ -715,7 +715,18 @@ h3 {
 .social-linkedin {
   background: #0077b5;
 }
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .btn {
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+    font-size: 10px; /* Reduce font size */
+  }
 
+  .share-buttons {
+    gap: 5px; /* Reduce gap on smaller screens */
+  }
+}
+/* ------------------------------------------- */
 /* Privacy Policy */
 .privacy-container {
   max-width: 800px;
