@@ -59,7 +59,7 @@ function calculateAffordability() {
     }
 
     // Determine if the user is within the target range based on income type
-    const targetPercentage = incomeTypeToggle ? 25 : 35; // 25% for net income, 35% for gross income
+    const targetPercentage = incomeTypeToggle ? 50 : 35; // 25% for net income, 35% for gross income
     
     if (rentPercentage > targetPercentage) {
         resultBar.classList.remove('green-bar');
