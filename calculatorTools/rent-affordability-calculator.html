@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Use our simple Rent Affordability Calculator to determine how much you can afford to spend on rent based on your monthly income, debts, and expenses.">
-    <meta name="keywords" content="Rent Calculator, Affordability Calculator, Rent Budget, Monthly Rent, Personal Finance">
+    <meta name="keywords" content="Rent Calculator, Rent Affordability Calculator, Rent Affordability Calculator 2024, Rent Budget, Monthly Rent, Personal Finance">
     <meta name="author" content="Hot Club Tracks">
     <title>Rent Affordability Calculator - Find Your Ideal Rent Budget</title>
     <link rel="stylesheet" href="/calculatorTools/rent-affordability-calculator.css">
@@ -37,33 +37,82 @@
         </div>
     <hr>
 <br>
-        <div class="maintopic">Rent Affordability Calculator</div>
+        <h1>Rent Affordability Calculator 2024</h1>
+        <br>
+        <img class="mainPicture" src="" alt="Rent Calculator">
+        <br>
         <div class="totalLayout">
             <div class="col-1">
-                <div class="rent-calculator">
-                    <label for="income">Monthly Income:</label>
-                    <input type="number" id="income" placeholder="Enter your income" />
-                
-                    <label for="debts">Monthly Debt Payments:</label>
-                    <input type="number" id="debts" placeholder="Enter your debt payments" />
-                
-                    <label for="expenses">Other Monthly Expenses:</label>
-                    <input type="number" id="expenses" placeholder="Enter other expenses" />
-                
-                    <label for="rentPercentage">Percentage of Income for Rent:</label>
-                    <input type="number" id="rentPercentage" value="30" />
-                
-                    <button onclick="calculateRent()">Calculate</button>
-                
-                    <div class="result" id="result"></div>
+               <hr>
+                <p>
+                    <h3>Can you Afford Your Rent</h3>
+                    <div id="rent-calculator-container">
+                        <div class="income-type-container">
+                            <div class="toggle-switch">
+                                <input type="radio" name="income-type" id="rent-calculator-net" value="net" checked>
+                                <label for="rent-calculator-net" class="toggle-label net-label">Net</label>
+                                <input type="radio" name="income-type" id="rent-calculator-gross" value="gross">
+                                <label for="rent-calculator-gross" class="toggle-label gross-label">Gross</label>
+                            </div>
+                        </div>
+                        <div class="rent-calculator-inputs">
+                            <label for="rent-calculator-income">Income:</label>
+                            <select id="rent-calculator-income-frequency">
+                                <option value="monthly">Monthly</option>
+                                <option value="weekly">Weekly</option>
+                                <option value="biweekly">Biweekly</option>
+                                <option value="hourly">Hourly</option>
+                            </select>
+                            <input type="number" id="rent-calculator-income" placeholder="Enter your income">
+                            
+                            <label for="rent-calculator-food">Food Expenses:</label>
+                            <input type="number" id="rent-calculator-food" placeholder="e.g., 500 for food">
+                    
+                            <label for="rent-calculator-utilities">Monthly Utilities:</label>
+                            <input type="number" id="rent-calculator-utilities" placeholder="e.g., 100 for utilities">
+                    
+                            <label for="rent-calculator-car-payment">Car Payment:</label>
+                            <input type="number" id="rent-calculator-car-payment" placeholder="e.g., 300 for car payment">
+                    
+                            <label for="rent-calculator-insurance">Insurance:</label>
+                            <input type="number" id="rent-calculator-insurance" placeholder="e.g., 150 for insurance">
+                    
+                            <label for="rent-calculator-debts">Monthly Debts:</label>
+                            <input type="number" id="rent-calculator-debts" placeholder="e.g., 200 for credit cards, student loans">
+                        </div>
+                    
+                        <label for="rent-calculator-rent">Proposed Rent:</label>
+                        <input type="number" id="rent-calculator-rent" placeholder="Enter your proposed rent">
+                    <br>
+                        <button id="rent-calculator-calculate-btn">Calculate</button>
+                    <p>
+                        <div id="rent-calculator-results">
+                            <h2>Results</h2>
+                            <div id="rent-calculator-percentage-bar">
+                                <span id="rent-calculator-percentage-label"></span>
+                            </div>
+                            <p id="rent-calculator-result-text"></p>
+                        </div>
+                    </p>
+                    </div>                    
+                </p>           
+                    <br>
+                    <!-- Share on Social -->
+                        <div class="share-buttons">
+                            <a href="https://twitter.com/intent/tweet?text=%20&url=https://www.hotclubtracks.com/calculatorTools/rent-affordability-calculator" class="btn social-twitter" target="_blank">Share on Twitter</a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.hotclubtracks.com/calculatorTools/rent-affordability-calculator" class="btn social-facebook" target="_blank">Share on Facebook</a>
+                            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.hotclubtracks.com/calculatorTools/rent-affordability-calculator" class="btn social-linkedin" target="_blank">Share on LinkedIn</a>
+                        </div>
+                    <br>
+                    <div class="return-button-container">
+                            <!-- <a href="./index.html" class="back-to-stories">Back to Home</a> -->
+                        <a href="#" onclick="window.history.back(); return false;" class="back-to-stories">Return to Last Page</a>
+                    </div>
+                    <br>
+                    <div class="mainAd">
+                    <a href="https://join.robinhood.com/patricg1405/"> <img class="adArtMain" src="../addimages/robinhoodaddimage1a.jpg" alt="Robinhood Ad"></a>
+                    </div>
                 </div>
-                <br>
-                <div class="return-button-container">
-                     <!-- <a href="./index.html" class="back-to-stories">Back to Home</a> -->
-                    <a href="#" onclick="window.history.back(); return false;" class="back-to-stories">Return to Last Page</a>
-                  </div>
-                <br>
-            </div>
             <div class="col-2">
                 <div class="otherStories">
                     <h1>Other Stories</h1>
@@ -91,9 +140,6 @@
             </div>
         </div>
         <br>
-  <div class="mainAd">
-    <a href="https://join.robinhood.com/patricg1405/"> <img class="adArtMain" src="../addimages/robinhoodaddimage1a.jpg" alt="Robinhood Ad"></a>
-</div>
 <p>
     <div class="otherAdsTitle"><h2>GIFs of the Week!</h2></div>
     <div class="otherAdsLayout">
