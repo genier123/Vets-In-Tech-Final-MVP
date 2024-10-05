@@ -42,15 +42,9 @@ body {
   }
   
   .mainPicture {
-    margin: 0 auto;
-    width: 75%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-    border-radius: 1px;
-    padding-left: 15%; /* Add some padding */
-    padding-right: 15%;
-    overflow: hidden;
+    width: 100%;
+    max-width: 460px;
+    margin: 0 auto; /* This centers the image horizontally */
   }
   
   .mainImage {
