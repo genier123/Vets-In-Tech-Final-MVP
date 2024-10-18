@@ -46,6 +46,7 @@ h3 {
   width: 100%;
   max-width: 460px;
   margin: 0 auto; /* This centers the image horizontally */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .mainTitle1 {
