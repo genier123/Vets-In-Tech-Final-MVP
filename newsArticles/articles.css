@@ -211,7 +211,7 @@ h3 {
   }
 }
 
-.para1, #filter, .para2, p, .news-date {
+.para1, #filter, .para2, p, .news-date, a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
   border-radius: 2px;
