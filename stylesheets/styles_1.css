@@ -18,12 +18,29 @@ body {
   border: white;
 }
 
-hr{
+hr {
   font-size: xx-small;
   background-color: #fff;
   border: .1px solid #ddd;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+/*vertical-line*/
+
+.vertical-line {
+  font-size: xx-small;
+  background-color: #fff;
+  border: .1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Media query for screens less than 780px */
+@media (max-width: 780px) {
+  .vertical-line, .vertical-line-border, .vertical-hr, .vertical-border {
+    display: none;
+  }
+}
+/* End vertical-line Section ----------*/
 
 h1 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -408,8 +425,8 @@ h3 {
 .news-container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   gap: 20px; /* Controls spacing between articles */
+  justify-content:flex-start;
 }
 
 .news-item {
@@ -417,11 +434,10 @@ h3 {
   border: 1px solid #ddd;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  padding: 10px; /* Reduced padding for the entire news item */
+  padding: 10px;
   box-sizing: border-box;
   overflow: hidden;
-  flex: 1 1 calc(33.33% - 40px); /* 3 items per row for larger screens */
-  /* flex: 1 1 calc(50% - 40px); /* 2 items per row for larger screens */
+  flex: 1 1 200px; /* Minimum width to fit as many items as possible */
   transition: transform 0.3s ease; /* Scaling effect on hover */
   margin: 0.01px;
 }
