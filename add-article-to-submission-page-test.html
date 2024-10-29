@@ -16,6 +16,8 @@
         <label>Date Published: <input type="datetime-local" id="datePublished" required></label><br>
         <button type="submit">Add News Item</button>
     </form>
+<br>
+    <button id="deleteLatestBtn">Delete Latest News Item</button>
 
     <script>
         document.getElementById("newsForm").addEventListener("submit", function(event) {
@@ -34,6 +36,18 @@
 
             alert("News item added!");
             document.getElementById("newsForm").reset();
+        });
+
+        document.getElementById("deleteLatestBtn").addEventListener("click", function() {
+            let newsItems = JSON.parse(localStorage.getItem("newsItems")) || [];
+
+            if (newsItems.length > 0) {
+                newsItems.shift();  // Remove the first (most recent) item
+                localStorage.setItem("newsItems", JSON.stringify(newsItems));
+                alert("Latest news item deleted!");
+            } else {
+                alert("No news items to delete.");
+            }
         });
     </script>
 </body>
