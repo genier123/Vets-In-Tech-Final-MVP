@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Item Input</title>
+</head>
+<body>
+    <br>
+    https://www.hotclubtracks.com/
+    <br>
+    <form id="newsForm">
+        <label>Image Source: <input type="text" id="imageSrc" required></label><br>
+        <label>Link URL: <input type="text" id="linkUrl" required></label><br>
+        <label>Title: <input type="text" id="title" required></label><br>
+        <label>Date Published: <input type="datetime-local" id="datePublished" required></label><br>
+        <button type="submit">Add News Item</button>
+    </form>
+
+    <script>
+        document.getElementById("newsForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const imageSrc = document.getElementById("imageSrc").value;
+            const linkUrl = document.getElementById("linkUrl").value;
+            const title = document.getElementById("title").value;
+            const datePublished = document.getElementById("datePublished").value;
+
+            const newItem = { imageSrc, linkUrl, title, datePublished };
+
+            let newsItems = JSON.parse(localStorage.getItem("newsItems")) || [];
+            newsItems.unshift(newItem);  // Add new item to the top
+            localStorage.setItem("newsItems", JSON.stringify(newsItems));
+
+            alert("News item added!");
+            document.getElementById("newsForm").reset();
+        });
+    </script>
+</body>
+</html>
