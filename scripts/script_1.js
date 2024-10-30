@@ -251,32 +251,4 @@ function acceptPrivacyCookies() {
 window.onload = showPrivacyCookieBanner;
 
 
-// Add Stories
-const newsContainer = document.getElementById("newsContainer");
-const newsItems = JSON.parse(localStorage.getItem("newsItems")) || [];
-
-newsItems.forEach(item => {
-    const article = document.createElement("article");
-    article.className = "news-item";
-
-    const link = document.createElement("a");
-    link.href = item.linkUrl;
-    link.className = "news-link2";
-
-    const img = document.createElement("img");
-    img.src = item.imageSrc;
-    img.alt = item.title;
-
-    const title = document.createElement("h2");
-    title.textContent = item.title;
-
-    link.appendChild(img);
-    link.appendChild(title);
-    article.appendChild(link);
-
-    const dateElement = document.createElement("p");
-    dateElement.textContent = `Published: ${new Date(item.datePublished).toLocaleString()}`;
-    article.appendChild(dateElement);
-
-    newsContainer.prepend(article);  // Add new item to the top of the container
-});
+// Add Stories -----FUTURE CODE
