@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Preconnect and CSS stylesheets -->
+    <link rel="stylesheet" href="./page-generation-form-version1.css">
+</head>
+<body>
+
+<div id="inputForm">
+    <h2>Generate Article HTML</h2>
+    
+    <label for="linkName">Link Name (URL):</label>
+    <input type="text" id="linkName" placeholder="Enter page name...">
+    
+    <div class="radio-group">
+        <label><input type="radio" name="category" value="calculators"> Calculators</label>
+        <label><input type="radio" name="category" value="carandtruck"> Car and Truck</label>
+        <label><input type="radio" name="category" value="celebrities"> Celebrities</label>
+        <label><input type="radio" name="category" value="djsandproducers"> DJs and Producers</label>
+        <label><input type="radio" name="category" value="lifestyle" checked> Lifestyle</label>
+        <label><input type="radio" name="category" value="lyrics"> Lyrics</label>
+        <label><input type="radio" name="category" value="moneyandfinance"> Money and Finance</label>
+        <label><input type="radio" name="category" value="music"> Music</label>
+    </div>
+
+    <label for="titleInput">Title:</label>
+    <input type="text" id="titleInput" value="Write Description here...">
+    
+    <label for="main-picture">Main Picture URL:</label>
+    <input type="text" id="main-picture" placeholder="Enter image link..."><br><br>
+
+    <label for="descriptionInput">Meta Description:</label>
+    <textarea id="descriptionInput" placeholder="Write Description here..."></textarea>
+    
+    <label for="keywordsInput">Meta Keywords:</label>
+    <input type="text" id="keywordsInput" value="Insert comma serperated keywords...">
+    
+    <label for="authorInput">Author:</label>
+    <input type="text" id="authorInput" value="Hot Club Tracks by PG Digital">
+    
+    <label for="ogTitleInput">Open Graph Title:</label>
+    <input type="text" id="ogTitleInput" value="Enter in meta description" disabled>
+    
+    <label for="ogDescriptionInput">Open Graph Description:</label>
+    <textarea id="ogDescriptionInput"></textarea>
+    
+    <label for="ogUrlInput">Open Graph URL:</label>
+    <input type="text" id="ogUrlInput" value="" disabled>
+    
+    <label for="ogTypeInput">Open Graph Type:</label>
+    <input type="text" id="ogTypeInput" value="article">
+    
+    <label for="ogImageInput">Open Graph Image:</label>
+    <input type="text" id="ogImageInput" value="Enter link in main picture URL" disabled>
+    
+    <label for="h1Input">H1:</label>
+    <input type="text" id="h1Input" value="Halloween Top TikTok Trends This Week">
+    
+    <label for="dateInput">Date:</label>
+    <input type="date" id="dateInput" value="2024-10-28">
+    
+    <button id="addSectionButton">Add Section</button>
+    <br>
+    <h3>Sections</h3>
+    <br>
+    <div id="sectionsContainer"></div>
+    <br>
+    <button id="generateHtmlButton">Generate HTML</button>
+    <button id="copyHtmlButton">Copy to Clipboard</button>
+    <br>
+    <h3>Generated HTML</h3>
+    <textarea id="generatedHtml" rows="10" cols="50"></textarea>
+</div>
+
+<script src="./page-generation-form-version1.js"></script>
+</body>
+</html>
