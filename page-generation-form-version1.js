@@ -128,8 +128,8 @@ document.getElementById("generateHtmlButton").onclick = function () {
                     </article>                                      
                 <br>
                     <div class="share-buttons">
-                        <a href="https://twitter.com/intent/tweet?text=Halloween%20Trends%202024%20&url=https://www.hotclubtracks.com/lifestyle/halloween-tiktok-trends-this-week" class="btn social-twitter" target="_blank">Share on Twitter</a>
-                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.hotclubtracks.com/lifestyle/halloween-tiktok-trends-this-week" class="btn social-facebook" target="_blank">Share on Facebook</a>
+                        <a href="https://twitter.com/intent/tweet?text=%20%202024%20&url=${finalOgUrl}" class="btn social-twitter" target="_blank">Share on Twitter</a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=${finalOgUrl}" class="btn social-facebook" target="_blank">Share on Facebook</a>
                     </div>
                 <br>
                         <div class="return-button-container">
