@@ -6,25 +6,61 @@ document.getElementById("addSectionButton").onclick = function () {
     
     if (h2Input && pInput) {
         const section = document.createElement("section");
+        section.setAttribute("draggable", "true");
 
-        // Add the content along with a delete button to the section
         section.innerHTML = `
             <h2>${h2Input}</h2>
             <p>${pInput}</p>
             <button class="deleteSectionButton">Delete Section</button>
         `;
 
-        // Append the section to the container
         sectionsContainer.appendChild(section);
 
-        // Attach event listener to the delete button within this section
         section.querySelector(".deleteSectionButton").onclick = function () {
             sectionsContainer.removeChild(section);
         };
+
+        addDragAndDropHandlers(section);
     } else {
         alert("Both H2 and Paragraph must be provided.");
     }
 };
+
+function addDragAndDropHandlers(section) {
+    section.addEventListener("dragstart", function (e) {
+        section.classList.add("dragging");
+    });
+
+    section.addEventListener("dragend", function () {
+        section.classList.remove("dragging");
+    });
+
+    sectionsContainer.addEventListener("dragover", function (e) {
+        e.preventDefault();
+        const draggingElement = document.querySelector(".dragging");
+        const afterElement = getDragAfterElement(sectionsContainer, e.clientY);
+
+        if (afterElement == null) {
+            sectionsContainer.appendChild(draggingElement);
+        } else {
+            sectionsContainer.insertBefore(draggingElement, afterElement);
+        }
+    });
+}
+
+function getDragAfterElement(container, y) {
+    const draggableElements = [...container.querySelectorAll("section:not(.dragging)")];
+    
+    return draggableElements.reduce((closest, child) => {
+        const box = child.getBoundingClientRect();
+        const offset = y - box.top - box.height / 2;
+        if (offset < 0 && offset > closest.offset) {
+            return { offset: offset, element: child };
+        } else {
+            return closest;
+        }
+    }, { offset: Number.NEGATIVE_INFINITY }).element;
+}
 
 document.getElementById("generateHtmlButton").onclick = function () {
     const title = document.getElementById("titleInput").value;
@@ -123,7 +159,7 @@ document.getElementById("generateHtmlButton").onclick = function () {
                 <br>
                     <article>
                         <section>
-                        ${sectionsContainer.innerHTML}
+                    ${sectionsClone} <!-- Use the cleaned-up clone here -->
                         </section>
                     </article>                                      
                 <br>
@@ -232,4 +268,32 @@ document.getElementById("copyHtmlButton").onclick = function () {
     generatedHtml.select();
     document.execCommand("copy");
     alert("HTML code copied to clipboard!");
+};
+
+document.getElementById("clearButton").onclick = function () {
+    // Clear all sections in the sectionsContainer
+    sectionsContainer.innerHTML = "";
+
+    // Reset all input fields to their default values
+    document.getElementById("titleInput").value = "";
+    document.getElementById("main-picture").value = "";
+    document.getElementById("descriptionInput").value = "";
+    document.getElementById("keywordsInput").value = "";
+    document.getElementById("authorInput").value = "";
+    document.getElementById("ogTitleInput").value = "";
+    document.getElementById("ogDescriptionInput").value = "";
+    document.getElementById("ogUrlInput").value = "";
+    document.getElementById("ogImageInput").value = "";
+    document.getElementById("h1Input").value = "";
+    document.getElementById("dateInput").value = "";
+    document.getElementById("linkName").value = "";
+
+    // Reset radio buttons (category selection)
+    const categoryRadios = document.querySelectorAll('input[name="category"]');
+    categoryRadios.forEach(radio => (radio.checked = false));
+
+    // Clear the generated HTML preview
+    document.getElementById("generatedHtml").value = "";
+
+    alert("All inputs and sections have been cleared!");
 };
