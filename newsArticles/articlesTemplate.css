@@ -195,7 +195,7 @@ h3 {
   }
 }
 
-.para1, #filter, .para2, p, .news-date, li {
+.para1, #filter, .para2, .news-date {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
   border-radius: 2px;
@@ -204,7 +204,42 @@ h3 {
   vertical-align: middle;
   text-align: center;
   padding-left: 5%;
-  padding-right: 5%;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  border-radius: 2px;
+  max-width: 100%;
+  margin: 0 auto;
+  vertical-align: middle;
+  text-align: center;
+  padding-left: 5%;
+  text-indent: 2em;
+}
+
+li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  border-radius: 2px;
+  max-width: 100%;
+  margin: 0 auto;
+  vertical-align: middle;
+  text-align: left;
+  list-style: circle;
+}
+
+blockquote {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  border-radius: 2px;
+  max-width: 100%;
+  margin: 0 auto;
+  vertical-align: middle;
+  text-align: center;
+  padding-left: 5%;
+  text-indent: 2em;
+
 }
 
 .article {
