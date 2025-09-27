@@ -5,6 +5,7 @@ const menuItems = [
     { text: 'DJ & Producer', href: './djsandproducers.html' },
     { text: 'Lifestyle', href: './lifestyle.html' },
     { text: 'Lyrics', href: './lyrics.html' },
+    { text: 'News', href: './news.html' },
     { text: 'Archives', href: './archives.html' }
 ];
 

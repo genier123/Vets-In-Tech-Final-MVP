@@ -19,24 +19,19 @@
         <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
     </head>
 <body>
-    <hr>
-    <div class="myMenu">HotClubTracks</div>
-        <div id="buttonMenu">
-            <button onclick="location.href='./index.html'">Home</button>
-            <button onclick="location.href='./music.html'">Music</button>
-            <button onclick="location.href='./celebrities.html'">Celebrities</button>
-            <button onclick="location.href='./lifestyle.html'">Lifestyle</button>
-            <button onclick="location.href='./moneyandfinance.html'">Money & Finance</button>
-            <button onclick="location.href='./lyrics.html'">Lyrics</button>
-            <button onclick="location.href='./carandtruck.html'">Car & Truck</button>
-            <button onclick="location.href='./djsandproducers.html'">DJ & Producer</button>
-            <button onclick="location.href='./calculators.html'">Calculator Tools</button>
-            <button onclick="location.href='./newsarchives.html'">News Archives</button>
-        </div>
-    <hr>
-    <br>
-      <div class="maintopic"><u>Best Party Songs of the 2000s</u></div>
-    <br>
+    <!-- Logo/Menu Section -->
+    <header class="myMenu">
+        <a href="https://www.hotclubtracks.com/">
+        <h1>Hot Club Tracks</h1>
+        </a>
+    </header>
+            <div id="buttonMenu">
+                <!-- Menu buttons will be added here by JavaScript -->
+            </div>
+        <br>
+        <div class="maintopic"><u>Best Party Songs of the 2000s</u></div>
+        <br>
+    <!-- Logo/Menu Section End-->
     <p class="para1"><!-- Paragraph -->
             It's the Early 2000's, and whether you were in the back seat of your mom's car embarrassed watching her car dance to her favorite song or you were a seasoned vet in the clubs and party scene and knew all the cool dances to every popular song, we all remember those early to mid 2000's tracks that led to those fun memories. Granted there is many that we missed, and we may have to create a <b><em>"Part 2 Continued list"</em></b> after this. Disregard the ranking, as this list is in no particular order. What are your favorite songs of the 2000's?           
     <br>
@@ -100,19 +95,16 @@
             <hr>
         </div>
         -->
-        <div class="mainfooter">
-            <hr>
-            <br>
-            <a href = "mailto: hotclubtracks@gmail.com">Email Us</a> | Copyright © 2020-2024 Hot Club Tracks. All rights reserved. | <a href="https://www.instagram.com/hotclubtracks/">IG:@hotclubtracks</a> | <a href="./privacypolicy.html">Privacy Policy</a> | <a href="./aboutus.html">About Us</a>
-            <br>
-            <br>
-            <hr>
-        </div>
+    <div class="mainfooter" id="dynamic-footer">
+        <!-- The footer will be generated here by JavaScript -->
+    </div>
          <!-- Privacy Cookie Statement -->
         <div class="privacy-cookie-banner" id="privacyCookieBanner">
             <p>We do not use cookies on our website. For more information about how we handle your data, please visit our <a href="./privacypolicy.html">Privacy Policy</a>.</p>
             <button onclick="acceptPrivacyCookies()">Got it!</button>
         </div>
-<script src="./scripts/_best-songs-of-the-2000s.html.js"></script>
+            <script src="./scripts/menuItems.js"></script>
+            <script src="./scripts/create-footer.js"></script>
+            <script src="./scripts/_best-songs-of-the-2000s.html.js"></script>
 </body>
 </html>
