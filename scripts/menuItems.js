@@ -5,7 +5,7 @@ const menuItems = [
     { text: 'DJ & Producer', href: './djsandproducers.html' },
     { text: 'Lifestyle', href: './lifestyle.html' },
     { text: 'Lyrics', href: './lyrics.html' },
-    { text: 'News Archives', href: './archives.html' }
+    { text: 'Archives', href: './archives.html' }
 ];
 
 // Get the menu container element from the HTML
