@@ -9,6 +9,7 @@ const menuItems = [
     { text: 'Archives', href: './archives.html' }
 ];
 
+
 // Get the menu container element from the HTML
 const menuContainer = document.getElementById('buttonMenu');
 
