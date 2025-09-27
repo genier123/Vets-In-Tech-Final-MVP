@@ -489,30 +489,38 @@ h3 {
   padding: 10px;
   box-sizing: border-box;
   overflow: hidden;
-  flex: 1 1 200px; /* Minimum width to fit as many items as possible */
-  transition: transform 0.3s ease; /* Scaling effect on hover */
+  flex: 1 1 200px;
+  transition: transform 0.3s ease;
   margin: 0.01px;
+  max-width: 250px; /* Adjust this value to your preferred max width */
 }
 
 .news-item:hover {
-  transform: scale(1.02); /* Slight zoom on hover */
+  transform: scale(1.02);
 }
 
 .news-item img {
   width: 100%;
-  height: 150px; /* Default height for larger screens */
+  height: 150px;
   object-fit: cover;
   border-radius: 2px;
-  margin-bottom: 5px; /* Reduced space between image and title */
+  margin-bottom: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: height 0.3s ease; /* Transition for smooth scaling */
 }
 
 .news-item h2 {
-  margin: 5px 0; /* Reduced top and bottom margin for the title */
-  font-size: 1.5em; /* Default font size for larger screens */
-  padding: 0; /* No padding inside the title */
-  transition: font-size 0.3s ease; /* Transition for smooth scaling */
+  margin: 5px 0;
+  font-size: 1.5em;
+  padding: 0;
+}
+
+.news-item h2 {
+  transition: transform 0.3s ease;
+  transform-origin: left; /* Optional: Makes the scaling start from the left */
+}
+
+.news-item:hover h2 {
+  transform: scale(1.05); /* Scales the text visually without expanding the box */
 }
 
 .news-link {
@@ -523,7 +531,6 @@ h3 {
 .news-link:hover {
   color: #007BFF;
 }
-
 
 /* Media Queries for responsiveness */
 

@@ -252,3 +252,29 @@ window.onload = showPrivacyCookieBanner;
 
 
 // Add Stories -----FUTURE CODE
+
+//-------------------- Filter Articles --------------------
+function myFilterFunction() {
+    // Declare variables
+    const input = document.getElementById('searchInput1');
+    const filter = input.value.toUpperCase();
+    const newsContainer = document.getElementById('newsContainer');
+    const articles = newsContainer.getElementsByClassName('news-item');
+
+    // Loop through all news articles, and hide those that don't match the search query
+    for (let i = 0; i < articles.length; i++) {
+        const article = articles[i];
+        const heading = article.querySelector('h2');
+        
+        // Ensure a heading element exists before attempting to filter
+        if (heading) {
+            const textValue = heading.textContent || heading.innerText;
+            if (textValue.toUpperCase().indexOf(filter) > -1) {
+                article.style.display = ""; // Show the article
+            } else {
+                article.style.display = "none"; // Hide the article
+            }
+        }
+    }
+}
+
