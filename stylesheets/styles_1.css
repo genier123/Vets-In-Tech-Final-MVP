@@ -224,7 +224,7 @@ h3 {
   align-items: center;
   gap: 10px; /* Space between flex items */
 }
-/*Footer Start-------------------------------------------*/
+/*Footer End-------------------------------------------*/
 
 
 .griditems1 {
@@ -795,6 +795,7 @@ h3 {
   }
 }
 /* ------------------------------------------- */
+
 /* Privacy Policy */
 .privacy-container {
   max-width: 800px;
