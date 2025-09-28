@@ -17,27 +17,21 @@
         <meta property="og:url" content="URL">
         <meta property="og:type" content="article">
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2474604734581000" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="./articlesTemplate.css">
+        <link rel="stylesheet" href="../stylesheets/articlesTemplate.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <hr>
-    <div class="myMenu">HotClubTracks</div>
+  <!-- Logo Section -->
+  <header class="myMenu">
+    <a href="https://www.hotclubtracks.com/">
+      <h1>Hot Club Tracks</h1>
+    </a>
+  </header>
         <div id="buttonMenu">
-            <button onclick="location.href='./index.html'">Home</button>
-            <button onclick="location.href='./music.html'">Music</button>
-            <button onclick="location.href='./celebrities.html'">Celebrities</button>
-            <button onclick="location.href='./lifestyle.html'">Lifestyle</button>
-            <button onclick="location.href='./moneyandfinance.html'">Money & Finance</button>
-            <button onclick="location.href='./lyrics.html'">Lyrics</button>
-            <button onclick="location.href='./carandtruck.html'">Car & Truck</button>
-            <button onclick="location.href='./djsandproducers.html'">DJ & Producer</button>
-            <button onclick="location.href='./calculators.html'">Calculator Tools</button>
-            <button onclick="location.href='./newsarchives.html'">News Archives</button>
+            <!-- Menu buttons will be added here by JavaScript -->
         </div>
-    <hr>
     <br>
 <article>
     <h1>10 Things You Didn't Know About Donald Trump</h1>
@@ -155,21 +149,17 @@
                 <img src="../GIFs/Way2Sexy.gif" alt="" height="75px">
             </div>
         </div>
-</p>
-<br>
-<div class="mainfooter">
-    <hr>
-    <br>
-    <a href = "mailto: hotclubtracks@gmail.com">Email Us</a> | Copyright © 2020-2024 Hot Club Tracks. All rights reserved. | <a href="https://www.instagram.com/hotclubtracks/">IG:@hotclubtracks</a> | <a href="./privacypolicy.html">Privacy Policy</a> | <a href="./aboutus.html">About Us</a>
-    <br>
-    <br>
-    <hr>
-</div>
- <!-- Privacy Cookie Statement -->
-<div class="privacy-cookie-banner" id="privacyCookieBanner">
-    <p>We do not use cookies on our website. For more information about how we handle your data, please visit our <a href="./privacypolicy.html">Privacy Policy</a>.</p>
-    <button onclick="acceptPrivacyCookies()">Got it!</button>
-</div>
-<script src="./scripts/script_1.js"></script>
+        <br>
+        <div class="mainfooter" id="dynamic-footer">
+        <!-- The footer will be generated here by JavaScript -->
+        </div>
+         <!-- Privacy Cookie Statement -->
+        <div class="privacy-cookie-banner" id="privacyCookieBanner">
+            <p>We do not use cookies on our website. For more information about how we handle your data, please visit our <a href="./privacypolicy.html">Privacy Policy</a>.</p>
+            <button onclick="acceptPrivacyCookies()">Got it!</button>
+        </div>
+    <script src="../scripts/menuItems.js"></script>
+    <script src="../scripts/create-footer.js"></script>
+    <script src="../scripts/articlesTemplate.js"></script>
 </body>
 </html>

@@ -22,7 +22,7 @@
 <meta property="og:image" content="https://i.ytimg.com/vi/kpCwH5TXx_U/maxresdefault.jpg">
 
 <!-- Preconnect and CSS stylesheets -->
-<link rel="stylesheet" href="../newsArticles/articlesTemplate.css">
+<link rel="stylesheet" href="../stylesheets/articlesTemplate.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
@@ -32,22 +32,16 @@
 
 </head>
 <body>
-    <hr>
-        <div class="myMenu">HotClubTracks</div>
-            <div id="buttonMenu">
-                <button onclick="location.href='../index.html'">Home</button>
-                <button onclick="location.href='../music.html'">Music</button>
-                <button onclick="location.href='../celebrities.html'">Celebrities</button>
-                <button onclick="location.href='../lifestyle.html'">Lifestyle</button>
-                <button onclick="location.href='../moneyandfinance.html'">Money & Finance</button>
-                <button onclick="location.href='../lyrics.html'">Lyrics</button>
-                <button onclick="location.href='../carandtruck.html'">Car & Truck</button>
-                <button onclick="location.href='../djsandproducers.html'">DJ & Producer</button>
-                <button onclick="location.href='../calculators.html'">Calculator Tools</button>
-                <button onclick="location.href='../newsarchives.html'">News Archives</button>
-            </div>
-    <hr>
-<br>
+  <!-- Logo Section -->
+  <header class="myMenu">
+    <a href="https://www.hotclubtracks.com/">
+      <h1>Hot Club Tracks</h1>
+    </a>
+  </header>
+        <div id="buttonMenu">
+            <!-- Menu buttons will be added here by JavaScript -->
+        </div>
+    <br>
 <article>
     <h1>How to Get Famous on TikTok in 2024-2025: A Comprehensive Guide</h1>
         <div class="totalLayout">
@@ -253,19 +247,16 @@ This strategy drives traffic and builds a cohesive online presence.</p>
             </div>
         </p>
         <br>
-        <div class="mainfooter">
-            <hr>
-            <br>
-            <a href = "mailto: hotclubtracks@gmail.com">Email Us</a> | Copyright © 2020-2024 Hot Club Tracks. All rights reserved. | <a href="https://www.instagram.com/hotclubtracks/">IG:@hotclubtracks</a> | <a href="./privacypolicy.html">Privacy Policy</a> | <a href="./aboutus.html">About Us</a>
-            <br>
-            <br>
-            <hr>
+        <div class="mainfooter" id="dynamic-footer">
+        <!-- The footer will be generated here by JavaScript -->
         </div>
-        <!-- Privacy Cookie Statement -->
+         <!-- Privacy Cookie Statement -->
         <div class="privacy-cookie-banner" id="privacyCookieBanner">
             <p>We do not use cookies on our website. For more information about how we handle your data, please visit our <a href="./privacypolicy.html">Privacy Policy</a>.</p>
             <button onclick="acceptPrivacyCookies()">Got it!</button>
         </div>
-    <script src="./articlesTemplate.js"></script>
+        <script src="../scripts/menuItems.js"></script>
+        <script src="../scripts/create-footer.js"></script>
+        <script src="../scripts/articlesTemplate.js"></script>
 </body>
 </html>
