@@ -1,12 +1,12 @@
 // Define the menu data structure as an array of objects
 const menuItems = [
-    { text: 'Home', href: './index.html' },
-    { text: 'Celebrities', href: './celebrities.html' },
-    { text: 'DJ & Producer', href: './djsandproducers.html' },
-    { text: 'Lifestyle', href: './lifestyle.html' },
-    { text: 'Lyrics', href: './lyrics.html' },
-    { text: 'News', href: './news.html' },
-    { text: 'Archives', href: './archives.html' }
+    { text: 'Home', href: 'https://www.hotclubtracks.com/' },
+    { text: 'Celebrities', href: 'https://www.hotclubtracks.com/celebrities' },
+    { text: 'DJ & Producer', href: 'https://www.hotclubtracks.com/djsandproducers' },
+    { text: 'Lifestyle', href: 'https://www.hotclubtracks.com/lifestyle' },
+    { text: 'Lyrics', href: 'https://www.hotclubtracks.com/lyrics' },
+    { text: 'News', href: 'https://www.hotclubtracks.com/news' },
+    { text: 'Archives', href: 'https://www.hotclubtracks.com/archives' }
 ];
 
 
