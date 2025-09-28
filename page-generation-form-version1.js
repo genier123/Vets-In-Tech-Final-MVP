@@ -131,22 +131,17 @@ document.getElementById("generateHtmlButton").onclick = function () {
 
 </head>
 <body>
-    <hr>
-        <div class="myMenu">HotClubTracks</div>
+    <!-- Logo/Menu Section -->
+    <header class="myMenu">
+        <a href="https://www.hotclubtracks.com/">
+        <h1>Hot Club Tracks</h1>
+        </a>
+    </header>
             <div id="buttonMenu">
-                <button onclick="location.href='../index.html'">Home</button>
-                <button onclick="location.href='../music.html'">Music</button>
-                <button onclick="location.href='../celebrities.html'">Celebrities</button>
-                <button onclick="location.href='../lifestyle.html'">Lifestyle</button>
-                <button onclick="location.href='../moneyandfinance.html'">Money & Finance</button>
-                <button onclick="location.href='../lyrics.html'">Lyrics</button>
-                <button onclick="location.href='../carandtruck.html'">Car & Truck</button>
-                <button onclick="location.href='../djsandproducers.html'">DJ & Producer</button>
-                <button onclick="location.href='../calculators.html'">Calculator Tools</button>
-                <button onclick="location.href='../newsarchives.html'">News Archives</button>
+                <!-- Menu buttons will be added here by JavaScript -->
             </div>
-    <hr>
-<br>
+        <br>
+    <!-- Logo/Menu Section End-->
 <article>
     <h1>${h1}</h1>
         <div class="totalLayout">
@@ -202,20 +197,8 @@ document.getElementById("generateHtmlButton").onclick = function () {
                             </a>
                         </article>
                         <article class="news-item2">
-                            <a href="/ArtistLyricsPages/LovenOnMeJackHarlowLyrics.html" class="news-link2">
-                                <img src="https://upload.wikimedia.org/wikipedia/en/7/72/%22Lovin_On_Me%22_by_Jack_Harlow_-_cover_art.png" alt="Loven On Me Lyrics">
-                                <h2>Loven On Me Lyrics</h2>
-                            </a>
-                        </article>
-                        <article class="news-item2">
                             <a href="/pay-raise-calculator.html" class="news-link2">
                                 <img src="https://cdn.pixabay.com/photo/2015/02/02/18/58/money-621349_960_720.jpg" alt="Pay raise">
-                                <h2>Loven On Me Lyrics</h2>
-                            </a>
-                        </article>
-                        <article class="news-item2">
-                            <a href="/newsArticles/Five-Things-You-May-Not-Know-About-Robert-Downey-Jr.html" class="news-link2">
-                                <img src="https://www.hollywoodreporter.com/wp-content/uploads/2024/07/JG2_0637_pYnCmsep-e1722141697676.jpeg?w=2000&h=1126&crop=1&resize=1000%2C562" alt="">
                                 <h2>Loven On Me Lyrics</h2>
                             </a>
                         </article>
@@ -242,20 +225,17 @@ document.getElementById("generateHtmlButton").onclick = function () {
             </div>
         </p>
         <br>
-        <div class="mainfooter">
-            <hr>
-            <br>
-            <a href = "mailto: hotclubtracks@gmail.com">Email Us</a> | Copyright © 2020-2024 Hot Club Tracks. All rights reserved. | <a href="https://www.instagram.com/hotclubtracks/">IG:@hotclubtracks</a> | <a href="./privacypolicy.html">Privacy Policy</a> | <a href="./aboutus.html">About Us</a>
-            <br>
-            <br>
-            <hr>
+        <div class="mainfooter" id="dynamic-footer">
+            <!-- The footer will be generated here by JavaScript -->
         </div>
         <!-- Privacy Cookie Statement -->
         <div class="privacy-cookie-banner" id="privacyCookieBanner">
             <p>We do not use cookies on our website. For more information about how we handle your data, please visit our <a href="./privacypolicy.html">Privacy Policy</a>.</p>
             <button onclick="acceptPrivacyCookies()">Got it!</button>
         </div>
-    <script src="./articlesTemplate.js"></script>
+<script src="./scripts/menuItems.js"></script>
+<script src="./scripts/create-footer.js"></script>
+<script src="./articlesTemplate.js"></script>
 </body>
 </html>
 `;

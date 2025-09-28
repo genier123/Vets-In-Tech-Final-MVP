@@ -15,21 +15,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <hr>
-    <div class="myMenu">HotClubTracks</div>
+  <!-- Logo Section -->
+  <header class="myMenu">
+    <a href="https://www.hotclubtracks.com/">
+      <h1>Hot Club Tracks</h1>
+    </a>
+  </header>
         <div id="buttonMenu">
-            <button onclick="location.href='./index.html'">Home</button>
-            <button onclick="location.href='./music.html'">Music</button>
-            <button onclick="location.href='./celebrities.html'">Celebrities</button>
-            <button onclick="location.href='./lifestyle.html'">Lifestyle</button>
-            <button onclick="location.href='./moneyandfinance.html'">Money & Finance</button>
-            <button onclick="location.href='./lyrics.html'">Lyrics</button>
-            <button onclick="location.href='./carandtruck.html'">Car & Truck</button>
-            <button onclick="location.href='./djsandproducers.html'">DJ & Producer</button>
-            <button onclick="location.href='./calculators.html'">Calculator Tools</button>
-            <button onclick="location.href='./newsarchives.html'">News Archives</button>
+            <!-- Menu buttons will be added here by JavaScript -->
         </div>
-    <hr>
     <br>
         <article>
             <h1>Finding the Best Melodic Beats: A Guide to Top Sources</h1>
@@ -130,19 +124,16 @@
         </div>
     </p>
     <br>
-    <div class="mainfooter">
-        <hr>
-        <br>
-        <a href = "mailto: hotclubtracks@gmail.com">Email Us</a> | Copyright © 2020-2024 Hot Club Tracks. All rights reserved. | <a href="https://www.instagram.com/hotclubtracks/">IG:@hotclubtracks</a> | <a href="./privacypolicy.html">Privacy Policy</a> | <a href="./aboutus.html">About Us</a>
-        <br>
-        <br>
-        <hr>
-    </div>
+  <div class="mainfooter" id="dynamic-footer">
+    <!-- The footer will be generated here by JavaScript -->
+  </div>
      <!-- Privacy Cookie Statement -->
     <div class="privacy-cookie-banner" id="privacyCookieBanner">
         <p>We do not use cookies on our website. For more information about how we handle your data, please visit our <a href="./privacypolicy.html">Privacy Policy</a>.</p>
         <button onclick="acceptPrivacyCookies()">Got it!</button>
     </div>
-<script src="./scripts/script_1.js"></script>
+    <script src="./scripts/menuItems.js"></script>
+    <script src="./scripts/create-footer.js"></script>
+    <script src="./scripts/script_1.js"></script>
 </body>
 </html>

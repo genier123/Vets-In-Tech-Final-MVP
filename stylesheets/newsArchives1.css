@@ -1,4 +1,23 @@
 /* Original CSS */
+.myMenu {
+  text-align: center;
+}
+
+.myMenu a {
+  text-decoration: none;
+  color: #333; /* Set a default color for the logo */
+  display: block;
+}
+
+.myMenu h1 {
+  font-family: 'Teko', sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 1px;
+
+}
+/* Logo Styling */
 
 body {
     margin: 0;
@@ -94,17 +113,7 @@ body {
     transition: .5s ease;
     backface-visibility: hidden;
   }
-  
-  .myMenu{
-    font-family: 'Teko', sans-serif;
-    font-size: xx-large;
-    margin: auto;
-    padding-top: .1px;
-    padding-bottom: .1px;
-    padding-left: 5%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
+
   /* Compact Button Menu Styling */
   #buttonMenu {
     display: flex;
@@ -428,11 +437,87 @@ ul#newsList {
   padding: 0;
 }
 
-/*-----------------MainFooter--------------------*/
-.mainfooter{
+/*Footer Start-------------------------------------------*/
+.mainfooter {
   text-align: center;
-  font-size: 12px;
   font-family: 'Teko', sans-serif;
   min-width: 320px;
   max-width: 1600px;
+  padding: 10px 10px; /* Generous padding for a spacious look */
+  background-color: #1a1a1a; /* Dark background */
+  color: #e0e0e0; /* Light gray text for contrast */
+}
+
+/* Style the links within the footer */
+.mainfooter a {
+  text-decoration: none;
+  color: #fff; /* White links */
+  font-weight: 500; /* Bolder text for visibility */
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.mainfooter a:hover {
+  color: #00bcd4; /* A pop of color on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Style the separator pipes with more spacing */
+.mainfooter span {
+  color: #888;
+  margin: 0 10px;
+}
+
+/* Style the horizontal rule */
+.mainfooter hr {
+  border: 0;
+  height: 1px;
+  background-color: #444;
+  width: 60%;
+  margin: 20px auto 0;
+}
+
+/* A container for the inline links to add a little more structure */
+.mainfooter div:first-child {
+  display: flex;
+  flex-wrap: wrap; /* Allows links to wrap on smaller screens */
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Space between flex items */
+}
+/*Footer End-------------------------------------------*/
+
+
+/* Privacy Policy */
+.privacy-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+.privacy-cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: lightgrey;
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+  display: none; /* Initially hidden */
+}
+.privacy-cookie-banner button {
+  background: #218394;
+  border: none;
+  color: #cfcaca;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.privacy-cookie-banner button:hover {
+  background: #ffffff;
+}
+.privacy-footer {
+  text-align: center;
+  padding: 20px;
+  background: #f4f4f4;
+  border-top: 1px solid #ddd;
 }
