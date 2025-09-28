@@ -174,35 +174,12 @@ document.getElementById("generateHtmlButton").onclick = function () {
                 <br>
             </div>
             <div class="col-2">
-                    <div class="otherStories">
-                        <h1>Other Stories</h1>
-                    </div>
-                    <div class="news-container2">
-                        <article class="news-item2">
-                            <a href="/BestPartySongsofthe2000s.html" class="news-link2">
-                                <img src="../img/Top_2000s_Icon.jpg" alt="Eminem">
-                                <h2>Best 2000s Party Songs</h2>
-                            </a>
-                        </article>
-                        <article class="news-item2">
-                            <a href="/Best90sSongs.html" class="news-link2">
-                                <img src="/img/Top_90s_Icon.jpg" alt="Tupac">
-                                <h2>Best 90s Party Songs</h2>
-                            </a>
-                        </article>
-                        <article class="news-item2">
-                            <a href="../newsArticles/Floridas-5-Best-Secret-Places-to-Visit.html" class="news-link2">
-                                <img src="https://tse3.mm.bing.net/th?id=OIG1.YW8Apf_LPvOGvtEhYG4i&w=270&h=270&c=6&r=0&o=5&dpr=2&pid=ImgGn" alt="Florida">
-                                <h2>FLorida's 5 Secret Places</h2>
-                            </a>
-                        </article>
-                        <article class="news-item2">
-                            <a href="/pay-raise-calculator.html" class="news-link2">
-                                <img src="https://cdn.pixabay.com/photo/2015/02/02/18/58/money-621349_960_720.jpg" alt="Pay raise">
-                                <h2>Loven On Me Lyrics</h2>
-                            </a>
-                        </article>
-                    </div>
+                <div class="otherStories">
+                    <h1>Other Stories</h1>
+                </div>
+                <div class="news-container2">
+                    <div id="news-item2-insert"></div>
+                </div>
             </div>
         </div>
     <br>
@@ -233,9 +210,10 @@ document.getElementById("generateHtmlButton").onclick = function () {
             <p>We do not use cookies on our website. For more information about how we handle your data, please visit our <a href="./privacypolicy.html">Privacy Policy</a>.</p>
             <button onclick="acceptPrivacyCookies()">Got it!</button>
         </div>
-<script src="./scripts/menuItems.js"></script>
-<script src="./scripts/create-footer.js"></script>
-<script src="./articlesTemplate.js"></script>
+<script src="../scripts/menuItems.js"></script>
+<script src="../scripts/other-articles.js"></script> 
+<script src="../scripts/create-footer.js"></script>
+<script src="../scripts/articlesTemplate.js"></script>
 </body>
 </html>
 `;
