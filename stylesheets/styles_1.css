@@ -492,7 +492,7 @@ h3 {
   flex: 1 1 200px;
   transition: transform 0.3s ease;
   margin: 0.01px;
-  max-width: 250px; /* Adjust this value to your preferred max width */
+  max-width: 225px;
 }
 
 .news-item:hover {
@@ -614,6 +614,7 @@ h3 {
   box-sizing: border-box;
   overflow: hidden;
   flex: 1 1 calc(100% - 40px); /* Full width for larger screens */
+  max-width: 225px;
 }
 
 .news-item2 img {
