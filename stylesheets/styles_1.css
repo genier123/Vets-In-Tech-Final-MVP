@@ -554,7 +554,7 @@ h3 {
 }
 
 /* iPads and smaller: Keep 2 items per row, further scale down images and text */
-@media (max-width: 1024px) {
+@media (max-width: 1080px) {
   .news-item {
       flex: 1 1 calc(50% - 40px); /* 2 items per row */
   }
