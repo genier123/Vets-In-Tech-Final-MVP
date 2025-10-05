@@ -55,7 +55,8 @@ h1 {
 
 h2 {
   font-family: 'Teko', sans-serif;
-  text-align: center;
+  text-align: left;
+  padding-left: 5%;
 }
 
 h3 {
@@ -266,7 +267,6 @@ p {
   vertical-align: middle;
   text-align: left;
   padding-left: 5%;
-  text-indent: 2em;
 }
 
 li {
