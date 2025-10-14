@@ -105,3 +105,35 @@ section {
     background: #f9f9f9;
     cursor: move; /* Indicate draggable behavior */
 }
+
+
+#generatedLinkContainer {
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+  }
+  
+  #generatedLink {
+    width: 300px;
+    padding: 6px;
+    margin-right: 6px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  #copyLinkButton {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #copyLinkButton:hover {
+    background-color: #45a049;
+  }
+  
