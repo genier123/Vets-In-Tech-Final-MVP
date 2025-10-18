@@ -7,12 +7,12 @@
     <meta name="keywords" content="Rent Calculator, Rent Affordability Calculator, Rent Affordability Calculator 2024, Rent Budget, Monthly Rent, Personal Finance">
     <meta name="author" content="Hot Club Tracks">
     <title>Rent Affordability Calculator - Find Your Ideal Rent Budget</title>
-    <link rel="stylesheet" href="/calculatorTools/rent-affordability-calculator.css">
+    <link rel="stylesheet" href="/lifestyle/rent-affordability-calculator.css">
     <link rel="canonical" href="https://www.example.com/rent-affordability-calculator">
     <meta property="og:title" content="Rent Affordability Calculator">
     <meta property="og:description" content="Calculate how much you can afford to spend on rent with our easy-to-use Rent Affordability Calculator. Enter your income, debts, and expenses to find your ideal rent budget.">
     <meta property="og:image" content="https://tse1.mm.bing.net/th?id=OIG4.PoFauHHEnYjHHifP5Kt_&w=270&h=270&c=6&r=0&o=5&dpr=2&pid=ImgGn">
-    <meta property="og:url" content="https://www.example.com/rent-affordability-calculator">
+    <meta property="og:url" content="https://www.hotclubtracks.com/lifestyle/rent-affordability-calculator.html">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Rent Affordability Calculator">
@@ -23,21 +23,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <hr>
-        <div class="myMenu">HotClubTracks</div>
-        <div id="buttonMenu">
-            <button onclick="location.href='../index.html'">Home</button>
-            <button onclick="location.href='../music.html'">Music</button>
-            <button onclick="location.href='../pageMaintenance_1.html'">Entertainment</button>
-            <button onclick="location.href='../calculators.html'">Calculator Tools</button>
-            <button onclick="location.href='../pageMaintenance_1.html'">Car & Truck</button>
-            <button onclick="location.href='../moneyandfinance.html'">Money & Finance</button>
-            <button onclick="location.href='../pageMaintenance_1.html'">Lyrics</button>
-            <button onclick="location.href='../newsArchives1.html'">News Archives</button>
-        </div>
-    <hr>
+    <!-- Logo / Menu Section -->
+    <header class="myMenu">
+        <a href="https://www.hotclubtracks.com/">
+            <h1>Hot Club Tracks</h1>
+        </a>
+    </header>
+    <div id="buttonMenu"></div>
     <br>
-        <h1>Rent Affordability Calculator 2024</h1>
+        <h1>Rent Affordability Calculator</h1>
         <br>
         <div class="totalLayout">
             <div class="col-1">
@@ -98,9 +92,9 @@
                     <br>
                     <!-- Share on Social -->
                         <div class="share-buttons">
-                            <a href="https://twitter.com/intent/tweet?text=%20&url=https://www.hotclubtracks.com/calculatorTools/rent-affordability-calculator" class="btn social-twitter" target="_blank">Share on Twitter</a>
-                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.hotclubtracks.com/calculatorTools/rent-affordability-calculator" class="btn social-facebook" target="_blank">Share on Facebook</a>
-                            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.hotclubtracks.com/calculatorTools/rent-affordability-calculator" class="btn social-linkedin" target="_blank">Share on LinkedIn</a>
+                            <a href="https://twitter.com/intent/tweet?text=%20&url=https://www.hotclubtracks.com/lifestyle/rent-affordability-calculator" class="btn social-twitter" target="_blank">Share on Twitter</a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.hotclubtracks.com/lifestyle/rent-affordability-calculator" class="btn social-facebook" target="_blank">Share on Facebook</a>
+                            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.hotclubtracks.com/lifestyle/rent-affordability-calculator" class="btn social-linkedin" target="_blank">Share on LinkedIn</a>
                         </div>
                     <br>
                     <div class="return-button-container">
@@ -157,14 +151,21 @@
     </div>
 </p>
 <br>
-<div class="mainfooter">
-    <hr>
-    <br>
-        <a href = "mailto: hotclubtracks@gmail.com">Email Us</a> | Copyright © Hot Club Tracks | <a href="https://www.instagram.com/hotclubtracks/">IG:@hotclubtracks</a>
-    <br>
-    <br>
-    <hr>
-</div>
-    <script src="/calculatorTools/rent-affordability-calculator.js"></script>
+<div class="mainfooter" id="dynamic-footer">
+    <!-- The footer will be generated here by JavaScript -->
+    </div>
+  <!-- Privacy Cookie Statement -->
+  <div class="privacy-cookie-banner" id="privacyCookieBanner">
+      <p>
+        We may use third-party services (like Google AdSense) that may use cookies to
+        personalize ads and analyze traffic. To learn more, see our
+        <a href="./privacypolicy.html">Privacy Policy</a>.
+      </p>
+      <button onclick="acceptPrivacyCookies()">Got it</button>
+    </div>
+    <script src="../scripts/menuItems.js"></script>
+    <script src="/lifestyle/rent-affordability-calculator.js"></script>
+    <script src="../scripts/other-articles.js"></script>
+    <script src="../scripts/create-footer.js"></script>
 </body>
 </html>

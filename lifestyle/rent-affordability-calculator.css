@@ -1,4 +1,24 @@
 /* Original CSS */
+/* Logo Styling */
+.myMenu {
+  text-align: center;
+}
+
+.myMenu a {
+  text-decoration: none;
+  color: #333; /* Set a default color for the logo */
+  display: block;
+}
+
+.myMenu h1 {
+  font-family: 'Teko', sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 1px;
+
+}
+/* Logo Styling */
 
 body {
     margin: 0;
