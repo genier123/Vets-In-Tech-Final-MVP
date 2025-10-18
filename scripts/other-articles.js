@@ -18,7 +18,7 @@ const htmlContent = `
 </article>
 <br>
 <article class="news-item2">
-    <a href="https://www.hotclubtracks.com/pay-raise-calculator.html" class="news-link2">
+    <a href="https://www.hotclubtracks.com/lifestyle/pay-raise-calculator.html" class="news-link2">
         <img src="https://cdn.pixabay.com/photo/2015/02/02/18/58/money-621349_960_720.jpg" alt="Pay raise">
         <h2>Pay Raise Calculator Over Years</h2>
     </a>
