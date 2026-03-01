@@ -347,7 +347,7 @@ h5 {
   justify-content: center;
 }
 
-#otherAdsIcon {
+.otherAdsIcon, #otherAdsIcon {
   padding: 0;
 }
 
@@ -906,4 +906,7 @@ h5 {
     margin: 0 auto;
     width: 325px;
   }
+}
+.otherAdsTitle {
+  text-align: center;
 }

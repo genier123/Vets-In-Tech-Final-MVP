@@ -193,7 +193,7 @@ a {
       width: 100%;
   }
 }
-#otherAdsIcon{
+.otherAdsIcon, #otherAdsIcon {
   padding-left: 1px;
   padding-right: 1px;
 }
@@ -575,4 +575,7 @@ a {
     font-size: 0.85rem;
     padding: 6px 14px;
   }
+}
+.otherAdsTitle {
+  text-align: center;
 }

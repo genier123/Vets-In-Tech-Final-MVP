@@ -433,7 +433,7 @@ ul#newsList {
   justify-content: center;
 }
 
-#otherAdsIcon {
+.otherAdsIcon, #otherAdsIcon {
   padding: 0;
 }
 
@@ -561,4 +561,7 @@ ul#newsList {
     font-size: 0.85rem;
     padding: 6px 14px;
   }
+}
+.otherAdsTitle {
+  text-align: center;
 }

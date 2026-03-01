@@ -1,83 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Preconnect and CSS stylesheets -->
-    <link rel="stylesheet" href="./page-generation-form-version1.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Internal page generator tool for creating article HTML templates.">
+  <title>Page Generation Tool | Hot Club Tracks</title>
+    <link rel="canonical" href="https://www.hotclubtracks.com/page-generation-form-version1.html">
+  <link rel="stylesheet" href="./stylesheets/articlesTemplate.css">
+  <link rel="stylesheet" href="./page-generation-form-version1.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header class="myMenu">
+    <a href="https://www.hotclubtracks.com/"><h1>Hot Club Tracks</h1></a>
+  </header>
+  <div id="buttonMenu"></div>
+  <br>
 
-<div id="inputForm">
-    <h2>Generate Article HTML</h2>
-    
-    <label for="linkName">Link Name (URL):</label>
-    <input type="text" id="linkName" placeholder="Enter page name...">
-    
-    <div class="radio-group">
-        <label><input type="radio" name="category" value="celebrities"> Celebrities</label>
-        <label><input type="radio" name="category" value="djsandproducers"> DJs and Producers</label>
-        <label><input type="radio" name="category" value="lifestyle" checked> Lifestyle</label>
-        <label><input type="radio" name="category" value="lyrics"> Lyrics</label>
-        <label><input type="radio" name="category" value="news"> News</label>
+  <article>
+    <h1>Generate Article HTML</h1>
+    <div class="totalLayout">
+      <div class="col-1">
+        <div id="inputForm">
+          <label for="linkName">Link Name (URL):</label>
+          <input type="text" id="linkName" placeholder="Enter page name...">
+
+          <div class="radio-group">
+            <label><input type="radio" name="category" value="celebrities"> Celebrities</label>
+            <label><input type="radio" name="category" value="djsandproducers"> DJs and Producers</label>
+            <label><input type="radio" name="category" value="lifestyle" checked> Lifestyle</label>
+            <label><input type="radio" name="category" value="lyrics"> Lyrics</label>
+            <label><input type="radio" name="category" value="news"> News</label>
+          </div>
+
+          <label for="titleInput">Title:</label>
+          <input type="text" id="titleInput" value="Write Description here...">
+
+          <label for="main-picture">Main Picture URL:</label>
+          <input type="text" id="main-picture" placeholder="Enter image link..."><br><br>
+
+          <label for="descriptionInput">Meta Description:</label>
+          <textarea id="descriptionInput" placeholder="Write Description here..."></textarea>
+
+          <label for="keywordsInput">Meta Keywords:</label>
+          <input type="text" id="keywordsInput" value="Insert comma serperated keywords...">
+
+          <label for="authorInput">Author:</label>
+          <input type="text" id="authorInput" value="Hot Club Tracks by PG Digital">
+
+          <label for="ogTitleInput">Open Graph Title:</label>
+          <input type="text" id="ogTitleInput" value="Enter in meta description" disabled>
+
+          <label for="ogDescriptionInput">Open Graph Description:</label>
+          <textarea id="ogDescriptionInput"></textarea>
+
+          <label for="ogUrlInput">Open Graph URL:</label>
+          <input type="text" id="ogUrlInput" value="" disabled>
+
+          <label for="ogTypeInput">Open Graph Type:</label>
+          <input type="text" id="ogTypeInput" value="article">
+
+          <label for="ogImageInput">Open Graph Image:</label>
+          <input type="text" id="ogImageInput" value="Enter link in main picture URL" disabled>
+
+          <label for="h1Input">H1:</label>
+          <input type="text" id="h1Input" value="Halloween Top TikTok Trends This Week">
+
+          <label for="dateInput">Date:</label>
+          <input type="date" id="dateInput" value="2024-10-28">
+
+          <button id="addSectionButton">Add Section</button>
+          <br>
+          <h3>Sections</h3>
+          <br>
+          <div id="sectionsContainer"></div>
+          <br>
+          <button id="generateHtmlButton">Generate HTML</button>
+          <button id="copyHtmlButton">Copy to Clipboard</button>
+          <br>
+          <h3>Generated HTML</h3>
+          <textarea id="generatedHtml" rows="10" cols="50"></textarea>
+          <br>
+          <button id="clearButton">Clear All</button>
+          <br>
+          <div id="generatedLinkContainer" style="display:none; margin-top:10px;">
+            <label><strong>Generated Page Link:</strong></label><br>
+            <input type="text" id="generatedLink" readonly>
+            <button id="copyLinkButton">Copy Link</button>
+          </div>
+        </div>
+        <br>
+        <p><a href="./privacypolicy.html">Privacy Policy</a> | <a href="./contact.html">Contact</a></p>
+      </div>
+
+      <div class="col-2">
+        <div class="otherStories"><h1>Other Stories</h1></div>
+        <div class="news-container2"><div id="news-item2-insert"></div></div>
+      </div>
     </div>
+  </article>
 
-    <label for="titleInput">Title:</label>
-    <input type="text" id="titleInput" value="Write Description here...">
-    
-    <label for="main-picture">Main Picture URL:</label>
-    <input type="text" id="main-picture" placeholder="Enter image link..."><br><br>
+  <div class="mainfooter" id="dynamic-footer"></div>
 
-    <label for="descriptionInput">Meta Description:</label>
-    <textarea id="descriptionInput" placeholder="Write Description here..."></textarea>
-    
-    <label for="keywordsInput">Meta Keywords:</label>
-    <input type="text" id="keywordsInput" value="Insert comma serperated keywords...">
-    
-    <label for="authorInput">Author:</label>
-    <input type="text" id="authorInput" value="Hot Club Tracks by PG Digital">
-    
-    <label for="ogTitleInput">Open Graph Title:</label>
-    <input type="text" id="ogTitleInput" value="Enter in meta description" disabled>
-    
-    <label for="ogDescriptionInput">Open Graph Description:</label>
-    <textarea id="ogDescriptionInput"></textarea>
-    
-    <label for="ogUrlInput">Open Graph URL:</label>
-    <input type="text" id="ogUrlInput" value="" disabled>
-    
-    <label for="ogTypeInput">Open Graph Type:</label>
-    <input type="text" id="ogTypeInput" value="article">
-    
-    <label for="ogImageInput">Open Graph Image:</label>
-    <input type="text" id="ogImageInput" value="Enter link in main picture URL" disabled>
-    
-    <label for="h1Input">H1:</label>
-    <input type="text" id="h1Input" value="Halloween Top TikTok Trends This Week">
-    
-    <label for="dateInput">Date:</label>
-    <input type="date" id="dateInput" value="2024-10-28">
-    
-    <button id="addSectionButton">Add Section</button>
-    <br>
-    <h3>Sections</h3>
-    <br>
-    <div id="sectionsContainer"></div>
-    <br>
-    <button id="generateHtmlButton">Generate HTML</button>
-    <button id="copyHtmlButton">Copy to Clipboard</button>
-    <br>
-    <h3>Generated HTML</h3>
-    <textarea id="generatedHtml" rows="10" cols="50"></textarea>
-    <br>
-    <button id="clearButton">Clear All</button>
-    <br>
-    <div id="generatedLinkContainer" style="display:none; margin-top:10px;">
-        <label><strong>Generated Page Link:</strong></label><br>
-        <input type="text" id="generatedLink" readonly>
-        <button id="copyLinkButton">Copy Link</button>
-      </div>      
-</div>
-<script src="./page-generation-form-version1.js"></script>
+  <script src="./scripts/menuItems.js"></script>
+  <script src="./scripts/other-articles.js"></script>
+  <script src="./scripts/create-footer.js"></script>
+  <script src="./page-generation-form-version1.js"></script>
 </body>
 </html>

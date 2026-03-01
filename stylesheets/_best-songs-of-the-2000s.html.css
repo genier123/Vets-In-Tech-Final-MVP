@@ -182,6 +182,9 @@ h3{
   justify-content: center;
 }
 
-#otherAdsIcon {
+.otherAdsIcon, #otherAdsIcon {
   padding: 0;
+}
+.otherAdsTitle {
+  text-align: center;
 }

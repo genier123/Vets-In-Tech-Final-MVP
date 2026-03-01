@@ -1,54 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News Item Input</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Internal tool for adding and managing news items for Hot Club Tracks.">
+  <title>Article Submission Tool | Hot Club Tracks</title>
+    <link rel="canonical" href="https://www.hotclubtracks.com/add-article-to-submission-page-test.html">
+  <link rel="stylesheet" href="./stylesheets/articlesTemplate.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <br>
-    https://www.hotclubtracks.com/
-    <br>
-    <form id="newsForm">
-        <label>Image Source: <input type="text" id="imageSrc" required></label><br>
-        <label>Link URL: <input type="text" id="linkUrl" required></label><br>
-        <label>Title: <input type="text" id="title" required></label><br>
-        <label>Date Published: <input type="datetime-local" id="datePublished" required></label><br>
-        <button type="submit">Add News Item</button>
-    </form>
-<br>
-    <button id="deleteLatestBtn">Delete Latest News Item</button>
+  <header class="myMenu">
+    <a href="https://www.hotclubtracks.com/"><h1>Hot Club Tracks</h1></a>
+  </header>
+  <div id="buttonMenu"></div>
+  <br>
 
-    <script>
-        document.getElementById("newsForm").addEventListener("submit", function(event) {
-            event.preventDefault();
+  <article>
+    <h1>Article Submission Tool</h1>
+    <div class="totalLayout">
+      <div class="col-1">
+        <p><i>Internal utility for adding and removing news items from local storage.</i></p>
+        <form id="newsForm">
+          <label>Image Source: <input type="text" id="imageSrc" required></label><br>
+          <label>Link URL: <input type="text" id="linkUrl" required></label><br>
+          <label>Title: <input type="text" id="title" required></label><br>
+          <label>Date Published: <input type="datetime-local" id="datePublished" required></label><br>
+          <button type="submit">Add News Item</button>
+        </form>
+        <br>
+        <button id="deleteLatestBtn">Delete Latest News Item</button>
+        <br><br>
+        <p><a href="./privacypolicy.html">Privacy Policy</a> | <a href="./contact.html">Contact</a></p>
+      </div>
+      <div class="col-2">
+        <div class="otherStories"><h1>Other Stories</h1></div>
+        <div class="news-container2"><div id="news-item2-insert"></div></div>
+      </div>
+    </div>
+  </article>
 
-            const imageSrc = document.getElementById("imageSrc").value;
-            const linkUrl = document.getElementById("linkUrl").value;
-            const title = document.getElementById("title").value;
-            const datePublished = document.getElementById("datePublished").value;
+  <div class="mainfooter" id="dynamic-footer"></div>
 
-            const newItem = { imageSrc, linkUrl, title, datePublished };
+  <script>
+    document.getElementById("newsForm").addEventListener("submit", function(event) {
+      event.preventDefault();
 
-            let newsItems = JSON.parse(localStorage.getItem("newsItems")) || [];
-            newsItems.unshift(newItem);  // Add new item to the top
-            localStorage.setItem("newsItems", JSON.stringify(newsItems));
+      const imageSrc = document.getElementById("imageSrc").value;
+      const linkUrl = document.getElementById("linkUrl").value;
+      const title = document.getElementById("title").value;
+      const datePublished = document.getElementById("datePublished").value;
 
-            alert("News item added!");
-            document.getElementById("newsForm").reset();
-        });
+      const newItem = { imageSrc, linkUrl, title, datePublished };
 
-        document.getElementById("deleteLatestBtn").addEventListener("click", function() {
-            let newsItems = JSON.parse(localStorage.getItem("newsItems")) || [];
+      let newsItems = JSON.parse(localStorage.getItem("newsItems")) || [];
+      newsItems.unshift(newItem);
+      localStorage.setItem("newsItems", JSON.stringify(newsItems));
 
-            if (newsItems.length > 0) {
-                newsItems.shift();  // Remove the first (most recent) item
-                localStorage.setItem("newsItems", JSON.stringify(newsItems));
-                alert("Latest news item deleted!");
-            } else {
-                alert("No news items to delete.");
-            }
-        });
-    </script>
+      alert("News item added!");
+      document.getElementById("newsForm").reset();
+    });
+
+    document.getElementById("deleteLatestBtn").addEventListener("click", function() {
+      let newsItems = JSON.parse(localStorage.getItem("newsItems")) || [];
+
+      if (newsItems.length > 0) {
+        newsItems.shift();
+        localStorage.setItem("newsItems", JSON.stringify(newsItems));
+        alert("Latest news item deleted!");
+      } else {
+        alert("No news items to delete.");
+      }
+    });
+  </script>
+  <script src="./scripts/menuItems.js"></script>
+  <script src="./scripts/other-articles.js"></script>
+  <script src="./scripts/create-footer.js"></script>
 </body>
 </html>

@@ -3,78 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Email Scraper</title>
+  <meta name="description" content="Internal email extraction helper tool for processing pasted text content.">
+  <title>Email Scraper Tool | Hot Club Tracks</title>
+    <link rel="canonical" href="https://www.hotclubtracks.com/test-page.html">
+  <link rel="stylesheet" href="./stylesheets/articlesTemplate.css">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      padding: 20px;
-      background-color: #f5f5f5;
-    }
-    h1 {
-      text-align: center;
-      color: #333;
-    }
-    textarea {
-      width: 100%;
-      height: 150px;
-      margin-bottom: 10px;
-      padding: 10px;
-      font-size: 16px;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-    }
-    button {
-      width: 100%;
-      padding: 10px;
-      font-size: 16px;
-      color: #fff;
-      background-color: #007BFF;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #0056b3;
-    }
-    #output {
-      margin-top: 20px;
-      padding: 10px;
-      background-color: #fff;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-    }
-    pre {
-      white-space: pre-wrap;
-      word-wrap: break-word;
-    }
+    textarea { width: 100%; height: 150px; margin-bottom: 10px; }
+    #output { margin-top: 20px; padding: 10px; background-color: #fff; border: 1px solid #ddd; border-radius: 4px; }
+    pre { white-space: pre-wrap; word-wrap: break-word; }
   </style>
 </head>
 <body>
-  <h1>Email Scraper</h1>
-  <p>Paste content below to extract email addresses:</p>
-  <textarea id="inputText" placeholder="Paste text or HTML content here..."></textarea>
-  <button id="scrapeButton">Extract Emails</button>
-  <div id="output">
-    <h3>Extracted Emails:</h3>
-    <pre id="emailList">No emails extracted yet.</pre>
-  </div>
+  <header class="myMenu">
+    <a href="https://www.hotclubtracks.com/"><h1>Hot Club Tracks</h1></a>
+  </header>
+  <div id="buttonMenu"></div>
+  <br>
+
+  <article>
+    <h1>Email Scraper</h1>
+    <div class="totalLayout">
+      <div class="col-1">
+        <p>Paste content below to extract email addresses:</p>
+        <textarea id="inputText" placeholder="Paste text or HTML content here..."></textarea>
+        <button id="scrapeButton">Extract Emails</button>
+        <div id="output">
+          <h3>Extracted Emails:</h3>
+          <pre id="emailList">No emails extracted yet.</pre>
+        </div>
+        <br>
+        <p><a href="./privacypolicy.html">Privacy Policy</a> | <a href="./contact.html">Contact</a></p>
+      </div>
+      <div class="col-2">
+        <div class="otherStories"><h1>Other Stories</h1></div>
+        <div class="news-container2"><div id="news-item2-insert"></div></div>
+      </div>
+    </div>
+  </article>
+
+  <div class="mainfooter" id="dynamic-footer"></div>
 
   <script>
     document.getElementById('scrapeButton').addEventListener('click', () => {
-      // Get user input
       const inputText = document.getElementById('inputText').value;
-
-      // Regular expression to match email addresses
       const emailRegex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g;
-
-      // Find all matches
       const emails = inputText.match(emailRegex);
-
-      // Format and display the results
       const emailList = emails ? emails.join('\n') : 'No valid emails found.';
       document.getElementById('emailList').textContent = emailList;
     });
   </script>
+  <script src="./scripts/menuItems.js"></script>
+  <script src="./scripts/other-articles.js"></script>
+  <script src="./scripts/create-footer.js"></script>
 </body>
 </html>

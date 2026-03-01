@@ -299,7 +299,7 @@ body {
     justify-content: center;
   }
   
-  #otherAdsIcon {
+  .otherAdsIcon, #otherAdsIcon {
     padding: 0;
   }
   
@@ -850,4 +850,8 @@ input[type="radio"] {
   padding: 20px;
   background: #f4f4f4;
   border-top: 1px solid #ddd;
+}
+
+.otherAdsTitle {
+  text-align: center;
 }

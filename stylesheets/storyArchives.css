@@ -286,7 +286,7 @@ body {
     justify-content: center;
   }
   
-  #otherAdsIcon {
+  .otherAdsIcon, #otherAdsIcon {
     padding: 0;
   }
   
@@ -733,4 +733,7 @@ body {
     font-size: 0.85rem;
     padding: 6px 14px;
   }
+}
+.otherAdsTitle {
+  text-align: center;
 }

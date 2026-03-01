@@ -1,143 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Async Google Ads Script -->
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2474604734581000" crossorigin="anonymous"></script>
-        
-        <!-- Basic Meta Tags -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Calculate your potential salary increase effortlessly with our Pay Raise Calculator. This tool provides precise estimates based on percentage raise, current salary, and your desired outcome. Perfect for negotiating pay raises or planning financial goals, it helps you make informed decisions and maximize your earnings. Access additional financial planning resources to enhance your financial well-being. Start optimizing your salary today.">
-        <meta name="keywords" content="pay raise calculator, salary increase estimator, income calculator, wage adjustment tool, budgeting calculator, financial planning resources, compensation calculator">
-        <meta name="author" content="Hot Club Tracks by PG Digital">
-    
-        <!-- Open Graph Meta Tags for Social Media Sharing -->
-        <meta property="og:title" content="Pay Raise Calculator Over Years | Hot Club Tracks">
-        <meta property="og:description" content="Easily estimate your potential salary increase with our Pay Raise Calculator. Perfect for negotiating raises and planning your finances.">
-        <meta property="og:image" content="URL_TO_SOCIAL_MEDIA_IMAGE"> <!-- Replace with actual image URL -->
-        <meta property="og:url" content="https://www.hotclubtracks.com/lifestyle/pay-raise-calculator.html"> <!-- Replace with the actual page URL -->
-        <meta property="og:type" content="website">
-    
-        <!-- Twitter Card Meta Tags -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Pay Raise Calculator | Hot Club Tracks">
-        <meta name="twitter:description" content="Calculate your salary increase with ease using our Pay Raise Calculator. Ideal for financial planning and raise negotiations.">
-        <meta name="twitter:image" content="URL_TO_TWITTER_IMAGE"> <!-- Replace with actual image URL -->
-    
-        <!-- Title -->
-        <title>Pay Raise Calculator | Hot Club Tracks</title>
-    
-        <!-- CSS Stylesheet -->
-         <link rel="stylesheet" href="../stylesheets/newsArchives1.css">
-        <link rel="stylesheet" href="../stylesheets/calculator_style.css">
-        
-        <!-- Preconnect for Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
-    
-        <!-- Canonical URL -->
-        <link rel="canonical" href="PAGE_URL"> <!-- Replace with the actual page URL -->
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Calculate annual income and projected pay raises with an easy calculator built for salary planning.">
+  <meta name="keywords" content="pay raise calculator, salary increase estimator, annual income calculator, compensation planning">
+  <meta name="author" content="Hot Club Tracks by PG Digital">
+  <title>Pay Raise Calculator | Hot Club Tracks</title>
+  <link rel="canonical" href="https://www.hotclubtracks.com/lifestyle/pay-raise-calculator.html">
+  <meta property="og:title" content="Pay Raise Calculator | Hot Club Tracks">
+  <meta property="og:description" content="Estimate annual income and model pay raises over multiple years.">
+  <meta property="og:url" content="https://www.hotclubtracks.com/lifestyle/pay-raise-calculator.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://cdn.pixabay.com/photo/2015/02/02/18/58/money-621349_960_720.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pay Raise Calculator | Hot Club Tracks">
+  <meta name="twitter:description" content="Estimate annual income and pay raises with a simple calculator.">
+  <meta name="twitter:image" content="https://cdn.pixabay.com/photo/2015/02/02/18/58/money-621349_960_720.jpg">
+  <link rel="stylesheet" href="../stylesheets/articlesTemplate.css">
+  <link rel="stylesheet" href="../stylesheets/calculator_style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2474604734581000" crossorigin="anonymous"></script>
+</head>
 <body>
-  <!-- Logo Section -->
   <header class="myMenu">
-    <a href="https://www.hotclubtracks.com/">
-      <h1>Hot Club Tracks</h1>
-    </a>
+    <a href="https://www.hotclubtracks.com/"><h1>Hot Club Tracks</h1></a>
   </header>
-        <div id="buttonMenu">
-            <!-- Menu buttons will be added here by JavaScript -->
-        </div>
-    <br>
-    <div class="maintopic">Pay Raise Calculator Over Years</div>
-    <div class="container">
-        <h1>Figure Out Your Annual Income</h1>
+  <div id="buttonMenu"></div>
+  <br>
+
+  <article>
+    <h1>Pay Raise Calculator Over Years</h1>
+    <div class="totalLayout">
+      <div class="col-1">
         <br>
-        <div>
-          <label for="hourlyRate">Hourly Rate:</label>
-          <input type="number" id="hourlyRate" placeholder="Hourly Rate">
+        <img class="mainPicture" src="https://cdn.pixabay.com/photo/2015/02/02/18/58/money-621349_960_720.jpg" alt="Pay raise planning">
+        <br><br>
+
+        <div class="container">
+          <h2>Figure Out Your Annual Income</h2>
+          <br>
+          <div>
+            <label for="hourlyRate">Hourly Rate:</label>
+            <input type="number" id="hourlyRate" placeholder="Hourly Rate">
+          </div>
+          <br>
+          <div>
+            <label for="hoursPerWeek">Hours Per Week:</label>
+            <input type="number" id="hoursPerWeek" placeholder="Hours Per Week">
+          </div>
+          <button onclick="calculateAnnualIncome()">Calculate</button>
+          <div id="annualIncomeResult"></div>
+          <button onclick="copyAnnualIncome()">Copy Result</button>
+          <button onclick="resetAnnualIncome()">Reset</button>
         </div>
+
         <br>
-        <div>
-          <label for="hoursPerWeek">Hours Per Week:</label>
-          <input type="number" id="hoursPerWeek" placeholder="Hours Per Week">
-        </div>
-        <button onclick="calculateAnnualIncome()">Calculate</button>
-        <div id="annualIncomeResult"></div>
-        <button onclick="copyAnnualIncome()">Copy Result</button>
-        <button onclick="resetAnnualIncome()">Reset</button>
-      </div>
-      <br>
-      <div class="container">
-        <h1>Pay Raise Calculator</h1>
-        <br>
-        <div>
+
+        <div class="container">
+          <h2>Pay Raise Calculator</h2>
+          <br>
+          <div>
             <label for="currentAmount">Current Annual Income:</label>
             <input type="number" id="currentAmount" placeholder="Current Annual Income">
-        </div>
-        <br>
-        <div>
+          </div>
+          <br>
+          <div>
             <input type="radio" id="newIncomeTab" name="tab" value="newIncome" checked>
             <label for="newIncomeTab">New Annual Income:</label>
             <input type="number" id="newAmount" placeholder="New Annual Income">
-        </div>
-        <br>
-        <div>
+          </div>
+          <br>
+          <div>
             <input type="radio" id="percentIncreaseTab" name="tab" value="percentIncrease">
             <label for="percentIncreaseTab">Percent Increase:</label>
             <input type="number" id="percentIncrease" placeholder="Percent Increase">
             <label for="applyAnnually">
-                <input type="checkbox" id="applyAnnually"> Apply Increase Annually
+              <input type="checkbox" id="applyAnnually"> Apply Increase Annually
             </label>
             <label for="numberOfYears" id="yearsLabel" style="display:none;">Number of Years:</label>
             <input type="number" id="numberOfYears" placeholder="Number of Years" style="display:none;">
+          </div>
+          <button onclick="calculate()">Calculate</button>
+          <div id="results"></div>
+          <button onclick="copyResult()">Copy Result</button>
+          <button onclick="reset()">Reset</button>
         </div>
-        <button onclick="calculate()">Calculate</button>
-        <div id="results"></div>
-        <button onclick="copyResult()">Copy Result</button>
-        <button onclick="reset()">Reset</button>
-    </div>
-    <br>
-    <div class="return-button-container">
-         <!-- <a href="./index.html" class="back-to-stories">Back to Home</a> -->
-        <a href="#" onclick="window.history.back(); return false;" class="back-to-stories">Return to Last Page</a>
+
+        <br>
+        <div class="share-buttons">
+          <a href="https://twitter.com/intent/tweet?text=Pay%20Raise%20Calculator&url=https://www.hotclubtracks.com/lifestyle/pay-raise-calculator.html" class="btn social-twitter" target="_blank">Share on Twitter</a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.hotclubtracks.com/lifestyle/pay-raise-calculator.html" class="btn social-facebook" target="_blank">Share on Facebook</a>
+          <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.hotclubtracks.com/lifestyle/pay-raise-calculator.html" class="btn social-linkedin" target="_blank">Share on LinkedIn</a>
+        </div>
+        <br>
+        <div class="return-button-container">
+          <a href="#" onclick="window.history.back(); return false;" class="back-to-stories">Return to Last Page</a>
+        </div>
+        <br>
       </div>
-    <br>
-    <p>
-        <div class="otherAdsTitle"><h2>GIFs of the Week!</h2></div>
-        <div class="otherAdsLayout">
-            <div id="otherAdsIcon">
-                <img src="../GIFs/Dancing GIF-downsized.gif" alt="" height="75px">
-            </div>
-            <div id="otherAdsIcon">
-                <img src="../GIFs/Advertise GIF-downsized.gif" alt="" height="75px">
-            </div>
-            <div id="otherAdsIcon">
-                <img src="../GIFs/Wtf GIF-downsized.gif" alt="" height="75px">
-            </div>
-            <div id="otherAdsIcon">
-                <img src="../GIFs/Way2Sexy.gif" alt="" height="75px">
-            </div>
-        </div>
-    </p>
-    <br>
-  <div class="mainfooter" id="dynamic-footer">
-    <!-- The footer will be generated here by JavaScript -->
+
+      <div class="col-2">
+        <div class="otherStories"><h1>Other Stories</h1></div>
+        <div class="news-container2"><div id="news-item2-insert"></div></div>
+      </div>
+    </div>
+  </article>
+
+  <br>
+  <div class="otherAdsTitle"><h3>GIFs of the Week!</h3></div>
+  <div class="otherAdsLayout">
+    <div class="otherAdsIcon"><img src="../GIFs/Dancing GIF-downsized.gif" alt="Dancing gif" height="75"></div>
+    <div class="otherAdsIcon"><img src="../GIFs/Advertise GIF-downsized.gif" alt="Advertise gif" height="75"></div>
+    <div class="otherAdsIcon"><img src="../GIFs/Wtf GIF-downsized.gif" alt="Reaction gif" height="75"></div>
+    <div class="otherAdsIcon"><img src="../GIFs/Way2Sexy.gif" alt="Dance gif" height="75"></div>
   </div>
-<!-- Privacy Cookie Statement -->
-<div class="privacy-cookie-banner" id="privacyCookieBanner">
+  <br>
+
+  <div class="mainfooter" id="dynamic-footer"></div>
+  <div class="privacy-cookie-banner" id="privacyCookieBanner">
     <p>
       We may use third-party services (like Google AdSense) that may use cookies to
       personalize ads and analyze traffic. To learn more, see our
-      <a href="./privacypolicy.html">Privacy Policy</a>.
+      <a href="../privacypolicy.html">Privacy Policy</a>.
     </p>
     <button onclick="acceptPrivacyCookies()">Got it</button>
   </div>
-    <script src="../scripts/menuItems.js"></script>
-    <script src="../scripts/create-footer.js"></script>
-    <script src="/lifestyle/pay-raise-calculator.js"></script>
+
+  <script src="../scripts/menuItems.js"></script>
+  <script src="../scripts/other-articles.js"></script>
+  <script src="../scripts/create-footer.js"></script>
+  <script src="../scripts/articlesTemplate.js"></script>
+  <script src="./pay-raise-calculator.js"></script>
 </body>
 </html>

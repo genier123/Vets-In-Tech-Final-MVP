@@ -7,7 +7,8 @@ const footerContent = `
     Copyright © 2020-${new Date().getFullYear()} Hot Club Tracks. All rights reserved. |
     <a href="https://www.instagram.com/hotclubtracks/">IG:@hotclubtracks</a> |
     <a href="./privacypolicy.html">Privacy Policy</a> |
-    <a href="./aboutus.html">About Us</a>
+    <a href="./aboutus.html">About Us</a> |
+    <a href="./contact.html">Contact</a>
     <br>
 `;
 

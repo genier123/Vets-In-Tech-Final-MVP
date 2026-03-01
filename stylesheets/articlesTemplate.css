@@ -353,3 +353,6 @@ p {
 .otherAdsIcon img:hover {
   transform: scale(1.1); /* subtle zoom on hover */
 }
+.otherAdsTitle {
+  text-align: center;
+}

@@ -276,7 +276,7 @@ h3 {
   justify-content: center;
 }
 
-#otherAdsIcon {
+.otherAdsIcon, #otherAdsIcon {
   padding: 0;
 }
 
@@ -768,4 +768,7 @@ h3 {
     font-size: 0.85rem;
     padding: 6px 14px;
   }
+}
+.otherAdsTitle {
+  text-align: center;
 }
