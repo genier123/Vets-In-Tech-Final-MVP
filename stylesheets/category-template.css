@@ -1,0 +1,82 @@
+/* Shared category-page styling aligned with articlesTemplate.css */
+
+.categoryPage {
+  background: linear-gradient(180deg, #f7f8fb 0%, #ffffff 260px);
+}
+
+.categoryPage .myMenu,
+.categoryPage #buttonMenu,
+.categoryPage article,
+.categoryPage .totalLayout {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.categoryPage h1 {
+  margin-top: 10px;
+}
+
+.categoryPage .maintopic {
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.2rem;
+  color: #1f2937;
+  margin: 10px auto 16px auto;
+}
+
+.categoryPage .articleSearch1 {
+  max-width: 700px;
+  margin: 0 auto 14px auto;
+  padding: 0 12px;
+}
+
+.categoryPage .articleSearch1 input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d4d7dd;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.categoryPage .news-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.categoryPage .news-item {
+  padding: 12px;
+}
+
+.categoryPage .news-item p {
+  margin: 4px 0 0 0;
+  color: #4b5563;
+  font-size: 14px;
+}
+
+.categoryPage .news-item h2,
+.categoryPage .news-item2 h2 {
+  font-size: 1.3rem;
+}
+
+.categoryPage .otherStories h1 {
+  font-size: 2rem;
+}
+
+.categoryPage .topsongs1,
+.categoryPage .artworkContent1,
+.categoryPage .artwork1 {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .categoryPage .news-container {
+    grid-template-columns: 1fr;
+  }
+
+  .categoryPage .col-2 {
+    margin-top: 14px;
+  }
+}

@@ -1,24 +1,25 @@
 //------------------------ Write Table Data ----------------------
 let songData = [
-  {"Title": "Golden", "Artist": "HUNTR/X: EJAE, Audrey Nuna & REI AMI"},
-  {"Title": "Safe", "Artist": "Cardi B Featuring Kehlani"},
-  {"Title": "Your Idol", "Artist": "Saja Boys: Andrew Choi, Neckwav, Danny Chung, Kevin Woo & samUIL Lee"},
-  {"Title": "Love Me Not", "Artist": "Ravyn Lenae"},
-  {"Title": "GuabanSexxx", "Artist": "Rauw Alejandro"},
-  {"Title": "Soleao", "Artist": "Myke Towers"},
-  {"Title": "Tears", "Artist": "Sabrina Carpenter"},
-  {"Title": "Charlie", "Artist": "Tom MacDonald"},
-  {"Title": "12 to 12", "Artist": "Sombr"},
-  {"Title": "Ojos Tristes", "Artist": "Selena Gomez, Benny Blanco & The Marias"},
-  {"Title": "Soda Pop", "Artist": "Saja Boys: Andrew Choi, Neckwav, Danny Chung, Kevin Woo & samUIL Lee"},
-  {"Title": "Nokia", "Artist": "Playboi Carti"},
-  {"Title": "What It Sounds Like", "Artist": "HUNTR/X: EJAE, Audrey Nuna & REI AMI"},
+  {"Title": "Messy", "Artist": "Lola Young"},
+  {"Title": "Good Luck, Babe!", "Artist": "Chappell Roan"},
+  {"Title": "Nokia", "Artist": "Drake"},
+  {"Title": "Ordinary", "Artist": "Alex Warren"},
+  {"Title": "MUTT", "Artist": "Leon Thomas"},
+  {"Title": "Anxiety", "Artist": "Doechii"},
+  {"Title": "Pink Pony Club", "Artist": "Chappell Roan"},
+  {"Title": "Blue Strips", "Artist": "Jessie Murph"},
   {"Title": "Luther", "Artist": "Kendrick Lamar & SZA"},
   {"Title": "Daisies", "Artist": "Justin Bieber"},
-  {"Title": "Ordinary", "Artist": "Alex Warren"},
-  {"Title": "Strategy", "Artist": "TWICE"},
-  {"Title": "Baile Inolvidable", "Artist": "Bad Bunny"},
-  {"Title": "Wet Dream", "Artist": "Wet Leg"}
+  {"Title": "Tears", "Artist": "Sabrina Carpenter"},
+  {"Title": "Soleao", "Artist": "Myke Towers"},
+  {"Title": "Guaya", "Artist": "Rauw Alejandro"},
+  {"Title": "What It Sounds Like", "Artist": "HUNTR/X"},
+  {"Title": "Love Me Not", "Artist": "Ravyn Lenae"},
+  {"Title": "After Hours", "Artist": "Kehlani"},
+  {"Title": "MOVE", "Artist": "Adam Port, Stryv & Keinemusik"},
+  {"Title": "girl so confusing", "Artist": "Charli XCX"},
+  {"Title": "One Of The Girls", "Artist": "The Weeknd, JENNIE & Lily-Rose Depp"},
+  {"Title": "Beautiful Things", "Artist": "Benson Boone"}
 ];
   
 function generateTableHead(table, data) {
@@ -43,14 +44,15 @@ function generateTable(table, data) {
   }
 }
 
-let table = document.querySelector("table");
+let table = document.getElementById("myTable");
 let data = Object.keys(songData[0]);
 generateTableHead(table, data);
 generateTable(table, songData);
 
 //-------------------- Filter Artist --------------------
   function myFunctionA() {
-    var filter = event.target.value.toUpperCase();
+    var input = document.getElementById("myInput");
+    var filter = (input ? input.value : "").toUpperCase();
     var rows = document.querySelector("#myTable").rows;
     
     for (var i = 0; i < rows.length; i++) {
@@ -165,7 +167,10 @@ function myScrolldown() {
 var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
 var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
 var scrolled = (winScroll / height) * 100;
-document.getElementById("myBar").style.width = scrolled + "%";
+var myBar = document.getElementById("myBar");
+if (myBar) {
+  myBar.style.width = scrolled + "%";
+}
 }
 
 //---------------- Pop Up Model --------------------------

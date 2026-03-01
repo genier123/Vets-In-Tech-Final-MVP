@@ -1,0 +1,74 @@
+/* Global published-site typography/menu unification */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+  --hct-text: #161616;
+  --hct-subtext: #4b5563;
+  --hct-bg: #ffffff;
+  --hct-surface: #ffffff;
+  --hct-border: #e5e7eb;
+}
+
+body {
+  background-color: var(--hct-bg);
+  color: var(--hct-text);
+  font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+.myMenu h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 1.5px;
+  color: var(--hct-text);
+}
+
+#buttonMenu button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  border-radius: 4px;
+}
+
+h1, h2, h3 {
+  color: var(--hct-text);
+  text-wrap: balance;
+}
+
+h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.8px;
+  line-height: 1.1;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+p, li, td, th, input, button, a {
+  font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.maintopic {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.8px;
+}
+
+.news-item, .news-item2, .archiveItem {
+  border: 1px solid var(--hct-border);
+  background: var(--hct-surface);
+}
+
+.otherStories h1 {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.otherAdsTitle h3 {
+  text-align: center;
+}

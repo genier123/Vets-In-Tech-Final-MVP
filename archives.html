@@ -1,246 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Async Google Ads Script -->
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2474604734581000" crossorigin="anonymous"></script>
-        
-        <!-- Basic Meta Tags -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Access past news stories, articles, and reports. Explore Hot Club Tracks’ archives on music trends, industry news, and updates for DJs, producers, and musicians.">
-        <meta name="keywords" content="news archives, music news, DJ news, music blog, music production updates, news history, DJ resources">
-        <meta name="author" content="Hot Club Tracks by PG Digital">
-    
-        <!-- Open Graph Meta Tags for Social Media Sharing -->
-        <meta property="og:title" content="Music News Archives | HotClubTracks">
-        <meta property="og:description" content="Explore the Hot Club Tracks news archives with articles, stories, and reports on music, DJs, and producers.">
-        <meta property="og:image" content="https://www.hotclubtracks.com/img/web-background1.jpg">
-        <meta property="og:url" content="https://www.hotclubtracks.com/archives.html">
-        <meta property="og:type" content="website">
-    
-        <!-- Twitter Card Meta Tags -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Music News Archives | HotClubTracks">
-        <meta name="twitter:description" content="Browse through past news stories and updates in the world of music, DJing, and production.">
-        <meta name="twitter:image" content="https://www.hotclubtracks.com/img/web-background1.jpg">
-    
-        <!-- Title -->
-        <title>Music News Archives | Hot Club Tracks</title>
-    
-        <!-- CSS Stylesheet -->
-        <link rel="stylesheet" href="./stylesheets/newsArchives1.css">
-        
-        <!-- Preconnect for Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
-    
-        <!-- Canonical URL -->
-        <link rel="canonical" href="https://www.hotclubtracks.com/archives.html">
-    </head>    
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2474604734581000" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse every Hot Club Tracks article in one place. Search and explore all stories sorted from newest to oldest.">
+    <meta name="keywords" content="Hot Club Tracks archives, all articles, music news archive, celebrity news archive, lifestyle archive">
+    <meta name="author" content="Hot Club Tracks by PG Digital">
+
+    <meta property="og:title" content="Hot Club Tracks Archives | All Articles">
+    <meta property="og:description" content="Search every Hot Club Tracks article listed from newest to oldest.">
+    <meta property="og:image" content="https://www.hotclubtracks.com/img/web-background1.jpg">
+    <meta property="og:url" content="https://www.hotclubtracks.com/archives">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hot Club Tracks Archives | All Articles">
+    <meta name="twitter:description" content="Search every Hot Club Tracks article listed from newest to oldest.">
+    <meta name="twitter:image" content="https://www.hotclubtracks.com/img/web-background1.jpg">
+
+    <title>Hot Club Tracks Archives | All Articles</title>
+
+    <link rel="stylesheet" href="./stylesheets/articlesTemplate.css">
+    <link rel="stylesheet" href="./stylesheets/archives.css">
+    <link rel="canonical" href="https://www.hotclubtracks.com/archives">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./stylesheets/site-unified-theme.css">
+</head>
 <body>
-        <!-- Logo/Menu Section -->
-        <header class="myMenu">
-            <a href="https://www.hotclubtracks.com/">
+    <header class="myMenu">
+        <a href="https://www.hotclubtracks.com/">
             <h1>Hot Club Tracks</h1>
-            </a>
-        </header>
-                <div id="buttonMenu">
-                    <!-- Menu buttons will be added here by JavaScript -->
+        </a>
+    </header>
+
+    <div id="buttonMenu"></div>
+    <br>
+
+    <article>
+        <h1>All Articles Archive</h1>
+        <div class="archiveIntro">
+            <p>Every current article on Hot Club Tracks, sorted by publish date from newest to oldest.</p>
+        </div>
+
+        <div class="totalLayout">
+            <div class="col-1">
+                <div class="archiveSearchWrap">
+                    <input type="text" id="searchInput" placeholder="Search stories...">
+                    <p id="archiveCount" class="archiveCount"></p>
                 </div>
-            <br>
-        <!-- Logo/Menu Section End-->
-    <div class="maintopic">The News Archives!</div>
-<p>
-    <div class="news-archive">
-        <input type="text" id="searchInput" onkeyup="filterStories()" placeholder="Search stories..." />
-        <ul id="newsList">
-            <li class="news-item">
-                <a href="./newsArticles/JamesEarlJonesPassesAt93.html" class="newsLink">
-                    <div class="news-content">
-                        <div class="news-img">
-                            <img src="https://th.bing.com/th/id/OIP.ioZCZ-M-ANfirNyKI7l8tQAAAA?rs=1&pid=ImgDetMain" alt="James Earl Jones" class="news-image">
-                        </div>
-                        <div class="news-title">
-                            <h3>James Earl Jones Passes at 93: A Tribute to His Life and Career</h3>
-                            <p class="news-date">September 14th, 2024</p>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="news-item">
-                <a href="./calculatorTools/rent-affordability-calculator.html" class="newsLink">
-                    <div class="news-content">
-                        <div class="news-img">
-                            <img src="https://tse1.mm.bing.net/th?id=OIG4.PoFauHHEnYjHHifP5Kt_&w=270&h=270&c=6&r=0&o=5&dpr=2&pid=ImgGn" alt="Where to Find the Best Melodic Beats" class="news-image">
-                        </div>
-                        <div class="news-title">
-                            <h3>Rent Affordability Calculator</h3>
-                            <p class="news-date">September 8th, 2024</p>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="news-item">
-                <a href="./where-to-find-the-best-melodic-beats.html" class="newsLink">
-                    <div class="news-content">
-                        <div class="news-img">
-                            <img src="https://cdn.pixabay.com/photo/2019/09/27/07/57/music-4507817_1280.jpg" alt="Where to Find the Best Melodic Beats" class="news-image">
-                        </div>
-                        <div class="news-title">
-                            <h3>Where to Find the Best Melodic Beats</h3>
-                            <p class="news-date">September 5th, 2024</p>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="news-item">
-                <a href="/newsArticles/10-Things-You-May-Not-Know-About-Kamala-Harris.html" class="newsLink">
-                    <div class="news-content">
-                        <div class="news-img">
-                            <img src="https://d.newsweek.com/en/full/1525180/kamala-harris.jpg?w=1600&h=1200&q=88&f=7b9924c0ca6680b5f8d13b87313cde39" alt="10 Things You May Not Know About Kamala Harris" class="news-image">
-                        </div>
-                        <div class="news-title">
-                            <h3>10 Things You May Not Know About Kamala Harris</h3>
-                            <p class="news-date">August 18th, 2024</p>
-                        </div>
-                    </div>
-                </a>
-            </li> 
-            <li class="news-item">
-                <a href="/newsArticles/10-Things-You-May-Not-Know-About-Donald-Trump.html" class="newsLink">
-                    <div class="news-content">
-                        <div class="news-img">
-                            <img src="/newsimages/Screenshot 2024-08-18.png" alt="10 Things You Didn't Know About Donald Trump" class="news-image">
-                        </div>
-                        <div class="news-title">
-                            <h3>10 Things You Didn't Know About Donald Trump</h3>
-                            <p class="news-date">August 18th, 2024</p>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="news-item">
-                <a href="/newsArticles/Five-Things-You-May-Not-Know-About-Robert-Downey-Jr.html" class="newsLink">
-                    <div class="news-content">
-                        <div class="news-img">
-                            <img src="https://www.hollywoodreporter.com/wp-content/uploads/2024/07/JG2_0637_pYnCmsep-e1722141697676.jpeg?w=2000&h=1126&crop=1&resize=1000%2C562" alt="Five Things You May Not Know About Robert Downey Jr." class="news-image">
-                        </div>
-                        <div class="news-title">
-                            <h3>Five Things You May Not Know About Robert Downey Jr.</h3>
-                            <p class="news-date">July 28th, 2024</p>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="news-item">
-                <a href="/pay-raise-calculator.html" class="newsLink">
-                    <div class="news-content">
-                        <div class="news-img">
-                            <img src="https://cdn.pixabay.com/photo/2015/02/02/18/58/money-621349_960_720.jpg" alt="Pay Raise Calculator" class="news-image">
-                        </div>
-                        <div class="news-title">
-                            <h3>Pay Raise Calculator</h3>
-                            <p class="news-date">April 29th, 2024</p>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="news-item">
-                <a href="/ArtistLyricsPages/LovenOnMeJackHarlowLyrics.html" class="newsLink">
-                    <div class="news-content">
-                        <div class="news-img">
-                            <img src="https://upload.wikimedia.org/wikipedia/en/7/72/%22Lovin_On_Me%22_by_Jack_Harlow_-_cover_art.png" alt="Loven On Me Lyrics by Jack Harlow" class="news-image">
-                        </div>
-                        <div class="news-title">
-                            <h3>Loven On Me Lyrics by Jack Harlow</h3>
-                            <p class="news-date">April 22nd, 2024</p>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="news-item">
-                <a href="./newsArticles/toyotaStout.html" class="newsLink">
-                    <div class="news-content">
-                        <div class="news-img">
-                            <img src="https://pictures.dealer.com/k/kunestoyotaofgalesburgil/1105/aa63e1615e4f70bc6661ed29da366a1ax.jpg" alt="The New Toyota Stout Will Blow the Competition Away" class="news-image">
-                        </div>
-                        <div class="news-title">
-                            <h3>The New Toyota Stout Will Blow the Competition Away</h3>
-                            <p class="news-date">April 14th, 2024</p>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="news-item">
-                <a href="./newsArticles/tupac_9-30-23.html" class="newsLink">
-                    <div class="news-content">
-                        <div class="news-img">
-                            <img src="https://th.bing.com/th/id/OIP.eZVvdOauV8RyCht5OqVDTwAAAA?rs=1&pid=ImgDetMain" alt="Breakthrough in Tupac Shakur Murder Case" class="news-image">
-                        </div>
-                        <div class="news-title">
-                            <h3>Breakthrough in Tupac Shakur Murder Case</h3>
-                            <p class="news-date">September 30th, 2023</p>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="news-item">
-                <a href="./newsArticles/make-money-with-music-9-16-21.html" class="newsLink">
-                    <div class="news-content">
-                        <div class="news-img">
-                            <img src="https://tse1.mm.bing.net/th?id=OIG3._JYZipN3medNRE.hPFlU&w=270&h=270&c=6&r=0&o=5&dpr=2&pid=ImgGn" alt="How To Make Money As a Musician" class="news-image">
-                        </div>
-                        <div class="news-title">
-                            <h3>How To Make Money As a Musician</h3>
-                            <p class="news-date">September 17th, 2021</p>
-                        </div>
-                    </div>
-                </a>
-            </li>                
-            <!-- More items can be added similarly -->
-        </ul>
+                <div id="archiveList" class="archiveList"></div>
+            </div>
+
+            <div class="col-2">
+                <div class="otherStories">
+                    <h1>Other Stories</h1>
+                </div>
+                <div class="news-container2">
+                    <div id="news-item2-insert"></div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <br>
+    <div class="otherAdsTitle"><h3>GIFs of the Week!</h3></div>
+    <div class="otherAdsLayout">
+        <div class="otherAdsIcon">
+            <img src="./GIFs/Dancing GIF-downsized.gif" alt="Dancing GIF" height="75">
+        </div>
+        <div class="otherAdsIcon">
+            <img src="./GIFs/Advertise GIF-downsized.gif" alt="Advertise GIF" height="75">
+        </div>
+        <div class="otherAdsIcon">
+            <img src="./GIFs/Wtf GIF-downsized.gif" alt="Reaction GIF" height="75">
+        </div>
+        <div class="otherAdsIcon">
+            <img src="./GIFs/Way2Sexy.gif" alt="Dance GIF" height="75">
+        </div>
     </div>
-</p>
-<br>
-<div class="return-button-container">
-     <!-- <a href="./index.html" class="back-to-stories">Back to Home</a> -->
-    <a href="#" onclick="window.history.back(); return false;" class="back-to-stories">Return to Last Page</a>
-  </div>
-<br>
-<br>
-<div class="otherAdsTitle"><h3>GIFs of the Week!</h3></div>
-  <div class="otherAdsLayout">
-      <div class="otherAdsIcon">
-          <img src="../GIFs/Dancing GIF-downsized.gif" alt="" height="75px">
-      </div>
-      <div class="otherAdsIcon">
-          <img src="../GIFs/Advertise GIF-downsized.gif" alt="" height="75px">
-      </div>
-      <div class="otherAdsIcon">
-          <img src="../GIFs/Wtf GIF-downsized.gif" alt="" height="75px">
-      </div>
-      <div class="otherAdsIcon">
-          <img src="../GIFs/Way2Sexy.gif" alt="" height="75px">
-      </div>
-  </div>
-<br>
-    <div class="mainfooter" id="dynamic-footer">
-        <!-- The footer will be generated here by JavaScript -->
-    </div>
-    <!-- Privacy Cookie Statement -->
+
+    <br>
+    <div class="mainfooter" id="dynamic-footer"></div>
+
     <div class="privacy-cookie-banner" id="privacyCookieBanner">
         <p>
-        We may use third-party services (like Google AdSense) that may use cookies to
-        personalize ads and analyze traffic. To learn more, see our
-        <a href="./privacypolicy.html">Privacy Policy</a>.
+            We may use third-party services (like Google AdSense) that may use cookies to
+            personalize ads and analyze traffic. To learn more, see our
+            <a href="./privacypolicy.html">Privacy Policy</a>.
         </p>
         <button onclick="acceptPrivacyCookies()">Got it</button>
     </div>
-<script src="./scripts/menuItems.js"></script>
-<script src="./scripts/create-footer.js"></script>
-<script src="./scripts/script_1.js"></script>
+
+    <script src="./scripts/menuItems.js"></script>
+    <script src="./scripts/create-footer.js"></script>
+    <script src="./scripts/other-articles.js"></script>
+    <script src="./scripts/archives-data.js"></script>
+    <script src="./scripts/archives-render.js"></script>
 </body>
 </html>

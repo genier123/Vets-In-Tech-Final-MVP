@@ -9,15 +9,17 @@
         <meta name="keywords" content="Hot Club Tracks, Club Music Trends, Latest Music Releases, DJ Resource Hub, BPM Analysis, Song Lyrics Insights, Harmonic Key Information, Best Dance Tracks, Current Music Charts, EDM Essentials, New Music Releases, Club Playlist Ideas, Viral Music Hits, Music Genre Insights, DJ Techniques, Music Production Advice, Festival Songs, New Album Reviews, Spotlight on Emerging Artists, Music Discovery Hub">
         <meta name="author" content="Hot Club Tracks by PG Digital">
         <title>Hot Club Tracks | Your Guide to Club Music & Trends</title>
-    <link rel="canonical" href="https://www.hotclubtracks.com/index.html">
+    <link rel="canonical" href="https://www.hotclubtracks.com/">
         <meta property="og:url" content="https://www.hotclubtracks.com">
-        <meta property="og:type" content="article">
+        <meta property="og:type" content="website">
         <meta property="og:image" content="https://pyxis.nymag.com/v1/imgs/da9/ebc/4a09639b792b8c4875be10d14cd2864691-grammys-collage.2x.rhorizontal.w700.jpg">
         <link rel="stylesheet" href="./stylesheets/styles_1.css">
+        <link rel="stylesheet" href="./stylesheets/index-refresh.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
-    </head>    
+            <link rel="stylesheet" href="./stylesheets/site-unified-theme.css">
+</head>    
 <body>
   <!-- Logo Section -->
   <header class="myMenu">
@@ -29,49 +31,31 @@
             <!-- Menu buttons will be added here by JavaScript -->
         </div>
     <br>
-<p>
-    <div class="artworkContent1">
-        <div class="artwork1">
-            <img class="topsongs1" src="./img/bad_bunny_1.png" alt="Top songs artwork">
-        </div>
-        <div class="artwork1">
-            <img class="topsongs1" src="./img/taylor_swift_1.png" alt="Top songs artwork">
-        </div>
-        <div class="artwork1">
-            <img class="topsongs1" src="./img/travis_scott_1.png" alt="Top songs artwork">
-        </div>
-        <div class="artwork1">
-            <img class="topsongs1" src="./img/drake_1.png" alt="Top songs artwork">
-        </div>
+<section class="homepageHero">
+    <h2>Music Culture, Curated Daily</h2>
+    <p>Fresh stories, artist updates, and up-and-coming tracks in one clean feed.</p>
+    <div class="heroMeta">
+        <span>Trending Stories</span>
+        <span>Up-and-Coming Tracks</span>
+        <span>Updated March 2026</span>
     </div>
-    <div class="artworkContent1">
-        <div class="artwork1">
-            <img class="topsongs1" src="./img/black_coffee_1.png" alt="Top songs artwork">
-        </div>
-        <div class="artwork1">
-            <img class="topsongs1" src="./img/mau_p_1.png" alt="Top songs artwork">
-        </div>
-        <div class="artwork1">
-            <img class="topsongs1" src="./img/Doechii.png" alt="Top songs artwork">
-        </div>
-        <div class="artwork1">
-            <img class="topsongs1" src="./img/james_hype_1.png" alt="Top songs artwork">
-        </div>
-    </div>
-</p>
+</section>
 <article>
     <h1>Trending Music & News Right Now</h1>
     <div class="totalLayout">
         <div class="col-1">
-            <br>
-                <div class="news-container" id="newsContainer">
-                    <article class="news-item">
-                        <a href="https://www.hotclubtracks.com/celebrities/duff-vs-tisdale-feud.html" class="news-link" target="_blank">
-                            <img src="./img/duff-vs-tisdale-feud.png" alt="duff-vs-tisdale-feud">
+                <div class="sectionCard featuredCard">
+                    <a href="https://www.hotclubtracks.com/celebrities/duff-vs-tisdale-feud.html" class="featuredStory" target="_blank">
+                        <img src="./img/duff-vs-tisdale-feud.png" alt="Hilary Duff and Ashley Tisdale feud">
+                        <div class="featuredOverlay">
+                            <p class="featuredLabel">Featured</p>
                             <h2>Hollywood Feud Explodes: Duff vs. Tisdale</h2>
-                            <p>March 1st, 2026</p>
-                        </a>
-                    </article>
+                            <p>March 1, 2026</p>
+                        </div>
+                    </a>
+                </div>
+                <h2 class="sectionHeading">Latest Stories</h2>
+                <div class="news-container" id="newsContainer">
                     <article class="news-item">
                         <a href="https://www.hotclubtracks.com/news/Subscription-Based-Wedding.html" class="news-link" target="_blank">
                             <img src="https://tse4.mm.bing.net/th/id/OIP.u5MvdjzQxokAXmd4EeWpCAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Wedding">
@@ -129,10 +113,10 @@
                         </a>
                     </article>
                 </div>
-                <br>
-                <hr>
-                <h2>Hot Club Tracks and Music Now!</h2>
-                <div class="para2"><!-- Paragraph 2 -->
+                <div class="sectionCard tracksCard">
+                <h2 class="sectionHeading">Latest Hottest Up-and-Coming Tracks</h2>
+                <p class="tracksSubtitle">Use sort and search to quickly find what you want.</p>
+                <div class="para2">
                     <div id="filter">
                         <span>
                             <button onClick="history.go(0);">Popular</button>
@@ -149,15 +133,14 @@
                         <br>
                         <br>
                         <span>
-                            <input type="text" id="myInput" onkeyup="myFunctionA()" placeholder="Search for.." title="search for">
+                            <input type="text" id="myInput" onkeyup="myFunctionA()" placeholder="Search songs or artists..." title="search for">
                         </span>
                     </div>
-                    <br>
                 </div>
                 <table id="myTable">
                     <!-- Table Data! -->
                 </table>
-                <hr>
+                </div>
         </div>
         <div class="col-2">
             <div class="otherStories">
@@ -180,16 +163,16 @@
 <div class="otherAdsTitle"><h3>GIFs of the Week!</h3></div>
     <div class="otherAdsLayout">
         <div class="otherAdsIcon">
-            <img src="../GIFs/Dancing GIF-downsized.gif" alt="" height="75px">
+            <img src="./GIFs/Dancing GIF-downsized.gif" alt="" height="75px">
         </div>
         <div class="otherAdsIcon">
-            <img src="../GIFs/Advertise GIF-downsized.gif" alt="" height="75px">
+            <img src="./GIFs/Advertise GIF-downsized.gif" alt="" height="75px">
         </div>
         <div class="otherAdsIcon">
-            <img src="../GIFs/Wtf GIF-downsized.gif" alt="" height="75px">
+            <img src="./GIFs/Wtf GIF-downsized.gif" alt="" height="75px">
         </div>
         <div class="otherAdsIcon">
-            <img src="../GIFs/Way2Sexy.gif" alt="" height="75px">
+            <img src="./GIFs/Way2Sexy.gif" alt="" height="75px">
         </div>
     </div>
 <br>
