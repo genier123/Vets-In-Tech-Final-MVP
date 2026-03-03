@@ -192,15 +192,11 @@
 
       try {
         // Using normalized email as doc ID guarantees uniqueness.
+        // We intentionally skip a pre-read because rules block reads.
+        // With create-only rules, this set succeeds for new docs and
+        // fails for existing docs (treated as update).
         const docId = encodeURIComponent(email);
         const ref = db.collection(COLLECTION_NAME).doc(docId);
-        const existing = await ref.get();
-
-        if (existing.exists) {
-          localStorage.setItem(LOCAL_SUBSCRIBED_KEY, email);
-          setStatus(status, "This email is already subscribed.", true);
-          return;
-        }
 
         await ref.set({
           email: email,
@@ -300,7 +296,7 @@
     const code = err && err.code ? err.code : "";
 
     if (code === "permission-denied") {
-      return "Save blocked by Firestore rules. Check Firebase console rules.";
+      return "This email may already be subscribed, or Firestore rules blocked the save.";
     }
     if (code === "failed-precondition") {
       return "Firestore is not fully set up yet for this project.";
