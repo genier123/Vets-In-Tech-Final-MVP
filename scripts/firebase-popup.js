@@ -216,8 +216,11 @@
           hidePopup(root);
         }, 1000);
       } catch (err) {
-        console.error("[firebase-popup] Save failed:", err);
-        setStatus(status, "Could not save right now. Please try again.", true);
+        console.error("[firebase-popup] Save failed:", {
+          code: err && err.code ? err.code : "unknown",
+          message: err && err.message ? err.message : String(err),
+        });
+        setStatus(status, mapSaveError(err), true);
       }
     });
 
@@ -291,5 +294,20 @@
         value.indexOf("YOUR_") !== 0
       );
     });
+  }
+
+  function mapSaveError(err) {
+    const code = err && err.code ? err.code : "";
+
+    if (code === "permission-denied") {
+      return "Save blocked by Firestore rules. Check Firebase console rules.";
+    }
+    if (code === "failed-precondition") {
+      return "Firestore is not fully set up yet for this project.";
+    }
+    if (code === "unavailable") {
+      return "Network/service unavailable. Try again in a moment.";
+    }
+    return "Could not save right now. Please try again.";
   }
 })();
