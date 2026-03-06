@@ -19,7 +19,17 @@ let songData = [
   {"Title": "MOVE", "Artist": "Adam Port, Stryv & Keinemusik"},
   {"Title": "girl so confusing", "Artist": "Charli XCX"},
   {"Title": "One Of The Girls", "Artist": "The Weeknd, JENNIE & Lily-Rose Depp"},
-  {"Title": "Beautiful Things", "Artist": "Benson Boone"}
+  {"Title": "Beautiful Things", "Artist": "Benson Boone"},
+  {"Title": "Opalite", "Artist": "Taylor Swift"},
+  {"Title": "The Fate of Ophelia", "Artist": "Taylor Swift"},
+  {"Title": "Man I Need", "Artist": "Olivia Dean"},
+  {"Title": "Folded", "Artist": "Kehlani"},
+  {"Title": "Nokia", "Artist": "Drake"},
+  {"Title": "DTMF", "Artist": "Bad Bunny"},
+  {"Title": "BAILE INoLVIDABLE", "Artist": "Bad Bunny"},
+  {"Title": "NUEVAYoL", "Artist": "Bad Bunny"},
+  {"Title": "Choosin' Texas", "Artist": "Burna Boy"},
+  {"Title": "Pink Pony Club", "Artist": "Chappell Roan"}
 ];
   
 function generateTableHead(table, data) {
